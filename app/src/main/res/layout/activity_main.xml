@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:fitsSystemWindows="true">
+
+    <FrameLayout
+        android:id="@+id/main_frame_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/main_bottom" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/main_bottom"
+        android:background="@drawable/main_bottom_bg"
+        android:scaleType="fitEnd" />
+
+    <LinearLayout
+        android:id="@+id/main_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="#ffffff"
+        android:orientation="horizontal"
+        android:paddingBottom="4dp">
+
+
+        <RelativeLayout
+            android:id="@+id/menu_tag_wallet"
+            style="@style/ButtonBackgroundEffectStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="bottom|center_horizontal"
+            android:orientation="vertical">
+
+            <com.quarkonium.qpocket.view.TintImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/wallet_name"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/main_wallet_selector" />
+
+            <TextView
+                android:id="@+id/wallet_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="3dp"
+                android:text="@string/main_menu_tag_wallet"
+                android:textColor="@color/main_btn_selector"
+                android:textSize="11sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/menu_tag_setting"
+            style="@style/ButtonBackgroundEffectStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="bottom|center_horizontal"
+            android:orientation="vertical">
+
+            <com.quarkonium.qpocket.view.TintImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/setting_name"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/main_setting_selector" />
+
+            <TextView
+                android:id="@+id/setting_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="3dp"
+                android:text="@string/main_menu_tag_setting"
+                android:textColor="@color/main_btn_selector"
+                android:textSize="11sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ViewStub
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout="@layout/viewstub_guide_layout" />
+
+    <ViewStub
+        android:id="@+id/view_stub_install"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout="@layout/viewstub_main_update_layout" />
+</RelativeLayout>

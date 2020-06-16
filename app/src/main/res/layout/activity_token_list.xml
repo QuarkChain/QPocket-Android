@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:fitsSystemWindows="true">
+
+    <EditText
+        android:id="@+id/edit_focus"
+        android:layout_width="1dp"
+        android:layout_height="1dp" />
+
+    <!-- 顶部  -->
+    <com.quarkonium.qpocket.view.TopBarView
+        android:id="@+id/top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/appbar_top_height" />
+
+    <RelativeLayout
+        android:id="@+id/top_edit_layout"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginTop="@dimen/dp_67"
+        android:layout_marginBottom="17dp">
+
+        <EditText
+            android:id="@+id/token_list_search_edit"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_toLeftOf="@+id/edit_cancel"
+            android:background="@drawable/token_search_edit_bg2"
+            android:drawableLeft="@drawable/edit_search"
+            android:drawablePadding="8dp"
+            android:hint="@string/token_list_search_hint"
+            android:imeOptions="actionSearch"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:singleLine="true"
+            android:textColorHint="#c2c2c2"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/search_edit_remove"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:layout_alignRight="@+id/token_list_search_edit"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:padding="6dp"
+            android:scaleType="center"
+            android:src="@drawable/search_cancel"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/edit_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="@string/cancel"
+            android:textColor="@color/text_title"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/edit_cancel_width_view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="@string/cancel"
+            android:textColor="@color/text_title"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/token_list_swipe"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/top_edit_layout">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="19dp"
+                android:layout_marginRight="19dp"
+                android:layout_marginBottom="20dp"
+                app:cardElevation="2dp"
+                card_view:cardCornerRadius="7dp"
+                card_view:cardUseCompatPadding="true">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/token_list_recycler_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <RelativeLayout
+        android:id="@+id/token_search_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/top_edit_layout"
+        android:background="@color/colorPrimary"
+        android:clickable="true"
+        android:visibility="gone">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="19dp"
+            android:layout_marginRight="19dp"
+            android:layout_marginBottom="20dp"
+            app:cardElevation="2dp"
+            card_view:cardCornerRadius="7dp"
+            card_view:cardUseCompatPadding="true">
+
+            <com.quarkonium.qpocket.view.EmptyRecyclerView
+                android:id="@+id/token_search_list_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff" />
+        </androidx.cardview.widget.CardView>
+
+        <include
+            android:id="@+id/empty_view"
+            layout="@layout/search_empty_layout" />
+
+        <RelativeLayout
+            android:id="@+id/token_search_progress"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary"
+            android:visibility="gone">
+
+            <com.xdandroid.materialprogressview.MaterialProgressView
+                android:id="@+id/token_search_progress_anim"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/progress_layout"
+        layout="@layout/progress_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true" />
+</RelativeLayout>

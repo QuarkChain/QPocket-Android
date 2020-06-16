@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tl="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:fitsSystemWindows="true">
+
+    <!-- 顶部  -->
+    <com.quarkonium.qpocket.view.TopBarView
+        android:id="@+id/top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/appbar_top_height" />
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/transaction_swipe_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/public_sale_buy"
+        android:layout_below="@+id/top_layout"
+        android:paddingBottom="20dp">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="19dp"
+            android:paddingRight="19dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:descendantFocusability="blocksDescendants"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="25dp"
+                    app:cardElevation="2dp"
+                    card_view:cardCornerRadius="7dp"
+                    card_view:cardUseCompatPadding="true">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="19dp"
+                        android:layout_marginTop="19dp"
+                        android:layout_marginRight="19dp"
+                        android:background="#ffffff">
+
+                        <ImageView
+                            android:id="@+id/public_sale_img"
+                            android:layout_width="22dp"
+                            android:layout_height="22dp" />
+
+                        <TextView
+                            android:id="@+id/public_sale_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toRightOf="@+id/public_sale_img"
+                            android:singleLine="true"
+                            android:textColor="@color/text_title"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/public_sale_price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:singleLine="true"
+                            android:textColor="@color/text_title"
+                            android:textSize="13sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/public_sale_img"
+                            android:layout_marginTop="15dp"
+                            android:text="@string/token_detail_available_title"
+                            android:textColor="@color/text_message"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/public_sale_available"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/public_sale_img"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginTop="14dp"
+                            android:textColor="@color/text_title"
+                            android:textSize="13sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/public_sale_available"
+                            android:layout_marginTop="20dp"
+                            android:text="@string/token_detail_token_title"
+                            android:textColor="@color/text_message"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/public_sale_balance"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/public_sale_available"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginTop="19dp"
+                            android:textColor="@color/text_title"
+                            android:textSize="13sp"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_below="@+id/public_sale_balance"
+                            android:layout_marginTop="15dp"
+                            android:background="#ebebeb" />
+
+
+                        <TextView
+                            android:id="@+id/public_sale_basic"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/public_sale_balance"
+                            android:layout_marginTop="30dp"
+                            android:text="@string/token_detail_basic"
+                            android:textColor="@color/text_title"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/public_sale_basic"
+                            android:layout_marginTop="15dp"
+                            android:text="@string/token_detail_website"
+                            android:textColor="@color/text_message"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/public_sale_website"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/public_sale_basic"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginTop="15dp"
+                            android:autoLink="all"
+                            android:maxWidth="150dp"
+                            android:singleLine="true"
+                            android:textColor="#3ea5ff"
+                            android:textColorLink="#3ea5ff"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/public_sale_website"
+                            android:layout_marginTop="15dp"
+                            android:text="@string/token_detail_address"
+                            android:textColor="@color/text_message"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/public_sale_address"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/public_sale_website"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginTop="15dp"
+                            android:ellipsize="middle"
+                            android:maxWidth="150dp"
+                            android:singleLine="true"
+                            android:textColor="@color/text_message"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/public_sale_address"
+                            android:layout_marginTop="15dp"
+                            android:text="@string/public_sale_start_title"
+                            android:textColor="@color/text_message"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/public_sale_start_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/public_sale_address"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginTop="15dp"
+                            android:maxWidth="150dp"
+                            android:singleLine="true"
+                            android:textColor="@color/text_title"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/public_sale_start_time"
+                            android:layout_marginTop="15dp"
+                            android:text="@string/public_sale_end_title"
+                            android:textColor="@color/text_message"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/public_sale_end_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/public_sale_start_time"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginTop="15dp"
+                            android:maxWidth="150dp"
+                            android:singleLine="true"
+                            android:textColor="@color/text_title"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_below="@+id/public_sale_end_time"
+                            android:layout_marginTop="15dp"
+                            android:background="#ebebeb" />
+
+                        <TextView
+                            android:id="@+id/token_detail_des"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/public_sale_end_time"
+                            android:layout_marginTop="30dp"
+                            android:layout_marginBottom="20dp"
+                            android:textColor="@color/text_message"
+                            android:textSize="12sp" />
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <com.scwang.smartrefresh.layout.SmartRefreshLayout
+                    android:id="@+id/detail_tx_swipe"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#ffffff"
+                        app:cardElevation="2dp"
+                        card_view:cardCornerRadius="7dp"
+                        card_view:cardUseCompatPadding="true">
+
+                        <com.quarkonium.qpocket.view.SlidingTabLayout
+                            android:id="@+id/public_token_transaction_tab"
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            app:tl_textBold="true"
+                            app:tl_textsize="14sp"
+                            tl:tl_indicator_color="@color/text_title"
+                            tl:tl_indicator_height="1.5dp"
+                            tl:tl_indicator_margin_bottom="15dp"
+                            tl:tl_indicator_width_equal_title="true"
+                            tl:tl_tab_space_equal="true"
+                            tl:tl_textSelectColor="@color/text_title"
+                            tl:tl_textUnselectColor="@color/text_hint" />
+
+                        <androidx.viewpager.widget.ViewPager
+                            android:id="@+id/public_token_transaction_page"
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:layout_marginLeft="19dp"
+                            android:layout_marginTop="60dp"
+                            android:layout_marginRight="19dp" />
+
+                        <include
+                            android:id="@+id/tx_empty_layout"
+                            layout="@layout/search_empty_layout3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="60dp"
+                            android:visibility="gone" />
+                    </androidx.cardview.widget.CardView>
+                </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <TextView
+        android:id="@+id/public_sale_buy"
+        style="@style/ButtonForegroundEffectStyle"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="19dp"
+        android:layout_marginRight="19dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/btn_black_bg"
+        android:gravity="center"
+        android:text="@string/public_sale_buy"
+        android:textColor="#ffffff"
+        android:textSize="15sp" />
+</RelativeLayout>

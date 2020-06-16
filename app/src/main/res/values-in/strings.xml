@@ -1,0 +1,635 @@
+<resources>
+    <!--常量-->
+    <string name="next">Selanjutnya</string>
+    <string name="copy">Salin</string>
+    <string name="cancel">Batalkan</string>
+    <string name="confirm">OK</string>
+    <string name="done">Selesai</string>
+    <string name="ok">OK</string>
+    <string name="password">Kata sandi</string>
+    <string name="update">Pembaruan</string>
+    <string name="none">Tidak ada</string>
+    <string name="delete">Hapus</string>
+
+    <string name="network_error">Kesalahan jaringan, silahkan coba lagi nanti</string>
+    <!--==================================================-->
+
+
+    <!--权限-->
+    <string name="permission_declined">QPocket tidak memiliki izin untuk mengakses %s. Buka Pengaturan untuk memberikan izin.</string>
+    <string name="permission_camera">Kamera</string>
+    <string name="permission_storage">Ruang penyimpanan</string>
+
+    <!--crash 界面-->
+    <string name="tips_forcequit">Maaf! Terdapat kesalahan yang tidak terduga. Silahkan klik \'Kirim\' untuk melaporkan masalah ini. Terima kasih!</string>
+    <string name="menu_report">Kirim</string>
+
+    <!--创建钱包首页-->
+    <string name="create_wallet_new">BUAT DOMPET</string>
+    <string name="create_wallet_import">DOMPET IMPOR</string>
+
+
+    <!--创建钱包-->
+    <string name="create_wallet_title">Buat Dompet</string>
+    <string name="create_wallet_btn">Buat</string>
+    <string name="create_wallet_password">Kata sandi Dompet </string>
+    <string name="create_wallet_confirm_password">Konfirmasi Kata sandi </string>
+    <string name="create_wallet_hint">Petunjuk Kata sandi (Opsional)</string>
+
+    <!--创建钱包->密码校验-->
+    <string name="create_password_not_equals">Kata sandi tidak cocok</string>
+    <string name="create_password_fail">Gagal membuat dompet!</string>
+
+
+    <!--备份助记词提示-->
+    <string name="backup_wallet_title">Frase Cadangan</string>
+    <string name="backup_wallet_skip">Lewati</string>
+    <string name="create_wallet_btn_start">Mulai </string>
+    <string name="backup_wallet_info">Frase cadangan adalah satu-satunya cara untuk memulihkan dompet Anda. Simpanlah di tempat yang aman dan terlindungi.</string>
+    <string name="backup_wallet_info_hint">Pastikan Anda tidak diawasi ketika mencadangkan frase</string>
+
+
+    <!--记忆助记词-->
+    <string name="backup_wallet_remember_title">Frase Cadangan</string>
+    <string name="backup_wallet_remember_hint">Cadangkan frasa berikut dan kami akan memverifikasinya di langkah berikutnya.</string>
+
+
+    <!--确认助记词-->
+    <string name="backup_wallet_input_hint_title">Verifikasi Frase</string>
+    <string name="backup_wallet_input_hint">Klik frase secara berurutan, untuk memastikan cadangan Anda benar.</string>
+    <string name="backup_wallet_input_fail">Urutan frase salah</string>
+
+
+    <!--导入钱包-->
+    <string name="import_wallet_title">Dompet impor</string>
+
+    <string name="import_wallet_input_phrase_hint">Frase dipisahkan oleh spasi</string>
+    <string name="import_wallet_input_keystore_hint">Keystore Json</string>
+    <string name="import_wallet_input_private_hint">Kunci Privat</string>
+    <string name="import_wallet_input_watch_hint">Alamat %s</string>
+    <string name="import_wallet_btn">Impor</string>
+
+    <string name="import_phrase_tip">Kata-kata dipisahkan oleh spasi (Biasanya mengandung 12 kata)</string>
+    <string name="import_private_tip">Biasanya 64 karakter alfanumerik</string>
+    <string name="import_keystore_tip">Keystore dan kata sandi yang digunakan untuk mengenkripsi file</string>
+    <string name="create_password_tip">Atur Kata Sandi</string>
+
+    <string name="import_wallet_fail_exit">Dompet ini sudah ada</string>
+    <string name="import_wallet_fail_phrase">Frase Tidak Valid</string>
+    <string name="import_wallet_fail_private_key">Kunci Privat Tidak Valid</string>
+    <string name="import_wallet_fail_keystore">Keystore Tidak Valid</string>
+    <string name="import_wallet_fail_watch">Alamat %s Tidak Valid</string>
+
+    <string name="import_wallet_qkc">QuarkChain</string>
+    <string name="import_wallet_eth">Ethereum</string>
+    <string name="import_wallet_trx">TRX</string>
+
+    <!--主界面-->
+    <string name="main_menu_tag_wallet">Dompet</string>
+    <string name="main_menu_tag_setting">Pengaturan</string>
+    <string name="main_menu_tag_dapp">DApps</string>
+
+
+    <!--主界面 钱包-->
+    <string name="wallet_shard_id">Pecahan: %s</string>
+    <string name="wallet_token_total_symbol">QKC</string>
+    <string name="wallet_copy_address_label">Alamat</string>
+
+
+    <!--钱包二维码-->
+    <string name="wallet_qr_address">Alamat QuarkChain</string>
+    <string name="wallet_qr_address_title">Terima</string>
+    <string name="wallet_qr_address_title2">Terima</string>
+    <string name="error_fail_generate_qr">Tidak dapat menghasilkan kode QR.</string>
+    <string name="wallet_qr_eth_address">Alamat Ethereum</string>
+
+    <!--扫描二维码-->
+    <string name="wallet_qr_scan_title">Pindai</string>
+    <string name="wallet_qr_light_up">Nyalakan</string>
+    <string name="wallet_qr_light_down">Matikan</string>
+    <string name="wallet_qr_scan_fail">Gagal dipindai</string>
+    <string name="wallet_qr_scan_album">Album</string>
+
+    <!--钱包管理-->
+    <string name="wallet_manager_title">Dompet Saya</string>
+
+    <!--钱包编辑-->
+    <string name="wallet_edit_title">Manajemen Dompet</string>
+    <string name="wallet_edit_export_ks">Ekspor Keystore</string>
+    <string name="wallet_edit_export_pk">Ekspor Kunci Privat</string>
+    <string name="wallet_edit_export_phrase">Frase Cadangan</string>
+    <string name="wallet_edit_export_password">Masukkan kata sandi</string>
+    <string name="wallet_edit_delete">Hapus Dompet</string>
+    <string name="wallet_edit_setting_icon">Ubah Ikon Dompet</string>
+    <string name="wallet_edit_setting_name">Ubah Nama</string>
+    <string name="wallet_edit_dialog_name_title">Ubah Nama Dompet</string>
+    <string name="name">Nama</string>
+
+    <!--钱包导出成功-->
+    <string name="wallet_export_success_phrase_pk_tip">Jangan mencadangkan kunci privat ke email, notepad dan pesan instan.</string>
+    <string name="wallet_export_success_phrase_ky_tip">Jangan mencadangkan Keystore ke aplikasi email, notepad, dan pesan instan.</string>
+    <string name="wallet_export_success_offline">Kirim Offline</string>
+    <string name="wallet_export_success_offline_pk_tip">Jangan mentransfer kunci privat ini melalui media transmisi jaringan.</string>
+    <string name="wallet_export_success_offline_ky_tip">Jangan mentransfer keystore ini melalui media transmisi jaringan.</string>
+    <string name="wallet_export_private_key">Kunci Privat</string>
+    <string name="wallet_export_keystore">Keystore</string>
+    <string name="copy_success">Disalin</string>
+
+    <!--钱包头像设置-->
+    <string name="wallet_edit_icon">Ikon Dompet</string>
+
+
+    <!--交易记录列表-->
+    <string name="wallet_transaction_detail_title">Rincian</string>
+    <string name="wallet_transaction_total_token_title">Total:</string>
+    <string name="wallet_transaction_merge">Gabungkan</string>
+
+    <!--交易记录Item详情-->
+    <string name="wallet_transaction_detail_item_title">Transaksi</string>
+    <string name="wallet_transaction_detail_amount">Jumlah:</string>
+    <string name="wallet_transaction_detail_actual">Biaya Tx Aktual:</string>
+    <string name="wallet_transaction_from">Dari</string>
+    <string name="wallet_transaction_to">Ke</string>
+    <string name="wallet_transaction_from2">Dari:</string>
+    <string name="wallet_transaction_to2">Ke:</string>
+    <string name="wallet_transaction_pending">Mentransfer</string>
+    <string name="wallet_transaction_sent">Berhasil ditransfer</string>
+    <string name="wallet_transaction_sent_fail">Gagal</string>
+    <string name="wallet_transaction_receive">Diterima</string>
+    <string name="wallet_transaction_block_title">Blokir:</string>
+    <string name="wallet_transaction_tx_title">Tx:</string>
+
+
+    <!--创建发送界面-->
+    <string name="wallet_transaction_send_create_title">Kirim</string>
+    <string name="wallet_transaction_send_hint">Jumlah Untuk Kirim</string>
+    <string name="wallet_transaction_to_address_hint">Ke alamat</string>
+    <string name="wallet_transaction_send_gas">Harga Gas</string>
+    <string name="wallet_transaction_send_gas_limit">Batas Gas</string>
+    <string name="wallet_transaction_send_gas_gwei">GWei</string>
+    <string name="wallet_transaction_send">Hasilkan Transaksi</string>
+    <string name="wallet_transaction_send_fail">Gagal Hasilkan Transaksi!</string>
+
+    <string name="wallet_transaction_to_address_error">Alamat Tidak Valid</string>
+    <string name="wallet_transaction_to_amount_error">Jumlah Tidak Valid</string>
+    <string name="password_error">Kata sandi Salah</string>
+
+    <!--QKC转账-->
+    <string name="transaction_balance_error_title">Saldo tidak cukup</string>
+    <string name="transaction_balance_error_message_merge_success_title">Berhasil gabungkan pecahan</string>
+    <string name="transaction_balance_error_message_merge_success_message">Berhasil gabungkan pecahan, harap tarik ke bawah untuk menyegarkan sampai saldo cukup dan kemudian lanjutkan transaksi.</string>
+    <!--TOKEN转账-->
+    <string name="transaction_balance_token_amount_error">Saldo Token tidak cukup</string>
+    <string name="transaction_balance_token_merge_success_title">Berhasil gabungkan pecahan</string>
+    <string name="transaction_balance_token_merge_success_message">Berhasil gabungkan pecahan, pecahan  telah dialihkan ke pecahan token. Harap tarik ke bawah untuk menyegarkan sampai saldo cukup dan kemudian lanjutkan transaksi.</string>
+    <string name="transaction_balance_token_merge_success_message_nochange">Berhasil gabungkan pecahan, harap tarik ke bawah untuk menyegarkan sampai saldo cukup dan kemudian lanjutkan transaksi.</string>
+    <string name="transaction_balance_token_switch_title">Transaksi Terkirim</string>
+    <!--购买TOKEN-->
+    <string name="transaction_balance_public_switch_success_message">Pecahan telah dialihkan ke pecahan token. Harap tarik ke bawah untuk menyegarkan sampai saldo cukup dan kemudian lanjutkan transaksi.</string>
+    <string name="transaction_balance_public_switch_success_message_nochange">Transaksi terkirim, harap tarik ke bawah untuk menyegarkan sampai saldo cukup dan kemudian lanjutkan transaksi.</string>
+    <string name="transaction_balance_public_merge_success_message_nochange">Berhasil gabungkan pecahan, harap tarik ke bawah untuk menyegarkan sampai saldo cukup dan kemudian lanjutkan transaksi.</string>
+
+
+    <!--发送界面-->
+    <string name="wallet_transaction_send_title">Konfirmasi Transaksi</string>
+    <string name="wallet_transaction_send_amount_title">Jumlah:</string>
+    <string name="wallet_transaction_send_max_title">Biaya Transaksi Maks:</string>
+    <string name="wallet_transaction_send_hash_title">Hash Transaksi yang Ditandatangani:</string>
+    <string name="transaction_send_shard_limit">Transaksi lintas-pecahan dari pecahan %s ke %s.</string>
+    <string name="transaction_send_time">(waktu konfirmasi ~ 90 detik)</string>
+    <string name="transaction_send_action">Kirim Transaksi</string>
+    <string name="transaction_send_fail">Transaksi Gagal</string>
+    <string name="transaction_send_success">Transaksi Terkirim</string>
+    <string name="wallet_transaction_send_token_max_title">Biaya Transaksi Maks:</string>
+
+    <string name="wallet_transaction_send_from">Dari</string>
+    <string name="wallet_transaction_send_to">Ke</string>
+
+    <!--本地erc20 token详情界面-->
+    <string name="token_detail_basic">Informasi Dasar</string>
+    <string name="token_detail_token_title">Saldo:</string>
+    <string name="token_detail_available_title">Tersedia:</string>
+    <string name="token_detail_website">Situs web:</string>
+    <string name="token_detail_address">Kontrak Pintar</string>
+
+    <string name="public_sale_start_title">Waktu mulai:</string>
+    <string name="public_sale_end_title">Waktu berakhir:</string>
+    <string name="public_sale_buy">Beli</string>
+    <string name="public_sale_contract_address_title">Alamat Kontak Penjualan Publik</string>
+    <string name="wallet_public_transaction_send_hint">Jumlah</string>
+    <string name="wallet_public_transaction_price_hint">Harga</string>
+
+    <string name="public_buy_success">Dibeli</string>
+    <string name="public_send_success">Berhasil ditransfer</string>
+
+    <!--merge 界面-->
+    <string name="merge_title">Gabungkan</string>
+    <string name="merge_totalFee">Jumlah Total:</string>
+    <string name="merge_from">Dari:</string>
+    <string name="merge_to">Ke:</string>
+    <string name="merge_gasPrice">Saldo: %s</string>
+    <string name="merge_gasLimit">Biaya Tx: %s</string>
+    <string name="merge_amount">Jumlah:</string>
+    <string name="merge_send">Kirim Transaksi</string>
+    <string name="merge_send_fail">Transaksi transfer %s gagal</string>
+    <string name="merge_edit_gas_price">Harga Gas:</string>
+    <string name="merge_edit_gas_limit">Batas Gas:</string>
+
+    <!--Settings 界面-->
+    <string name="settings_language">Bahasa</string>
+    <string name="settings_help_title">Bantuan</string>
+    <string name="settings_terms_of_use_title">Ketentuan Layanan</string>
+    <string name="settings_privacy_police">Kebijakan Privasi</string>
+    <string name="settings_about_title">Tentang</string>
+
+    <!--Settings 关于-->
+    <string name="settings_about_twitter">Twitter</string>
+    <string name="settings_about_weibo">Weibo</string>
+    <string name="settings_about_telegram">Telegram</string>
+    <string name="settings_about_medium">Medium</string>
+
+    <!--Settings 语言-->
+    <string name="settings_languages_title">Bahasa</string>
+    <string name="settings_languages_save">Simpan</string>
+
+
+    <!--Watch Tips-->
+    <string name="wallet_watch_error_title">Amati Dompet</string>
+    <string name="wallet_watch_error_message">Dompet perhatikan tidak bisa mengekspor kunci pribadi atau keystore.</string>
+
+    <!--backup Tips-->
+    <string name="wallet_backup_title">Dompet belum dicadangkan</string>
+    <string name="wallet_backup_error_message">Frase dompet Anda belum dicadangkan, ingin cadangkan sekarang?</string>
+
+    <!--change name Tips-->
+    <string name="wallet_edit_change_name_success">Nama telah diubah</string>
+
+    <!--发送邮件-->
+    <string name="send_email_title">Dukungan Pelanggan</string>
+    <string name="no_email_title">Email belum disediakan</string>
+    <string name="no_email_message">Apl email perlu diinstal dan email perlu disediakan.</string>
+
+    <!--密码校验-->
+    <string name="password_low_title">Kata sandi terlalu mudah</string>
+    <string name="password_medium_title">Kekuatan Kata Sandi Rendah</string>
+    <string name="password_easy_message">Kata sandi yang kuat sulit ditebak. Gunakan kombinasi huruf kapital dan kecil, angka dan karakter khusus.</string>
+    <string name="password_high_title">Kekuatan Kata Sandi Sedang</string>
+    <string name="password_high_good_title">Kekuatan Kata Sandi Kuat</string>
+
+    <!--检查更新-->
+    <string name="check_update_new">Versi baru tersedia</string>
+    <string name="check_update_title">Periksa pembaruan</string>
+    <string name="check_update_up_to_date">Sudah diperbarui</string>
+
+    <!--删除钱包文案-->
+    <string name="delete_wallet_amount_title">Hapus Dompet</string>
+    <string name="delete_wallet_amount_message">Saldo dompet belum dihapus, yakin untuk menghapusnya?</string>
+
+
+    <!--指纹识别-->
+    <string name="finger_touch">Sidik jari</string>
+    <string name="finger_open_tip_title">Aktifkan Sidik jari</string>
+    <string name="finger_open_tip_msg">Sidik jari dapat digunakan sebagai pengganti kata sandi untuk login dan tanda tangan transaksi, aktifkan sekarang? Anda juga dapat mengaturnya di pengaturan nanti.</string>
+    <string name="finger_open_success">Berhasil Diaktifkan</string>
+    <string name="finger_open_fail">Gagal Diaktifkan</string>
+    <string name="finger_touch_title">Masukkan sidik jari</string>
+    <string name="finger_touch_msg">Gunakan sidik jari untuk mengesahkan transaksi, menandatangani, atau mengekspor</string>
+    <string name="finger_touch_again">Coba lagi</string>
+    <string name="finger_touch_password">Masukkan kata sandi</string>
+
+
+    <!--主页引导-->
+    <string name="guide_button_start">Mulai Sekarang</string>
+    <string name="guide_button_finish">Selesai </string>
+
+    <string name="guide_msg_text1">Selamat datang di QuarkChain! Kami telah menyiapkan beberapa tips untuk membantu Anda memulai dengan cepat.</string>
+    <string name="guide_get_qkc">Dapatkan QKC</string>
+
+    <!--多次密码失败-->
+    <string name="password_tryAfter">Terlalu sering memasukkan kata sandi yang salah, silahkan coba lagi setelah %detik</string>
+
+    <!--add token-->
+    <string name="add_token_title">Tambahkan Token</string>
+    <string name="add_token_button_detect">Deteksi</string>
+    <string name="add_token_name">Nama:</string>
+    <string name="add_token_symbol">Simbol:</string>
+    <string name="add_token_decimal">Desimal:</string>
+    <string name="add_token_contact">Alamat Kontrak</string>
+    <string name="add_token_fail">Alamat kontrak ERC20 tidak valid</string>
+
+    <!--lock界面-->
+    <string name="lock_title">Klik untuk memulai verifikasi</string>
+    <string name="lock_wallet_name">Masukkan kata sandi %s</string>
+
+    <!--助记词国际化-->
+    <string name="phrase_language_en">Inggris</string>
+    <string name="phrase_language_cn">Mandarin Sederhana</string>
+    <string name="phrase_language_tw">Mandarin Tradisional</string>
+    <string name="settings_network">Ganti Jaringan</string>
+    <string name="switch_network_title">Jaringan berbeda</string>
+    <string name="switch_network_message">Jaringan alamat yang dipindai (%s) dan alamat Anda saat ini (%s) berbeda, beralih jaringan sekarang?</string>
+    <string name="add_token_dialog_title">Token Tak Dikenal</string>
+    <string name="add_token_dialog_msg">Token yang dipindai tidak ada dalam daftar token saat ini, tambahkan sekarang?</string>
+    <string name="token_list_title">Token</string>
+    <string name="token_list_search_hint">Nama token atau simbol</string>
+
+    <!--public sale内容为空-->
+
+    <!--兑换码-->
+
+
+    <!--加载更多-->
+    <string name="brvah_loading">Memuat&#8230;</string>
+    <string name="brvah_load_failed">Gagal memuat</string>
+    <string name="brvah_load_end">Tidak ada lagi data</string>
+    <string name="empty_create_wallet_title">Dompet belum dibuat</string>
+    <string name="empty_create_wallet_msg">Perlu membuat atau mengimpor dompet untuk lanjutkan</string>
+    <string name="dapp_open_tips_again">Jangan tampilkan pesan ini lagi</string>
+    <string name="setting_clear_dapp">Hapus Cache Dapp</string>
+    <string name="menu_share_url">Bagikan</string>
+    <string name="menu_copy_url">Salin tautan</string>
+    <string name="menu_open_url">Buka di Browser</string>
+    <string name="web_error_title">%s Tidak Ada Respon</string>
+    <string name="web_error_message">Silahkan coba lagi nanti</string>
+    <string name="setting_clear_dapp_title">Hapus Cache Dapp</string>
+    <string name="setting_clear_dapp_message">Ini akan menghapus cache, cookie, dan data penelusuran lainnya.</string>
+    <string name="trx_total_band_width">Saldo Bandwidth:</string>
+    <string name="trx_cost_band_width">Biaya Bandwidth:</string>
+    <string name="cant_send_to_own_address">Alamat mengirim dan menerima tidak boleh sama</string>
+    <string name="transaction_send_title">Biaya Transaksi:</string>
+    <string name="transaction_unconfirmed">Belum dikonfirmasi</string>
+    <string name="wallet_qr_trx_address">Alamat TRX</string>
+    <string name="trx_freeze_title">Sumberdaya</string>
+    <string name="trx_freeze_band">Bandwidth</string>
+    <string name="trx_freeze_frozen_band">Bandwidth Dibekukan:</string>
+    <string name="trx_freeze_band_width_avaliable">Tersedia %d bp/%d bp </string>
+    <string name="trx_freeze_energy">Energi</string>
+    <string name="trx_freeze_frozen_energy">Energi Dibekukan</string>
+    <string name="trx_freeze_energy_available">Tersedia %d/%d</string>
+    <string name="trx_freeze_tag_freeze">Dibekukan </string>
+    <string name="trx_freeze_tag_unfreeze">Dicairkan</string>
+    <string name="trx_freeze_amount_hint">Jumlah yang Dibekukan</string>
+    <string name="trx_freeze_type">Jenis:</string>
+    <string name="trx_freeze_hint">Setidaknya dibekukan selama 3 hari</string>
+    <string name="trx_balance">Tersedia %s TRX</string>
+    <string name="trx_unfreeze_band_time">Bandwidth yang kadaluwarsa: %s</string>
+    <string name="trx_unfreeze_energy_time">Energi yang kadaluwarsa: %s</string>
+    <string name="trx_freeze_cost_title">Bandwidth tidak Cukup</string>
+    <string name="trx_unfreeze_cost_msg">Bandwidth tidak cukup, perlu membayar %s TRX, lanjutkan?</string>
+    <string name="trx_unfreeze_end_time">Sumber daya harus dibekukan setidaknya tiga hari</string>
+    <string name="trx_not_enough_cost_msg">Bandwidth atau energi tidak cukup, bayar %s TRX untuk melakukan Transaksi?</string>
+    <string name="trx_freeze_type_band">Bandwidth</string>
+    <string name="trx_freeze_type_energy">Energi</string>
+    <string name="guide_load_data">Memuat data&#8230;</string>
+    <string name="import_symbol_type_default">Tak dikenal</string>
+    <string name="import_symbol_type_null">Harus memilih jenis dompet</string>
+    <string name="import_symbol_watch_address">Alamat</string>
+    <string name="export_wallet_hint">Dompet saat ini adalah dompet HD, pastikan Anda telah mencadangkan frase sehingga Anda dapat memulihkan semua jenis kripto  (QKC, ETH, TRX, BTC, dll.), kunci privat atau keystore yang dicadangkan hanya dapat memulihkan dompet kripto saat ini.</string>
+    <string name="trx_trc20_transaction_empty">Token TRC20 tidak mendukung fitur penyelidikan transaksi. Anda dapat mengetahui status transaksi berdasarkan perubahan saldo.</string>
+    <string name="ssl_error_title">Sertifikat situs tidak terpercaya!</string>
+    <string name="ssl_error_message">Anda mencoba mengakses situs web %s, yang sertifikatnya tidak dikeluarkan oleh CA yang terpercaya. Anda disarankan untuk tidak melanjutkan ke situs web jika Anda belum pernah melihat peringatan ini sebelumnya.</string>
+    <string name="ssl_error_ok">Tetap lanjutkan</string>
+    <string name="ssl_error_cancel">Batalkan mengakses</string>
+    <string name="tran_vote">Pilih</string>
+    <string name="tran_smart">Interaksi Kontrak Pintar</string>
+    <string name="tran_freeze">Dibekukan </string>
+    <string name="tran_unfreeze">Dicairkan</string>
+
+
+    <!--设置界面-->
+
+    <!--登录/注册界面-->
+    <string name="user_info_title">Bounty</string>
+    <string name="help_email_tile">Email</string>
+    <string name="help_wechat_tile">ID Wechat</string>
+    <string name="help_weichat_copy_message">ID WeChat QPocket \"qpocketwallet\" telah disalin ke clipboard, tambahkan ke kontak WeChat Anda untuk mendapatkan dukungan.</string>
+    <string name="help_open_wechat_fail">Gagal melompat ke WeChat </string>
+    <string name="delete_wallet_only_one">Anda harus memiliki setidaknya satu dompet</string>
+    <string name="wallet_chain">Rantai:</string>
+    <string name="wallet_shard">Pecahan:</string>
+    <string name="wallet_chain_id">Rantai: %s</string>
+    <string name="wallet_balance">Saldo</string>
+    <string name="wallet_transaction_switch_chain">Ganti Rantai/Pecahan</string>
+
+    <!--wallet页-->
+
+    <!--merge-->
+    <string name="merge_chain_guide">Transfer semua QKC dalam rantai/pecahan yang dipilih berikut ke rantai/pecahan saat ini.</string>
+    <string name="merge_edit_chain_title">Dari Rantai/Pecahan(%s/%s) ke Rantai/Pecahan(%s/%s)</string>
+    <string name="wallet_transaction_address_chain_shard">%s (Rantai/Pecahan: %s/%s)</string>
+    <string name="merge_chain_shard">Rantai/Pecahan(%s/%s) </string>
+    <string name="transaction_balance_enough_message_switch">Saldo rantai/pecahan saat ini (%s/%s) tidak cukup,  silakan pilih transfer pecahan %s berikut dengan saldo yang cukup.</string>
+    <string name="transaction_balance_enough_message_merge">Saldo rantai/pecahan saat ini tidak cukup. Harap gabungkan %s rantai/pecahan lain ke dalam rantai/pecahan saat ini.</string>
+    <string name="transaction_balance_token_chain_merge">Saldo rantai/pecahan tempat token digunakan tidak cukup. Harap gabungkan %s rantai/pecahan lain ke dalam rantai/pecahan tersebut.</string>
+    <string name="transaction_balance_public_merge_chain_success_message">Rantai/Pecahan telah dialihkan ke Rantai/Pecahan tempat token digunakan. Harap tarik ke bawah untuk menyegarkan sampai saldo cukup dan kemudian lanjutkan transaksi.</string>
+    <string name="transaction_send_chain_shard_limit">Transaksi lintas rantai/pecahan: (dari%s/%s ke %s/%s)</string>
+
+
+    <!--tx detail-->
+    <string name="transaction_more_detail"><u>Lihat di Browser Blockchain</u></string>
+
+    <!--dapp-->
+
+    <!--dapp favorite manager-->
+    <string name="white_tips_title">Aktifkan Tandatangan Otomatis</string>
+    <string name="white_tips_msg">QPocket akan secara otomatis menandatangani transaksi berikutnya untuk aplikasi saat ini dan tidak akan meminta izin akses dan konfirmasi dari Anda hingga Anda keluar dari aplikasi ini.</string>
+
+    <!--wallet Manager-->
+
+    <!--二维码扫描-->
+    <string name="qr_coin_not_match">Token yang diterima dari Kode QR saat ini tidak konsisten dengan token yang ditransfer , harap periksa lagi.</string>
+    <string name="add_token_dialog_network_title">Token Tak Dikenal di testnet</string>
+    <string name="add_token_dialog_network_msg">Anda sedang di testnet (%s) . Token yang dipindai tidak ada dalam daftar token Anda testnet (%s), tambahkan sekarang?</string>
+    <string name="donate_request">Permintaan Token</string>
+
+
+    <!--market-->
+
+    <!--coin 详情页-->
+
+
+    <!--快讯-->
+    <string name="share_wechat_success">Berhasil Dibagikan</string>
+    <string name="share_wechat_fail">Gagal Dibagikan</string>
+    <string name="share_wechat_cancel">Batal Bagikan</string>
+
+    <string name="settings_coin">Unit mata uang</string>
+    <string name="wallet_token_title">Aset</string>
+    <string name="tx_send_all">Kirim Semua</string>
+    <string name="add_token_trx_contact">ID TRC10 Atau Alamat Kontrak TRC20</string>
+    <string name="add_token_trx_fail">ID TRC10 Atau Alamat Kontrak TRC20 tidak valid</string>
+    <string name="wallet_transaction_send_gas_title">Biaya Transaksi</string>
+    <string name="wallet_transaction_safe">Agak Lambat</string>
+    <string name="wallet_transaction_avg">Rata-rata</string>
+    <string name="wallet_transaction_fast">Cepat</string>
+    <string name="reload">Muat ulang</string>
+    <string name="wallet_transaction_fail_text">Gagal memuat biaya transaksi</string>
+    <string name="wallet_transaction_adv">Canggih</string>
+    <string name="loading">Memuat&#8230;</string>
+    <string name="wallet_manager_total_assets">Total Aset</string>
+
+    <!--airdrop-->
+    <string name="qkc_name">QuarkChain</string>
+    <string name="eth_name">Ethereum</string>
+    <string name="trx_name">Tron</string>
+    <string name="no_hd_name">Dompet Lain</string>
+    <string name="no_hd_name2">- Keystore/Kunci Privat</string>
+    <string name="hd_name">Dompet HD</string>
+    <string name="hd_name2">- Frase</string>
+
+    <!--登录-->
+
+    <!--积分系统-->
+
+    <!--积分系统 任务失败-->
+
+    <!--任务界面-->
+
+    <!--Point历史记录-->
+
+    <!--邀请详情页-->
+
+    <!--邀请详情页 历史记录-->
+
+    <!--Rule-->
+
+
+    <!--invite qr code-->
+
+    <string name="share_facebook_uninstalled">You need to install Facebook first</string>
+    <string name="share_twitter_uninstalled">You need to install Twitter first</string>
+    <string name="share_telegram_uninstalled">You need to install Telegram first</string>
+
+    <!--注册界面-->
+
+    <!--积分claim-->
+
+    <!--邀请注册获得积分-->
+
+    <!--地址本-->
+    <string name="address_book_title">Buku Alamat</string>
+    <string name="address_book_empty">Buku alamat Anda kosong</string>
+    <string name="address_book_add">Tambahkan Alamat Dompet</string>
+    <string name="address_book_network">Jenis Alamat:</string>
+    <string name="address_book_name">Nama:</string>
+    <string name="address_book_address">Alamat:</string>
+    <string name="address_book_complete">Simpan</string>
+    <string name="delete_book_tips">Apa Anda yakin mau menghapus alamat ini?</string>
+    <string name="add_book_success">Alamat berhasil ditambahkan</string>
+    <string name="modify_book_success">Alamat berhasil diubah</string>
+    <string name="delete_book_success">Alamat berhasil dihapus</string>
+
+    <!--非中文邀请时，弹框说明-->
+
+    <!--合约跨片调用-->
+    <string name="transaction_balance_public_buy_chain_switch">Saldo tidak cukup untuk Chain / Shard saat ini (%s /%s), silakan  pilih Chain / Shard yang berikut untuk membeli.</string>
+
+    <!--bounty-->
+
+
+    <!--BTC-->
+    <!--钱包创建-->
+    <string name="btc_change_segwit">SegWit</string>
+    <string name="btc_change_normal">Normal</string>
+    <string name="import_wallet_btc_wif_not_com">Segwit hanya mendukung kunci pribadi terkompresi</string>
+    <!--钱包管理-->
+
+    <!--btc钱包编辑-->
+    <string name="edit_btc_switch_address">Alihkan sub-alamat penerima</string>
+    <string name="edit_btc_change_segwit">Alihkan jenis alamat</string>
+
+    <!--切换btc钱包模式-->
+
+
+    <!--btc钱包收款地址管理-->
+
+    <!--钱包转账-->
+
+    <!--二维码收款界面-->
+    <string name="wallet_qr_btc_main_address">Alamat utama</string>
+    <string name="wallet_qr_btc_other_address">Sub-alamat</string>
+
+    <!--UI调整-->
+    <string name="empty_no_result">Tidak ada hasil</string>
+
+    <!--keystore导入-->
+    <string name="keystore_type_error">Jenis alamat yang ditentukan dalam keystore adalah %s</string>
+
+    <!--屏幕解锁-->
+    <string name="setting_unlock">Pengataruan buka kunci</string>
+    <string name="setting_open_app">Masukkan QPocket</string>
+    <string name="setting_open_app_info">Buka kunci ketika masukkan kembali QPocket setelah 1 menit</string>
+    <string name="setting_wallet_related">Terkait Dompet</string>
+    <string name="setting_wallet_related_info">Buka kunci saat melihat informasi terkait dompet</string>
+    <string name="setting_none">Tidak diperlukan perlindungan</string>
+    <string name="setting_none_info">Tidak diperlukan verifikasi ketika masukkan QPocket</string>
+
+    <string name="setting_unlock_info">Anda dapat menggunakan pengaturan buka kunci hanya jika sensor sentuh diaktifkan</string>
+
+
+    <!--冷钱包-->
+    <!--冷钱包-->
+    <!--冷钱包-->
+    <!--冷钱包 创建-->
+
+    <!--冷钱包 钱包页-->
+
+    <!--冷钱包 签名信息展示页-->
+
+    <!--冷钱包 签名信息錯誤提示-->
+
+    <!--冷钱包 merge-->
+    <string name="qkc_merge_size_error">Saldo konsolidasi tidak dapat memuat lebih dari 20 transaksi karena dibatasi oleh dompet dingin, harap kurangi jumlah transaksi dan coba lagi.</string>
+
+    <!--冷钱包 btc观察钱包-->
+    <string name="import_watch_info">Anda dapat melihat saldo dan riwayat transaksi dengan hanya mengimpor alamat dompet, atau Anda dapat menggunakannya dengan dompet dingin untuk menyelesaikan pengiriman transaksi.</string>
+
+    <!--冷钱包 多页签名-->
+
+
+    <!--通知-->
+
+
+    <!--硬件钱包-->
+    <!--硬件钱包 扫描钱包-->
+    <!--硬件钱包 链接-->
+
+    <!--硬件钱包 DApp-->
+
+
+    <!--冷钱包说明页-->
+
+
+    <string name="wallet_ledger_error_title">Dompet perangkat keras</string>
+    <string name="wallet_ledger_error_message">Dompet perangkat keras tidak bisa mengekspor kunci pribadi atau keystore.</string>
+
+
+    <!--创建子钱包-->
+    <string name="create_child_account_title">Tambahkan sub dompet</string>
+    <string name="create_child_account_btn">Tambahkan %s sub wallet</string>
+    <string name="create_child_account_tips">Cacatan: Sub dompet yang ditambahkan dapat dipulihkan dengan mengimpor mnemonik yang sama dengan miliknya</string>
+    <string name="create_child_account_success">Tambahkan sub dompet berhasil</string>
+    <string name="create_child_account_fail">Tambahkan sub dompet gagal</string>
+    <string name="create_child_account_exist">Nomor %s sub dompet sudah ada. Apakah Anda ingin menambahkan sub dompet baru setelah melewatkan semua sub dompet yang ada?</string>
+
+    <!--添加QKC token-->
+    <string name="add_token_qkc_contact"><font size="12">Nama token asli atau alamat QRC20</font></string>
+    <string name="add_token_qkc_fail">Nama token asli atau alamat kontrak QRC20 tidak valid</string>
+
+    <!--native token是否支持作为手续费-->
+    <string name="transaction_gas_token_not_support">Token asli yang dipilih tidak dapat digunakan sebagai biaya  penambang di rantai/ beling saat ini, silakan beralih ke token lain dan coba lagi.</string>
+    <string name="wallet_native_transaction_gas_enough">Saldo token asli saat ini tidak cukup untuk membayar biaya penambang, silakan beralih ke token lain dan coba lagi.</string>
+    <string name="wallet_qrc20_transaction_gas_enough">Saldo token asli saat ini tidak cukup untuk membayar biaya  penambang, silakan beralih ke token lain sebagai biaya penanganan atau melakukan transaksi di rantai/beling lain.</string>
+    <string name="native_gas_token_balance_not_enough">Cadangan token asli saat ini tidak cukup untuk membayar biaya transaksi ini.</string>
+
+    <string name="wallet_merge_transaction_gas_enough">Saldo %s tidak cukup untuk membayar biaya penambang</string>
+    <string name="merge_gas_token_not_support">Saldo %s tidak cukup untuk membayar biaya penambang, silakan beralih ke token asli lain dengan saldo yang cukup dan coba lagi.</string>
+    <string name="merge_gas_token_balance_not_enough">Cadangan token asli %s tidak cukup untuk membayar biaya transaksi ini.</string>
+
+    <!--通知全部已读-->
+
+    <!--删除HD钱包-->
+    <string name="delete_wallet_message">Apakah Anda ingin hapuskan sub dompet saat ini atau semua sub dompet dalam dompet HD ini?</string>
+    <string name="delete_wallet_sub">Hapuskan sub dompet saat ini</string>
+    <string name="delete_wallet_hd">Hapuskan seluruh dompet HD</string>
+</resources>

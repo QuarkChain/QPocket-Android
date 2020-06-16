@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="button_bg_press">#33ffffff</color>
+
+    <color name="colorPrimary">#FDFDFD</color>
+    <color name="colorPrimaryDark">#FDFDFD</color>
+    <color name="colorAccent">#212121</color>
+
+    <color name="text_title">#212121</color>
+    <color name="text_message">#a0a0a0</color>
+    <color name="text_hint">#bdbdbd</color>
+    <color name="text_d6d6d6">#d6d6d6</color>
+
+    <color name="theme_normal">#212121</color>
+    <color name="theme_enabled">#bdbdbd</color>
+    <color name="theme_pop_enabled">#898888</color>
+    <color name="theme_normal2">#4c4c4c</color>
+
+    <!--左滑删除-->
+    <color name="red_normal">#FF0000</color>
+    <color name="red_pressed">#FF6666</color>
+
+    <color name="color_03c755">#03C775</color>
+
+    <color name="color_999999">#999999</color>
+    <color name="color_666666">#666666</color>
+
+    <color name="color_cccccc">#CCCCCC</color>
+
+    <color name="white">#FFFFFF</color>
+</resources>

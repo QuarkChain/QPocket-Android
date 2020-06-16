@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:fitsSystemWindows="true">
+
+    <!-- 顶部  -->
+    <com.quarkonium.qpocket.view.TopBarView
+        android:id="@+id/top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/appbar_top_height" />
+
+    <WebView
+        android:id="@+id/terms_of_use_webView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/top_layout"
+        android:layout_marginLeft="19dp"
+        android:layout_marginTop="@dimen/dp_15"
+        android:layout_marginRight="19dp" />
+</RelativeLayout>

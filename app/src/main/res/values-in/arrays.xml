@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--创建钱包首页-->
+    <array name="create_wallet_titles">
+        <item>Dompet kripto semua-dalam-satu</item>
+        <item>Mendukung beberapa Aset Kripto</item>
+        <item>Aman &#38; Andal</item>
+    </array>
+    <array name="create_wallet_messages">
+        <item>Portal sederhana, aman dan sepenuhnya berfungsi untuk blockchain</item>
+        <item>Dukung QKC, ETH, BTC, dan TRX sekarang. Banyak lagi yang akan datang!</item>
+        <item>Kunci privat tidak pernah meninggalkan perangkat</item>
+    </array>
+
+    <!--导入钱包-->
+    <array name="import_wallet_tag">
+        <item>Frase</item>
+        <item>Kunci Privat</item>
+        <item>Keystore</item>
+        <item>Perhatikan</item>
+        <item>Ledger</item>
+    </array>
+    <array name="import_wallet_tag_cold">
+        <item>Frase</item>
+        <item>Kunci Privat</item>
+        <item>Keystore</item>
+    </array>
+
+    <!--交易记录列表-->
+    <array name="wallet_transaction_tag">
+        <item>Semua</item>
+        <item>Terkirim</item>
+        <item>Diterima</item>
+        <item>Gagal</item>
+    </array>
+
+    <!--本地erc20 token详情界面-->
+    <array name="public_sale_transaction_tag">
+        <item>Semua</item>
+        <item>Beli</item>
+        <item>Transfer</item>
+        <item>Gagal</item>
+    </array>
+
+    <!--Settings 语言-->
+    <array name="settings_languages">
+        <item>Sistem Default</item>
+        <item>English</item>
+        <item>简体中文</item>
+        <item>한국어</item>
+        <item>Bahasa Indonesia</item>
+        <item>Tiếng Việt</item>
+        <item>Pусский</item>
+    </array>
+
+    <array name="trx_freeze_tags">
+        <item>@string/trx_freeze_tag_freeze</item>
+        <item>@string/trx_freeze_tag_unfreeze</item>
+    </array>
+
+    <!--dapp-->
+
+    <!--dapp qkc-->
+
+    <!--market-->
+
+    <!--market coin 法币-->
+    <array name="setings_coin_all_country">
+        <item>BTC - Bitcoin</item>
+        <item>ETH - Ethereum</item>
+        <item>USD - Dolar AS</item>
+        <item>CNY - Yuan China</item>
+        <item>EUR - Euro</item>
+        <item>KRW - Won Korea Selatan</item>
+        <item>IDR - Rupiah Indonesia</item>
+        <item>INR - Rupee India</item>
+        <item>RUB - Rubel Rusia</item>
+        <item>UAH - Hryvnia Ukraina</item>
+        <item>VND - Dong Vietnam</item>
+        <item>AED - Dirham Uni Emirat Arab</item>
+        <item>ARS - Peso Argentina</item>
+        <item>AUD - Dolar Australia</item>
+        <item>BDT - Taka Bangladesh</item>
+        <item>BHD - Bahraini Dinar</item>
+        <item>BMD - Dolar Bermuda</item>
+        <item>BRL - Real Brazil</item>
+        <item>CAD - Dolar Kanada</item>
+        <item>CHF - Franc Swiss</item>
+        <item>CLP - Peso Chili</item>
+        <item>CZK - Koruna Ceko</item>
+        <item>DKK - Krona Denmark</item>
+        <item>GBP - Poundsterling Inggris</item>
+        <item>HKD - Dolar Hong Kong</item>
+        <item>HUF - Forint Hongaria</item>
+        <item>ILS - Shekel Baru Israel</item>
+        <item>JPY - Yen Jepang</item>
+        <item>KWD - Dinar Kuwait</item>
+        <item>LKR - Rupee Sri Lanka</item>
+        <item>MMK - Kyat Myanmar</item>
+        <item>MXN - Peso Meksiko</item>
+        <item>MYR - Ringgit Malaysia</item>
+        <item>NOK - Krone Norwegia</item>
+        <item>NZD - Dolar Selandia Baru</item>
+        <item>PHP - Peso Filipina</item>
+        <item>PKR - Rupee Pakistan</item>
+        <item>PLN - Zloty Polandia</item>
+        <item>SAR - Saudi Riyal</item>
+        <item>SEK - Krona Swedia</item>
+        <item>SGD - Dolar Singapura</item>
+        <item>THB - Baht Thailand</item>
+        <item>TRY - Lira Turki</item>
+        <item>TWD - Dolar Taiwan Baru</item>
+        <item>VEF - Bolivar Venezuela</item>
+        <item>ZAR - Rand Afrika Selatan</item>
+    </array>
+
+</resources>

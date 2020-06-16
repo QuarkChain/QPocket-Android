@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/appbar_top_height"
+    android:background="@drawable/top_bar_bg"
+    android:paddingLeft="4dp"
+    android:paddingRight="4dp">
+
+    <ImageView
+        android:id="@+id/re_take"
+        style="@style/ButtonBackgroundEffectStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/appbar_top_height"
+        android:paddingLeft="@dimen/dp_10"
+        android:paddingTop="15dp"
+        android:paddingRight="@dimen/dp_10"
+        android:paddingBottom="15dp"
+        android:scaleType="center"
+        android:src="@drawable/appbar_back_icon" />
+
+    <ImageView
+        android:id="@+id/btn_home"
+        style="@style/ButtonBackgroundEffectStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/re_take"
+        android:gravity="center"
+        android:paddingLeft="@dimen/dp_10"
+        android:paddingTop="15dp"
+        android:paddingRight="@dimen/dp_10"
+        android:paddingBottom="15dp"
+        android:scaleType="center"
+        android:src="@drawable/close" />
+
+    <TextView
+        android:id="@+id/top_bar_title"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_toLeftOf="@id/btn_refresh"
+        android:layout_toRightOf="@id/btn_home"
+        android:ellipsize="marquee"
+        android:gravity="center"
+        android:singleLine="true"
+        android:textColor="@color/text_title"
+        android:textSize="15sp" />
+
+    <ImageView
+        android:id="@+id/btn_refresh"
+        style="@style/ButtonBackgroundEffectStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_toLeftOf="@+id/btn_menu"
+        android:gravity="center"
+        android:paddingLeft="@dimen/dp_10"
+        android:paddingTop="15dp"
+        android:paddingRight="@dimen/dp_10"
+        android:paddingBottom="15dp"
+        android:scaleType="center"
+        android:src="@drawable/refresh" />
+
+    <ImageView
+        android:id="@+id/btn_menu"
+        style="@style/ButtonBackgroundEffectStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:paddingLeft="@dimen/dp_10"
+        android:paddingTop="15dp"
+        android:paddingRight="@dimen/dp_10"
+        android:paddingBottom="15dp"
+        android:scaleType="center"
+        android:src="@drawable/edit_menu" />
+</RelativeLayout>

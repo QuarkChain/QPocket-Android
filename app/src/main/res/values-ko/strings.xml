@@ -1,0 +1,650 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<resources>
+    <!--常量-->
+    <string name="next">다음</string>
+    <string name="copy">복사하기</string>
+    <string name="cancel">취소</string>
+    <string name="confirm">확인</string>
+    <string name="done">완료</string>
+    <string name="ok">확인</string>
+    <string name="password">비밀번호</string>
+    <string name="none">없음</string>
+    <string name="delete">삭제하기</string>
+    <string name="update">업데이트하기</string>
+
+    <string name="network_error">네트워크 연결이 실패되었습니다. 나중에 다시 시도하십시오!</string>
+    <!--==================================================-->
+
+    <!--权限-->
+    <string name="permission_declined">QPocket 는 %s 접속될 수 없습니다. 환경설정으로 이동하여 권할 설정을 허락하십시오.</string>
+    <string name="permission_camera">카메라</string>
+    <string name="permission_storage">저장</string>
+
+    <!--crash 界面-->
+    <string name="tips_forcequit">아이고! 예상하지 못한 오류가 발생되었습니다. \'제출\'버튼을 누르고 문제를 보고하십시오. 감사합니다!</string>
+    <string name="menu_report">제출</string>
+
+    <!--创建钱包首页-->
+    <string name="create_wallet_new">지갑 생성</string>
+    <string name="create_wallet_import">지갑 임포트</string>
+
+    <!--创建钱包-->
+
+    <!--创建钱包-->
+    <string name="create_wallet_title">지갑 생성</string>
+    <string name="create_wallet_btn">생성</string>
+    <string name="create_wallet_password">지갑 비밀번호</string>
+    <string name="create_wallet_confirm_password">비밀번호 확인</string>
+    <string name="create_wallet_hint">비밀번호 힌트 (선택사항)</string>
+    <string name="create_password_not_equals">비밀번호가 일치하지 않습니다</string>
+    <string name="backup_wallet_title">문구 백업하기</string>
+    <string name="backup_wallet_skip">건너뛰기</string>
+    <string name="create_wallet_btn_start">시작</string>
+    <string name="backup_wallet_info">문구를 백업해놔야만 당신의 지갑을 복구할 수 있습니다. 문구를 안전하고 보안이 유지된 장소에 저장하세요.</string>
+    <string name="backup_wallet_info_hint">문구를 백업할 동안 제 3자에게 노출되지 않도록 유의하세요.</string>
+    <string name="backup_wallet_remember_title">문구 백업하기</string>
+    <string name="backup_wallet_remember_hint">아래의 문구들을 백업하세요. 다음 단계에서 알맞게 백업했는지 검증절차를 거치게 됩니다.</string>
+    <string name="backup_wallet_input_hint_title">문구 검증하기</string>
+    <string name="backup_wallet_input_hint">단어들을 클릭하여 알맞은 순서대로 나열될 수 있도록 하세요.</string>
+    <string name="backup_wallet_input_fail">순서 오류</string>
+
+    <!--导入钱包-->
+    <string name="import_wallet_title">지갑 임포트하기</string>
+
+    <string name="import_wallet_input_phrase_hint">문구들은 띄어쓰기로 구분됨</string>
+    <string name="import_wallet_btn">임포트하기</string>
+    <string name="import_wallet_input_watch_hint">%s주소</string>
+    <string name="import_wallet_input_private_hint">프라이빗 키</string>
+    <string name="import_wallet_input_keystore_hint">Keystore JSON</string>
+    <string name="import_phrase_tip">문구들은 띄어쓰기로 구분됨. (일반적으로 12단어로 구성됨)</string>
+    <string name="import_private_tip">일반적으로 64개의 숫자와 알파벳 조합으로 이루어짐.</string>
+    <string name="import_keystore_tip">\"{&#8230;}\"로 시작하는 여러 문자 행과 그것을 암호화하기 위해 사용한 비밀번호 조합.</string>
+    <string name="create_password_tip">비밀번호 설정</string>
+    <string name="import_wallet_fail_exit">유효하지 않은 문구</string>
+    <string name="import_wallet_fail_keystore">유효하지 않은 Keystore</string>
+    <string name="import_wallet_fail_private_key">지갑이 이미 생성되었습니다</string>
+    <string name="import_wallet_fail_phrase">유효하지 않은 프라이빗 키</string>
+    <string name="import_wallet_fail_watch">유효하지 않는 %s 주소</string>
+
+    <string name="import_wallet_qkc">QuarkChain</string>
+    <string name="import_wallet_eth">이더리움</string>
+    <string name="import_wallet_trx">TRX</string>
+
+    <string name="main_menu_tag_wallet">지갑</string>
+    <string name="main_menu_tag_setting">설정</string>
+    <string name="wallet_token_total_symbol">QKC</string>
+    <string name="wallet_shard_id">샤드: %s</string>
+    <string name="wallet_copy_address_label">주소</string>
+    <string name="wallet_qr_address">QuarkChain 주소</string>
+    <string name="wallet_qr_address_title">받기</string>
+    <string name="wallet_qr_address_title2">수신하기</string>
+
+    <string name="wallet_qr_eth_address">이더리움 주소</string>
+    <string name="wallet_qr_scan_title">스캔하기</string>
+    <string name="wallet_qr_light_up">불 켜기</string>
+    <string name="wallet_qr_light_down">불 끄기</string>
+    <string name="wallet_qr_scan_album">앨범</string>
+    <string name="wallet_manager_title">내 지갑</string>
+    <string name="wallet_edit_title">지갑 관리</string>
+    <string name="wallet_edit_export_ks">Keystore 엑스포트</string>
+    <string name="wallet_edit_export_pk">프라이빗 키 엑스포트</string>
+    <string name="wallet_edit_export_phrase">문구 엑스포트</string>
+    <string name="wallet_edit_delete">지갑 삭제하기</string>
+    <string name="wallet_edit_setting_icon">지갑 아이콘 변경하기</string>
+    <string name="wallet_edit_setting_name">지갑 이름 변경하기</string>
+    <string name="wallet_edit_dialog_name_title">지갑 이름 변경하기</string>
+    <string name="name">이름</string>
+    <string name="wallet_export_success_phrase_ky_tip">Keystore 를 이메일이나 노트 앱 또는 인스턴트 메신저에 백업하지 마십시오.</string>
+    <string name="wallet_export_success_phrase_pk_tip">프라이빗 키  를 이메일이나 노트 앱 또는 인스턴트 메신저에 백업하지 마십시오.</string>
+    <string name="wallet_export_success_offline">오프라인 전송</string>
+    <string name="wallet_export_success_offline_ky_tip">인터넷 전송 도구를 이용하여 Keystore 를 전송하지 마십시오.</string>
+    <string name="wallet_export_success_offline_pk_tip">인터넷 전송 도구를 이용하여 프라이빗 키 를 전송하지 마십시오.</string>
+    <string name="wallet_export_private_key">프라이빗 키</string>
+    <string name="wallet_export_keystore">keystore</string>
+    <string name="copy_success">복사됨</string>
+    <string name="wallet_edit_icon">지갑 아이콘</string>
+
+    <!--交易记录列表-->
+    <string name="wallet_transaction_detail_title">상세내용</string>
+    <string name="wallet_transaction_total_token_title">총 잔고:</string>
+    <string name="wallet_transaction_merge">병합하기</string>
+
+    <string name="wallet_transaction_detail_item_title">트랜잭션</string>
+    <string name="wallet_transaction_detail_amount">총 수량:</string>
+    <string name="wallet_transaction_detail_actual">실제 트랜잭션 비용:</string>
+    <string name="wallet_transaction_from">보내는 곳</string>
+    <string name="wallet_transaction_from2">보내는 곳:</string>
+    <string name="wallet_transaction_to">보낼 곳</string>
+    <string name="wallet_transaction_to2">보낼 곳:</string>
+    <string name="wallet_transaction_sent">발송내역</string>
+    <string name="wallet_transaction_pending">전송중</string>
+    <string name="wallet_transaction_sent_fail">실패내역</string>
+    <string name="wallet_transaction_receive">수신내역</string>
+    <string name="wallet_transaction_block_title">블락:</string>
+    <string name="wallet_transaction_tx_title">트랜잭션:</string>
+    <string name="wallet_transaction_send_create_title">보내기</string>
+    <string name="wallet_transaction_send_hint">보낼 수량</string>
+    <string name="wallet_transaction_to_address_hint">보낼 주소</string>
+    <string name="wallet_transaction_send_gas">가스 가격</string>
+    <string name="wallet_transaction_send_gas_limit">가스 제한</string>
+    <string name="wallet_transaction_send_gas_gwei">GWei</string>
+    <string name="wallet_transaction_send">트랜잭션 생성하기</string>
+    <string name="wallet_transaction_send_fail">트랜잭션 생성 실패!</string>
+
+    <string name="wallet_transaction_to_address_error">유효하지 않은 주소!</string>
+    <string name="wallet_transaction_to_amount_error">유효하지 않은 수량!</string>
+    <string name="password_error">비밀번호 오류!</string>
+    <string name="transaction_balance_error_title">잔고 부족</string>
+    <string name="transaction_balance_error_message_merge_success_title">트랜잭션 전송됨</string>
+    <string name="transaction_balance_error_message_merge_success_message">병합된 트랜잭션이 전송되었습니다. 잔고가 충분해질 때까지 아래로 당겨 새로고침을 한 뒤 트랜잭션을 계속 진행해주세요.</string>
+    <string name="transaction_balance_token_amount_error">토큰 잔고 부족</string>
+    <string name="transaction_balance_token_merge_success_title">트랜잭션 전송됨</string>
+    <string name="transaction_balance_token_merge_success_message">기본 샤드가 토큰 샤드로 전환되었습니다. 잔고가 충분해질 때까지 아래로 당겨 새로고침을 한 뒤 트랜잭션을 계속 진행해주세요.</string>
+    <string name="transaction_balance_token_merge_success_message_nochange">잔고가 충분해질 때까지 아래로 당겨 새로고침을 한 뒤 트랜잭션을 계속 진행해주세요.</string>
+    <string name="transaction_balance_token_switch_title">트랜잭션 전송됨</string>
+    <string name="transaction_balance_public_switch_success_message">기본 샤드가 토큰 샤드로 전환되었습니다. 잔고가 충분해질 때까지 아래로 당겨 새로고침을 한 뒤 트랜잭션을 계속 진행해주세요.</string>
+    <string name="transaction_balance_public_switch_success_message_nochange">잔고가 충분해질 때까지 아래로 당겨 새로고침을 한 뒤 트랜잭션을 계속 진행해주세요.</string>
+    <string name="transaction_balance_public_merge_success_message_nochange">잔고가 충분해질 때까지 아래로 당겨 새로고침을 한 뒤 트랜잭션을 계속 진행해주세요.</string>
+    <string name="wallet_transaction_send_to">보낼 곳</string>
+    <string name="wallet_transaction_send_from">보내는 곳</string>
+    <string name="wallet_transaction_send_title">트랜잭션 확인하기</string>
+    <string name="wallet_transaction_send_amount_title">수량:</string>
+    <string name="wallet_transaction_send_max_title">최대 트랙잭션 수수료:</string>
+    <string name="wallet_transaction_send_hash_title">서명된 트랜잭션 해쉬:</string>
+    <string name="transaction_send_shard_limit">샤드 %sd로부터 %sd로의 크로스 샤드 트랜잭션</string>
+    <string name="transaction_send_time">(확인 시간은 90초까지 소요될 수 있습니다)</string>
+    <string name="transaction_send_action">트랜잭션 제출하기</string>
+    <string name="transaction_send_fail">트랜잭션 실패</string>
+    <string name="transaction_send_success">트랜잭션 전송됨</string>
+    <string name="token_detail_basic">기본 정보</string>
+    <string name="token_detail_token_title">잔고:</string>
+    <string name="token_detail_available_title">이용가능:</string>
+    <string name="token_detail_website">웹사이트:</string>
+    <string name="token_detail_address">스마트 계약:</string>
+    <string name="public_sale_start_title">시작 시간:</string>
+    <string name="public_sale_end_title">종료 시간:</string>
+    <string name="public_sale_buy">구매하기</string>
+    <string name="public_sale_contract_address_title">퍼블릭 판매 참여 주소</string>
+    <string name="wallet_public_transaction_send_hint">총 수량</string>
+    <string name="wallet_public_transaction_price_hint">가격</string>
+
+    <string name="public_buy_success">구매완료</string>
+    <string name="public_send_success">전송완료</string>
+
+
+    <string name="merge_title">병합하기</string>
+    <string name="merge_totalFee">총 수량:</string>
+    <string name="merge_from">보낼 곳:</string>
+    <string name="merge_to">보내는 곳:</string>
+    <string name="merge_gasPrice">잔고: %s </string>
+    <string name="merge_gasLimit">수수료: %s </string>
+    <string name="merge_amount">총 수량:</string>
+    <string name="merge_send">트랜잭션 제출하기</string>
+    <string name="merge_send_fail">%s 에서의 트랜잭션 병합이 실패함</string>
+    <string name="merge_edit_gas_price">가스 가격:</string>
+    <string name="merge_edit_gas_limit">가스 리밋:</string>
+    <string name="settings_language">언어</string>
+    <string name="settings_help_title">도움말</string>
+    <string name="settings_terms_of_use_title">서비스 조항</string>
+
+    <string name="settings_about_title">프로젝트 정보</string>
+    <string name="settings_privacy_police">개인정보 보호정책</string>
+    <string name="settings_about_telegram">텔레그램</string>
+    <string name="settings_about_weibo">웨이보</string>
+    <string name="settings_about_medium">미디엄</string>
+
+    <!--Settings 语言-->
+    <string name="settings_languages_title">언어</string>
+    <string name="settings_languages_save">저장</string>
+
+    <string name="wallet_watch_error_title">지갑 보기</string>
+    <string name="wallet_watch_error_message">워치 월렛은 프라이빗 키나 키스토어를 내보낼 수 없습니다.</string>
+    <string name="wallet_backup_title">지갑을 백업하십시오</string>
+    <string name="wallet_backup_error_message">지갑의 백업프레이즈가 백업되지 않았습니다. 지금 백업하시겠습니까?</string>
+    <string name="settings_about_twitter">트위터</string>
+    <string name="wallet_edit_change_name_success">이름이 변경되었습니다</string>
+    <string name="send_email_title">고객센터</string>
+    <string name="no_email_title">이메일 주소 설정 필요</string>
+    <string name="no_email_message">메일 앱 설치 및 메일 계정 설정 필요</string>
+    <string name="password_low_title">비밀번호가 너무 단순합니다</string>
+    <string name="password_medium_title">비밀번호 난이도 낮음</string>
+    <string name="password_easy_message">추측하기 어려운 비밀번호를 설정해주시기 바랍니다. 흔하지 않은 단어, 대문자, 불규칙적인 숫자, 기호들을 사용해주세요.</string>
+    <string name="password_high_title">비밀번호 난이도 중간</string>
+    <string name="password_high_good_title">비밀번호 난이도 높음</string>
+    <string name="check_update_new">새로운 업데이트 있음</string>
+    <string name="check_update_title">업데이트 확인하기</string>
+    <string name="check_update_up_to_date">최신 업데이트 됨</string>
+    <string name="delete_wallet_amount_title">지갑 삭제하기</string>
+    <string name="delete_wallet_amount_message">지갑에 잔고가 남아있습니다. 그래도 삭제하시겠습니까?</string>
+    <string name="finger_open_success">이네이블 성공</string>
+    <string name="finger_open_fail">이네이블 실패</string>
+    <string name="finger_touch_password">패스워드 입력</string>
+    <string name="guide_button_start">지금 시작하기</string>
+    <string name="guide_button_finish">종료하기</string>
+
+    <string name="guide_msg_text1">쿼크체인에 오신 것을 환영합니다! 시작하는데 유용한 팁 몇가지를 준비했습니다.</string>
+
+    <string name="guide_get_qkc">QKC 넣기</string>
+    <string name="password_tryAfter">비밀번호 입력한도를 초과하였습니다. %d 초후에 다시 시도해주세요.</string>
+    <string name="add_token_title">토큰 추가하기</string>
+    <string name="add_token_button_detect">감지하기</string>
+    <string name="add_token_name">이름:</string>
+    <string name="add_token_symbol">기호:</string>
+    <string name="add_token_decimal">십진수:</string>
+    <string name="add_token_contact">계약 주소</string>
+    <string name="add_token_fail">유효하지 않은 ERC20 계약 주소</string>
+    <string name="lock_title">탭을 눌러 검증 시작하기</string>
+    <string name="lock_wallet_name">%s의 이름을 입력하세요</string>
+    <string name="phrase_language_en">영어</string>
+    <string name="phrase_language_cn">중국어 간체</string>
+    <string name="phrase_language_tw">중국어 정체</string>
+
+    <!--助记词国际化-->
+    <string name="settings_network">네트워크 전환하기</string>
+
+    <string name="switch_network_title">다른 네트워크</string>
+    <string name="switch_network_message">검색된 주소(%s)의 네트워크와 당신의 현재 주소(%s)가 다릅니다. 지금 네트워크를 전환하시겠습니까?</string>
+
+    <!--add token info-->
+    <string name="add_token_dialog_title">알 수 없는 토큰</string>
+    <string name="add_token_dialog_msg">검색된 토큰이 현재 토큰 리스트에 없습니다. 지금 추가하시겠습니까?</string>
+
+    <string name="token_list_title">토큰</string>
+    <string name="token_list_search_hint">토큰 이름 또는 기호</string>
+
+    <string name="finger_touch_again">다시 시도</string>
+    <string name="finger_touch_msg">지문인식으로 거래, 서명 및 내보내기를 승인합니다</string>
+    <string name="finger_touch_title">지문을 인식시키세요</string>
+    <string name="finger_open_tip_msg">지문으로 패스워드 대신 로그인 하거나 트랜잭션을 승인할 수 있습니다. 지금 활성화 하시겠습니까? 추후 세팅에서 변경할 수 있습니다.</string>
+    <string name="finger_open_tip_title">터치 센서를 활성화 해주세요</string>
+    <string name="finger_touch">터치 센서</string>
+
+    <string name="wallet_transaction_send_token_max_title">최대 트랙잭션 수수료:</string>
+    <string name="wallet_edit_export_password">패스워드 입력</string>
+    <string name="wallet_qr_scan_fail">인식 실패</string>
+    <string name="error_fail_generate_qr">QR코드를 생성하지 못했습니다.</string>
+    <string name="create_password_fail">지갑 생성이 실패 했습니다.</string>
+
+    <!--加载更多-->
+    <string name="brvah_loading">로딩&#8230;</string>
+    <string name="brvah_load_failed">로딩 실패</string>
+    <string name="brvah_load_end">데이터가 더 이상 없음</string>
+
+    <!--编辑名称已经存在-->
+
+    <!--dapps-->
+    <!--dapps-->
+    <string name="main_menu_tag_dapp">DApps</string>
+
+    <string name="empty_create_wallet_title">월렛이 필요합니다</string>
+    <string name="empty_create_wallet_msg">계속 진행하시려면 월렛을 생성하거나 불러와야 합니다</string>
+
+    <string name="dapp_open_tips_again">이 메시지를 다시는 표시하지 않기</string>
+
+    <!--dapps 浏览器-->
+    <string name="setting_clear_dapp">캐시를 지워주세요</string>
+
+    <string name="menu_share_url">공유하기</string>
+    <string name="menu_copy_url">주소 복사하기</string>
+    <string name="menu_open_url">브라우저로 열기</string>
+
+    <string name="web_error_title">%s로부터 응답이 없습니다</string>
+    <string name="web_error_message">나중에 다시 시도해주세요</string>
+
+    <!--dapp setting-->
+    <string name="setting_clear_dapp_title">캐시를 지워주세요</string>
+    <string name="setting_clear_dapp_message">이것을 수행하면 캐시, 쿠키정보 및 방문기록 등을 지우게 됩니다.</string>
+
+
+    <!--dapp search-->
+
+
+    <!--tron-->
+    <string name="trx_total_band_width">대역폭 잔액：</string>
+    <string name="trx_cost_band_width">대역폭 비용：</string>
+    <string name="cant_send_to_own_address">보낸 주소와 받은 주소가 같으면 안됩니다</string>
+    <string name="transaction_send_title">거래수수료:</string>
+    <string name="transaction_unconfirmed">미확인</string>
+    <string name="wallet_qr_trx_address">TRX 주소</string>
+
+    <!--tron 冻结界面-->
+    <string name="trx_freeze_title">리소스</string>
+    <string name="trx_freeze_band">대역폭</string>
+    <string name="trx_freeze_frozen_band">대역폭 중지:</string>
+    <string name="trx_freeze_band_width_avaliable">확보할 수 있습니다 %d bp/%d bp</string>
+
+    <string name="trx_freeze_energy">에너지</string>
+    <string name="trx_freeze_frozen_energy">에너지 중지:</string>
+    <string name="trx_freeze_energy_available">확보할 수 있습니다 %d/%d</string>
+
+    <string name="trx_freeze_tag_freeze">정지</string>
+    <string name="trx_freeze_tag_unfreeze">진행</string>
+
+    <string name="trx_freeze_amount_hint">중지된 금액</string>
+    <string name="trx_freeze_type">유형:</string>
+
+    <string name="trx_freeze_hint">최소 3일간 중지</string>
+    <string name="trx_balance">확보할 수 있습니다 %s TRX</string>
+    <string name="trx_unfreeze_band_time">대역폭 만료일자: %s</string>
+    <string name="trx_unfreeze_energy_time">에너지 만료일자: %s</string>
+
+    <string name="trx_freeze_cost_title">대역폭이 충분하지 않습니다</string>
+    <string name="trx_unfreeze_cost_msg">%s TRX를 지불해야 합니다만 대역폭이 충분하지 않습니다. 계속하시겠어요?</string>
+    <string name="trx_unfreeze_end_time">최소한 3일간 중지되어야 합니다</string>
+
+    <string name="trx_not_enough_cost_msg">대역폭과 에너지가 불충분합니다. %s TRX로 지불하시겠습니까?</string>
+
+    <string name="trx_freeze_type_band">대역폭</string>
+    <string name="trx_freeze_type_energy">에너지</string>
+
+    <!--首页升级-->
+    <string name="guide_load_data">데이터 초기화중입니다&#8230;</string>
+
+    <!--导入钱包-->
+    <string name="import_symbol_type_default">알 수 없음</string>
+    <string name="import_symbol_type_null">지갑의 종류를 선택하셔야 합니다</string>
+    <string name="import_symbol_watch_address">주소</string>
+
+    <!--导出-->
+    <string name="export_wallet_hint">내보낸 지갑은 하드웨어 월렛입니다. 모든 코인 유형(QKC, ETH, TRX, BTC 및 기타)를 받으실 수 있도록 구문(phrase)을 미리 저장하셨는지 확인하시기 바랍니다. 내보내신 프라이빗 키 혹은 키스토어는 현재 유형의 코인만을 되살릴 수 있습니다.</string>
+
+    <!--trc20-->
+    <string name="trx_trc20_transaction_empty">TRC20 토큰은 트랜잭션 쿼리를 지원하지 않습니다. 트랜잭션 현황은 잔액의 변동으로 확인할 수 있습니다.</string>
+
+    <!--public sale trx内容为空-->
+
+    <!--ssl 安全隐患-->
+    <string name="ssl_error_title">사이트 인증을 신뢰할 수 없습니다.</string>
+    <string name="ssl_error_message">%s 접속시도 하였으나, 사이트 인증을 제공한 대상은 신뢰할 수 없습니다. 해당 사이트에서 이런 경고를 보지 못했다면 사이트 접속을 멈추세요.</string>
+    <string name="ssl_error_ok">접속을 진행해주세요</string>
+    <string name="ssl_error_cancel">돌아가기</string>
+
+    <!--trx交易记录-->
+    <string name="tran_vote">투표</string>
+    <string name="tran_smart">스마트 컨트랙트 인터랙션</string>
+    <string name="tran_freeze">잠금</string>
+    <string name="tran_unfreeze">잠금해제</string>
+
+
+    <!--设置界面-->
+
+    <!--登录/注册界面-->
+
+    <!--找回密码-->
+
+    <!--错误提示信息-->
+
+    <!--用户详情页-->
+    <string name="user_info_title">바운티</string>
+
+    <!--help-->
+    <string name="help_email_tile">이메일</string>
+    <string name="help_wechat_tile">위챗 ID</string>
+    <string name="help_weichat_copy_message">QPocket 위챗 ID “qpocketwallet”이 복사되었습니다. 위챗 컨트랙트에 추가하여 지원받으세요</string>
+    <string name="help_open_wechat_fail">위챗 전환 실패</string>
+
+    <!--删除钱包-->
+    <string name="delete_wallet_only_one">하나의 월렛은 가지고 있어야 합니다</string>
+
+    <!--QKC testnet2.5-->
+    <string name="wallet_chain">체인:</string>
+    <string name="wallet_shard">샤드:</string>
+    <string name="wallet_chain_id">체인: %s</string>
+    <string name="wallet_balance">잔액</string>
+    <string name="wallet_transaction_switch_chain">체인/샤드 전환하기</string>
+
+    <!--wallet页-->
+
+    <!--merge-->
+    <string name="merge_chain_guide">해당 체인/샤드의 모든 잔액을 주 체인/샤드로 통합하기.</string>
+    <string name="merge_edit_chain_title">체인/샤드(%s/%s)에서 체인/샤드 (%s/%s) 전환</string>
+
+    <!--tx-->
+    <string name="wallet_transaction_address_chain_shard">%s (체인/샤드: %s/%s)</string>
+    <string name="merge_chain_shard">체인/샤드(%s/%s)</string>
+    <string name="transaction_balance_enough_message_switch">현재 체인/샤드(%s/%s)의 잔액이 부족합니다. 다음 체인/샤드 중 하나를 선택하여 %s 를 전송하세요.</string>
+    <string name="transaction_balance_enough_message_merge">현재 체인/샤드에 잔액이 부족합니다. 다른 체인/샤드의 %s 를 현재 체인/샤드에 통합하세요.</string>
+    <!--public buy-->
+    <string name="transaction_balance_token_chain_merge">토큰이 저장된 체인/샤드의 잔액이 부족합니다. 다른 체인/샤드의 %s 를 해당 체인/샤드로 통합하세요.</string>
+    <string name="transaction_balance_public_merge_chain_success_message">토큰을 저장한 체인/샤드로 주 체인/샤드가 전환되었습니다. 화면을 풀다운하여 새로고침하시고, 잔액이 충분할 때 트랜젝션을 지속해주세요.</string>
+    <!--tx send-->
+    <string name="transaction_send_chain_shard_limit">크로스 체인/샤드 트랜젝션: (%s/%s 에서 %s/%s)</string>
+
+
+    <!--tx detail-->
+    <string name="transaction_more_detail"><u>블록체인 익스플로러에서 상세 보기</u></string>
+
+    <!--dapp-->
+
+    <!--dapp favorite manager-->
+
+    <!--dapp menu-->
+
+    <string name="white_tips_title">화이트리스트 작동하기</string>
+    <string name="white_tips_msg">이 기능은 현재 DApp을 사용 중일 때 사용자를 대신하여 DApp을 닫기 전까지  QPocket이 자동으로 트랜젝션을 진행합니다.</string>
+
+    <!--wallet Manager-->
+
+    <!--二维码扫描-->
+    <string name="qr_coin_not_match">받은 토큰 수가 전송된 토큰 수와 다릅니다, 다시 확인해주세요.</string>
+    <string name="add_token_dialog_network_title">테스트넷상 인식되지 않는 토큰입니다</string>
+    <string name="add_token_dialog_network_msg">현재 (%s)에 있습니다. 스캔된 토큰은 보유한 토큰 리스트에 없습니다(%s). 지금 추가하시겠습니까?</string>
+
+    <!--email 登录-->
+
+    <!--public sale qkc内容为空-->
+
+    <!--水龙头-->
+    <string name="donate_request">토큰 요청하기</string>
+
+
+    <!--market-->
+
+    <!--coin 详情页-->
+
+
+    <!--快讯-->
+
+    <!--快讯分享 目前只有中文有-->
+    <string name="share_wechat_success">공유 성공</string>
+    <string name="share_wechat_fail">공유 실패</string>
+    <string name="share_wechat_cancel">공유 취소</string>
+
+    <!--时间格式-->
+
+    <!--market coin 法币-->
+    <string name="settings_coin">화폐 단위</string>
+
+    <!--主页 钱包-->
+    <string name="wallet_token_title">자산</string>
+
+    <!--翻译-->
+    <!--添加token-->
+    <string name="add_token_trx_contact">TRC10 ID 또는 TRC20 컨트랙트 주소</string>
+    <string name="add_token_trx_fail">유효하지 않은 TRC10 ID 또는 TRC20 컨트랙트 주소</string>
+
+    <!--转账-->
+    <string name="tx_send_all">모두 전송</string>
+
+    <!--gas 手续费-->
+    <string name="wallet_transaction_send_gas_title">채굴 수수료</string>
+
+    <string name="wallet_transaction_safe">안전, 느린 속도</string>
+    <string name="wallet_transaction_avg">평균 속도</string>
+    <string name="wallet_transaction_fast">빠른 속도</string>
+
+    <string name="reload">재 로딩</string>
+    <string name="loading">로딩중&#8230;</string>
+    <string name="wallet_transaction_fail_text">가스 수수료 로딩 실패</string>
+
+    <string name="wallet_transaction_adv">많은</string>
+
+
+    <!--bounty-->
+
+    <!--钱包管理页-->
+    <string name="wallet_manager_total_assets">총 자산</string>
+
+    <!--Wealth-->
+
+    <!--airdrop-->
+
+    <string name="qkc_name">쿼크체인</string>
+    <string name="eth_name">이더리움</string>
+    <string name="trx_name">트론</string>
+    <string name="no_hd_name">기타 월렛</string>
+    <string name="no_hd_name2">- 키스토어/프라이빗키</string>
+    <string name="hd_name">HD 월렛</string>
+    <string name="hd_name2">- 문구(Phrases)</string>
+
+    <!--dapp-->
+
+    <!--登录-->
+    <!--积分系统 任务失败-->
+
+    <!--任务界面-->
+
+    <!--邀请详情页-->
+
+    <!--Rule-->
+
+    <!--invite qr code-->
+    <string name="share_facebook_uninstalled">먼저 페이스북을 설치해야 합니다.</string>
+    <string name="share_twitter_uninstalled">먼저 트위터를 설치해야 합니다.</string>
+    <string name="share_telegram_uninstalled">먼저 텔레그램을 설치해야 합니다. </string>
+
+    <!--注册界面-->
+
+    <!--积分claim-->
+
+    <!--邀请注册获得积分-->
+
+    <!--地址本-->
+    <string name="address_book_title">주소 리스트</string>
+    <string name="address_book_empty">주소 리스트가 비어 있습니다</string>
+    <string name="address_book_add">주소 추가하기</string>
+
+    <string name="address_book_network">주소 유형:</string>
+    <string name="address_book_name">이름:</string>
+    <string name="address_book_address">주소: </string>
+
+    <string name="address_book_complete">저장하기</string>
+
+    <string name="delete_book_tips">이주소를 정말 삭제하시겠습니까?</string>
+    <string name="add_book_success">주소 추가 완료</string>
+    <string name="modify_book_success">주소 수정 완료</string>
+    <string name="delete_book_success">주소 삭제 완료</string>
+
+    <!--非中文邀请时，弹框说明-->
+
+    <!--合约跨片调用-->
+    <string name="transaction_balance_public_buy_chain_switch">현 체인/샤드 (%s/%s)에 충분한 토큰 잔고가 없습니다. 구매를 위해서는 아래의 체인/샤드를 이용 하시기 바랍니다.</string>
+
+    <!--bounty-->
+
+
+    <!--BTC-->
+    <!--钱包创建-->
+    <string name="btc_change_segwit">세그윗</string>
+    <string name="btc_change_normal">노멀</string>
+    <string name="import_wallet_btc_wif_not_com">압축된 형태의 프라이빗 키만 세그윗 지원에 사용 가능</string>
+    <!--钱包管理-->
+
+    <!--btc钱包编辑-->
+    <string name="edit_btc_switch_address">수신 주소 바꾸기</string>
+    <string name="edit_btc_change_segwit">주소 유형 바꾸기</string>
+
+    <!--切换btc钱包模式-->
+
+
+    <!--btc钱包收款地址管理-->
+
+    <!--钱包转账-->
+
+    <!--二维码收款界面-->
+    <string name="wallet_qr_btc_main_address">메인 주소</string>
+    <string name="wallet_qr_btc_other_address">기타 주소</string>
+
+    <!--UI调整-->
+    <string name="empty_no_result">결과 없음</string>
+
+    <!--keystore导入-->
+    <string name="keystore_type_error">키스토어 파일에서 지정된 주소 유형은 %s 입니다</string>
+
+
+    <!--屏幕解锁-->
+    <string name="setting_unlock">해제</string>
+    <string name="setting_open_app">QPocket 열기</string>
+    <string name="setting_open_app_info">1분후 QPocket 재 오픈시 해제 </string>
+    <string name="setting_wallet_related">지갑 관련</string>
+    <string name="setting_wallet_related_info">지갑 관련지갑 관련 정보를 볼 때 해제</string>
+    <string name="setting_none">없음</string>
+    <string name="setting_none_info">터치센서 사용하지 않고 QPocket 열기</string>
+
+    <string name="setting_unlock_info">터치센서를 가능하게 할 시에만 해제 셋팅 사용 가능</string>
+
+
+    <!--冷钱包-->
+    <!--冷钱包-->
+    <!--冷钱包-->
+    <!--冷钱包 创建-->
+
+    <!--冷钱包 钱包页-->
+
+    <!--冷钱包 签名信息展示页-->
+
+    <!--冷钱包 签名信息錯誤提示-->
+
+    <!--冷钱包 merge-->
+    <string name="qkc_merge_size_error">병합 트랜잭션은 코드월렛 제한 때문에 20 이하여야 합니다. 조정 후 재시도 바랍니다</string>
+
+    <!--冷钱包 btc观察钱包-->
+    <string name="import_watch_info">"개인 키를 공개하지 않고 어떠한 퍼블릭 주소도 볼 수 있으며, 오프라인 서명을 하기 위해 해당 콜드 지갑을 사용한 트랜잭션 전송도 가능합니다."</string>
+
+
+    <!--通知-->
+
+
+    <!--硬件钱包-->
+    <!--硬件钱包 扫描钱包-->
+    <!--硬件钱包 链接-->
+
+    <!--硬件钱包 DApp-->
+
+
+    <!--冷钱包说明页-->
+
+    <string name="wallet_ledger_error_title">하드웨어 월렛은</string>
+    <string name="wallet_ledger_error_message">하드웨어 월렛은 프라이빗 키나 키스토어를 내보낼 수 없습니다.</string>
+
+
+    <!--创建子钱包-->
+    <string name="create_child_account_title">서브월렛 추가</string>
+    <string name="create_child_account_btn">%s 서브월렛 추가</string>
+    <string name="create_child_account_tips">노트: 추가된 서브월렛은 동일한 HD 월렛에 속한 다른 월렛과 같이 같은 프레이즈를 사용하여 복원 가능합니다.</string>
+    <string name="create_child_account_success">서브월렛 추가 성공</string>
+    <string name="create_child_account_fail">서브 월렛 추가 실패</string>
+    <string name="create_child_account_exist">%s 인덱스를 가지는 서브월렛이 이미 존재합니다. 중복되는 서브월렛을 모두 삭제하고 새로운 서브월렛울 생성 하시겠습니까?</string>
+
+    <!--添加QKC token-->
+    <string name="add_token_qkc_contact">네이티브 토큰 이름 또는 QRC20 주소</string>
+    <string name="add_token_qkc_fail">무효한 네이티브토큰 이름 또는 무효한 QRC20</string>
+
+    <!--native token是否支持作为手续费-->
+    <string name="transaction_gas_token_not_support">선택된 네이티브 토큰은 현재의 체인/샤드에서 가스 수수료로 사용이 불가합니다. 다른 토큰으로 전환 후 재시도 하시기 바랍니다.</string>
+    <string name="wallet_native_transaction_gas_enough">현재의 네이티브 토큰 잔액이 가스 수수료를 지불하기에 충분하지 않습니다. 다른 토큰으로 전환 한 후 재시도 하시기 바랍니다.</string>
+    <string name="wallet_qrc20_transaction_gas_enough">현재의 네이티브 토큰 잔액이 가스 수수료를 지불하기에 충분하지 않습니다. 다른 체인이나 샤드에서 거래를 시도하거나 토큰을 전환하시기 바랍니다.</string>
+    <string name="native_gas_token_balance_not_enough">현 네이티브 토큰의 백업 QKC가 가스수수료를 지불하기에 충분하지 않습니다.</string>
+
+    <string name="wallet_merge_transaction_gas_enough">%s 의 잔액이 가스수수료를 지불하기에 충분하지 않습니다. </string>
+    <string name="merge_gas_token_not_support">%s 의 잔액이 가스수수료를 지불하기에 충분하지 않습니다.  다른 네이티브토큰으로 전환 후 재시도 하시기 바랍니다.</string>
+    <string name="merge_gas_token_balance_not_enough">%s 의 백업 QKC가 가스수수료를 지불하기에 충분하지 않습니다. </string>
+
+    <!--通知全部已读-->
+
+
+    <!--删除HD钱包-->
+    <string name="delete_wallet_message">동일한 HD월렛에 속한 현 서브월렛 또는 모든 서브월렛을 지우시겠습니까?</string>
+    <string name="delete_wallet_sub">현재의 서브월렛 지우기</string>
+    <string name="delete_wallet_hd">HD월렛 전체 지우기</string>
+</resources>

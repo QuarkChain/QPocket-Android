@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:fitsSystemWindows="true">
+
+    <!-- 顶部  -->
+    <com.quarkonium.qpocket.view.TopBarView
+        android:id="@+id/top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/appbar_top_height" />
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/freeze_swipe_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/top_layout"
+        android:paddingBottom="20dp">
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/trx_scroll_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/dp_15"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="19dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="19dp"
+                    app:cardElevation="2dp"
+                    card_view:cardCornerRadius="7dp"
+                    card_view:cardUseCompatPadding="true">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="20dp">
+
+                        <TextView
+                            android:id="@+id/freeze_band_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/trx_freeze_band"
+                            android:textColor="@color/text_title"
+                            android:textSize="15sp" />
+
+                        <ProgressBar
+                            android:id="@+id/freeze_band_seekbar"
+                            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp"
+                            android:layout_below="@+id/freeze_band_title"
+                            android:layout_marginTop="25dp"
+                            android:max="1000"
+                            android:progress="500"
+                            android:progressDrawable="@drawable/progress_background" />
+
+                        <TextView
+                            android:id="@+id/freeze_band_current"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/freeze_band_seekbar"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="10dp"
+                            android:textColor="@color/text_title"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/freeze_band_value_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/freeze_band_current"
+                            android:layout_marginTop="20dp"
+                            android:text="@string/trx_freeze_frozen_band"
+                            android:textColor="@color/text_title"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/freeze_band_value"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/freeze_band_value_title"
+                            android:layout_alignParentRight="true"
+                            android:text="@string/trx_freeze_default_value"
+                            android:textColor="@color/text_title"
+                            android:textSize="12sp" />
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="19dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginRight="19dp"
+                    app:cardElevation="2dp"
+                    card_view:cardCornerRadius="7dp"
+                    card_view:cardUseCompatPadding="true">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="20dp">
+
+                        <TextView
+                            android:id="@+id/freeze_energy_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/trx_freeze_energy"
+                            android:textColor="@color/text_title"
+                            android:textSize="15sp" />
+
+                        <ProgressBar
+                            android:id="@+id/freeze_energy_seekbar"
+                            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp"
+                            android:layout_below="@+id/freeze_energy_title"
+                            android:layout_marginTop="25dp"
+                            android:max="1000"
+                            android:progress="500"
+                            android:progressDrawable="@drawable/progress_background" />
+
+                        <TextView
+                            android:id="@+id/freeze_energy_current"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/freeze_energy_seekbar"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="10dp"
+                            android:textColor="@color/text_title"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/freeze_energy_value_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/freeze_energy_current"
+                            android:layout_marginTop="15dp"
+                            android:text="@string/trx_freeze_frozen_energy"
+                            android:textColor="@color/text_title"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/freeze_energy_value"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/freeze_energy_value_title"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginTop="15dp"
+                            android:text="@string/trx_freeze_default_value"
+                            android:textColor="@color/text_title"
+                            android:textSize="12sp" />
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="19dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginRight="19dp"
+                    android:layout_marginBottom="25dp"
+                    app:cardElevation="2dp"
+                    card_view:cardCornerRadius="7dp"
+                    card_view:cardUseCompatPadding="true">
+
+                    <androidx.viewpager.widget.ViewPager
+                        android:id="@+id/freeze_view_page"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp" />
+
+                    <com.quarkonium.qpocket.view.SlidingTabLayout xmlns:tl="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/freeze_tab_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:layout_marginTop="5dp"
+                        app:tl_textsize="12sp"
+                        tl:tl_indicator_color="@color/text_title"
+                        tl:tl_indicator_height="1.5dp"
+                        tl:tl_indicator_margin_bottom="15dp"
+                        tl:tl_indicator_width_equal_title="true"
+                        tl:tl_tab_space_equal="true"
+                        tl:tl_textSelectColor="@color/text_title"
+                        tl:tl_textUnselectColor="@color/text_hint" />
+
+                    <RelativeLayout
+                        android:id="@+id/freeze_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/freeze_tab_view"
+                        android:layout_marginTop="47dp"
+                        android:padding="20dp">
+
+                        <EditText
+                            android:id="@+id/freeze_amount"
+                            style="@style/login_edit_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/dp_45"
+                            android:layout_marginRight="5dp"
+                            android:layout_toLeftOf="@+id/freeze_amount_symbol"
+                            android:background="@null"
+                            android:drawableBottom="@drawable/edit_text_bg"
+                            android:drawablePadding="5dp"
+                            android:gravity="bottom"
+                            android:hint="@string/trx_freeze_amount_hint"
+                            android:inputType="number"
+                            android:maxLength="-1"
+                            android:singleLine="true"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/freeze_amount_symbol"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@+id/freeze_amount"
+                            android:layout_alignBottom="@+id/freeze_amount"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginBottom="5dp"
+                            android:gravity="bottom"
+                            android:text="@string/trx"
+                            android:textColor="@color/text_title"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/freeze_total_balance"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/freeze_amount"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center"
+                            android:text="@string/trx_freeze_default_value"
+                            android:textColor="@color/text_title"
+                            android:textSize="13sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/freeze_total_balance"
+                            android:layout_marginTop="30dp"
+                            android:text="@string/trx_freeze_type"
+                            android:textColor="@color/text_title"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:id="@+id/freeze_band_type"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/freeze_total_balance"
+                            android:layout_marginTop="30dp"
+                            android:layout_toLeftOf="@+id/freeze_energy_type"
+                            android:drawableLeft="@drawable/trx_selected_img"
+                            android:drawablePadding="8dp"
+                            android:gravity="center_vertical"
+                            android:paddingRight="12dp"
+                            android:text="@string/trx_freeze_type_band"
+                            android:textColor="@color/main_btn_selector"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:id="@+id/freeze_energy_type"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/freeze_total_balance"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginTop="30dp"
+                            android:drawableLeft="@drawable/trx_selected_img"
+                            android:drawablePadding="8dp"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="12dp"
+                            android:text="@string/trx_freeze_type_energy"
+                            android:textColor="@color/main_btn_selector"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/freeze_energy_type"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginTop="10dp"
+                            android:text="@string/trx_freeze_hint"
+                            android:textColor="@color/text_title"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:id="@+id/freeze_action"
+                            style="@style/ButtonForegroundEffectStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_below="@+id/freeze_energy_type"
+                            android:layout_marginTop="54dp"
+                            android:background="@drawable/button_back_selector"
+                            android:gravity="center"
+                            android:text="@string/trx_freeze_tag_freeze"
+                            android:textColor="#ffffff"
+                            android:textSize="15sp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/unfreeze_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/freeze_tab_view"
+                        android:layout_marginTop="61dp"
+                        android:padding="20dp"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/unfreeze_band_time_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:text="@string/trx_unfreeze_band_time"
+                            android:textColor="@color/text_title"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/unfreeze_energy_time_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/unfreeze_band_time_title"
+                            android:layout_marginTop="10dp"
+                            android:text="@string/trx_unfreeze_energy_time"
+                            android:textColor="@color/text_title"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/unfreeze_energy_time_title"
+                            android:layout_marginTop="30dp"
+                            android:text="@string/trx_freeze_type"
+                            android:textColor="@color/text_title"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:id="@+id/unfreeze_band_type"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/unfreeze_energy_time_title"
+                            android:layout_marginTop="30dp"
+                            android:layout_toLeftOf="@+id/unfreeze_energy_type"
+                            android:drawableLeft="@drawable/trx_selected_img"
+                            android:drawablePadding="8dp"
+                            android:gravity="center_vertical"
+                            android:paddingRight="12dp"
+                            android:text="@string/trx_freeze_type_band"
+                            android:textColor="@color/main_btn_selector"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:id="@+id/unfreeze_energy_type"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/unfreeze_energy_time_title"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginTop="30dp"
+                            android:drawableLeft="@drawable/trx_selected_img"
+                            android:drawablePadding="8dp"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="12dp"
+                            android:text="@string/trx_freeze_type_energy"
+                            android:textColor="@color/main_btn_selector"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/unfreeze_energy_type"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginTop="10dp"
+                            android:text="@string/trx_freeze_hint"
+                            android:textColor="@color/text_title"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:id="@+id/unfreeze_action"
+                            style="@style/ButtonForegroundEffectStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_below="@+id/unfreeze_energy_type"
+                            android:layout_marginTop="50dp"
+                            android:background="@drawable/button_back_selector"
+                            android:gravity="center"
+                            android:text="@string/trx_freeze_tag_unfreeze"
+                            android:textColor="#ffffff"
+                            android:textSize="15sp" />
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <include
+        android:id="@+id/progress_layout"
+        layout="@layout/progress_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true" />
+</RelativeLayout>

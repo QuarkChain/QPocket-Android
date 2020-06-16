@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:fitsSystemWindows="true">
+
+    <!-- 顶部  -->
+    <com.quarkonium.qpocket.view.TopBarView
+        android:id="@+id/top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/appbar_top_height" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/top_layout"
+        android:layout_marginLeft="19dp"
+        android:layout_marginTop="@dimen/dp_15"
+        android:layout_marginRight="19dp"
+        android:layout_marginBottom="20dp"
+        app:cardElevation="3dp"
+        card_view:cardCornerRadius="7dp"
+        card_view:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <include
+                android:id="@+id/lock_open"
+                layout="@layout/activity_settings_unlock_item" />
+
+
+            <include
+                android:id="@+id/lock_wallet"
+                layout="@layout/activity_settings_unlock_item" />
+
+
+            <include
+                android:id="@+id/lock_none"
+                layout="@layout/activity_settings_unlock_item" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

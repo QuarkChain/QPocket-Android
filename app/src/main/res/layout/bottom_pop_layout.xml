@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#00000000"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="19dp"
+        android:layout_marginRight="19dp"
+        app:cardElevation="2dp"
+        card_view:cardCornerRadius="7dp"
+        card_view:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F6F6F6"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:gravity="center_horizontal"
+                android:text="@string/edit_btc_change_segwit"
+                android:textColor="#666666"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/pop_button_1"
+                style="@style/ButtonForegroundEffectStyle"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/btn_white_bg"
+                android:gravity="center"
+                android:text="@string/btc_change_segwit"
+                android:textColor="@color/color_03c755"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/pop_button_2"
+                style="@style/ButtonForegroundEffectStyle"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/btn_white_bg"
+                android:gravity="center"
+                android:text="@string/btc_change_normal"
+                android:textColor="@color/color_03c755"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/cancel_account_action"
+        style="@style/ButtonForegroundEffectStyle"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="22dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/btn_white_bg"
+        android:gravity="center"
+        android:text="@string/cancel"
+        android:textColor="@color/text_title"
+        android:textSize="16sp" />
+</LinearLayout>

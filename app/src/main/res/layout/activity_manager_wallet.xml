@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/wallet_manager_tab"
+        android:layout_width="67dp"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/top_layout"
+        android:layout_marginTop="-4dp"
+        android:background="#F0F0F0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/wallet_all_tab"
+                style="@style/ButtonBackgroundEffectStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp">
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/wallet_all_selector" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/wallet_qkc_tab"
+                style="@style/ButtonBackgroundEffectStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp">
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/wallet_qkc_selector" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/wallet_trx_tab"
+                style="@style/ButtonBackgroundEffectStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp">
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/wallet_trx_selector" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/wallet_eth_tab"
+                style="@style/ButtonBackgroundEffectStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp">
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/wallet_eth_selector" />
+            </RelativeLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/wallet_manager_recycler_context"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/top_layout"
+        android:layout_marginTop="-4dp"
+        android:layout_toRightOf="@+id/wallet_manager_tab"
+        android:background="#FDFDFD"
+        android:paddingBottom="10dp" />
+
+    <!-- 顶部  -->
+    <com.quarkonium.qpocket.view.TopBarView
+        android:id="@+id/top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/appbar_top_height" />
+</RelativeLayout>

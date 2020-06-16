@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?><!--创建钱包-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:fitsSystemWindows="true">
+
+    <!-- 顶部  -->
+    <com.quarkonium.qpocket.view.TopBarView
+        android:id="@+id/top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/appbar_top_height" />
+
+    <ImageView
+        android:id="@+id/wallet_icon_view"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_below="@+id/top_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp"
+        android:layout_marginBottom="40dp"
+        android:src="@drawable/create_phrase_hint" />
+
+    <RelativeLayout
+        android:id="@+id/wallet_backup_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/wallet_icon_view"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="25dp">
+
+        <View
+            android:id="@+id/message_index1"
+            android:layout_width="5dp"
+            android:layout_height="5dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/circle_bitmap" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14dp"
+            android:layout_toRightOf="@+id/message_index1"
+            android:text="@string/backup_wallet_info"
+            android:textColor="@color/text_message"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/wallet_backup_message"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="25dp">
+
+        <View
+            android:id="@+id/message_index2"
+            android:layout_width="5dp"
+            android:layout_height="5dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/circle_bitmap" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14dp"
+            android:layout_toRightOf="@+id/message_index2"
+            android:text="@string/backup_wallet_info_hint"
+            android:textColor="@color/text_message"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/account_action_next"
+        style="@style/ButtonForegroundEffectStyle"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="19dp"
+        android:layout_marginRight="19dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/button_back_selector"
+        android:gravity="center"
+        android:text="@string/create_wallet_btn_start"
+        android:textColor="#ffffff"
+        android:textSize="15sp" />
+
+    <include
+        android:id="@+id/progress_layout"
+        layout="@layout/progress_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true" />
+</RelativeLayout>

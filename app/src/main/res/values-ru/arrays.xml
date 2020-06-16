@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--创建钱包首页-->
+    <array name="create_wallet_titles">
+        <item>Универсальное решение для кошельков цифровых валют</item>
+        <item>Поддержка нескольких видов цифровых активов</item>
+        <item>Безопасно и надежно</item>
+    </array>
+    <array name="create_wallet_messages">
+        <item>Интерфейс простого, безопасного, полнофункционального блокчейна</item>
+        <item>Уже поддерживаются QKC, ETH, BTC и TRX, больше будет поддержка ещё других публичных блокчейнов.</item>
+        <item>Закрытый ключ никогда не будет покидать мобильный телефон, и подлежит хранению в зашифрованном состоянии.</item>
+    </array>
+
+    <!--导入钱包-->
+    <array name="import_wallet_tag">
+        <item>Мнемоника</item>
+        <item>Закрытый ключ</item>
+        <item>Keystore</item>
+        <item>Наблюдать кошелек</item>
+    </array>
+    <array name="import_wallet_tag_cold">
+        <item>Мнемоника</item>
+        <item>Закрытый ключ</item>
+        <item>Keystore</item>
+    </array>
+
+    <!--交易记录列表-->
+    <array name="wallet_transaction_tag">
+        <item>Все</item>
+        <item>Платеж</item>
+        <item>Получены</item>
+        <item>Неудача</item>
+    </array>
+
+    <!--本地erc20 token详情界面-->
+    <array name="public_sale_transaction_tag">
+        <item>Все</item>
+        <item>Покупка</item>
+        <item>Транзакция</item>
+        <item>Неудача</item>
+    </array>
+
+    <!--Settings 语言-->
+    <array name="settings_languages">
+        <item>По умолчанию системы</item>
+        <item>English</item>
+        <item>简体中文</item>
+        <item>한국어</item>
+        <item>Bahasa Indonesia</item>
+        <item>Tiếng Việt</item>
+        <item>Pусский</item>
+    </array>
+
+    <array name="trx_freeze_tags">
+        <item>@string/trx_freeze_tag_freeze</item>
+        <item>@string/trx_freeze_tag_unfreeze</item>
+    </array>
+
+    <!--dapp-->
+
+    <!--dapp qkc-->
+
+    <!--market-->
+
+    <!--market coin 法币-->
+    <array name="setings_coin_all_country">
+        <item>BTC - Биткойн</item>
+        <item>USD - Доллары США</item>
+        <item>CNY - RMB</item>
+        <item>EUR - Евро</item>
+        <item>KRW - Корейский вон</item>
+        <item>IDR - Индонезийская рупия</item>
+        <item>INR - Индийская рупия</item>
+        <item>RUB - Российский рубль</item>
+        <item>UAH - Украинская гривна</item>
+        <item>VND - Вьетнамский донг</item>
+        <item>AED - Дирхам ОАЭ</item>
+        <item>ARS - Аргентинское песо</item>
+        <item>AUD - Австралийский доллар</item>
+        <item>BDT - Така Бангладеша</item>
+        <item>BHD - Бахрейнский Динар</item>
+        <item>BMD - Бермудский доллар</item>
+        <item>BRL - Бразильский реал</item>
+        <item>CAD - канадский доллар</item>
+        <item>CHF - Франк</item>
+        <item>CLP - Чилийское песо</item>
+        <item>CZK - Чешская крона</item>
+        <item>DKK - Датская крона</item>
+        <item>GBP - Британский фунт</item>
+        <item>HKD - Гонконгский доллар</item>
+        <item>HUF - Венгерский форинт</item>
+        <item>ILS - Израильский Новый Шекель</item>
+        <item>JPY - Японская иена</item>
+        <item>KWD - Кувейтский динар</item>
+        <item>LKR - Шри-Ланкийская рупия</item>
+        <item>ММК - Доллар Мьянмы</item>
+        <item>MXN - Мексиканское песо</item>
+        <item>MYR - Малайзийский ринггит</item>
+        <item>NOK - Норвежская крона</item>
+        <item>NZD - Новозеландский доллар</item>
+        <item>PHP - Филиппинское песо</item>
+        <item>PKR - Пакистанская рупия</item>
+        <item>PLN - Польский злотый</item>
+        <item>SAR - Саудовский риал</item>
+        <item>SEK - Шведская крона</item>
+        <item>SGD - Сингапурский доллар</item>
+        <item>THB - Тайский бат</item>
+        <item>TRY - Турецкая лира</item>
+        <item>TWD - Новый тайваньский доллар</item>
+        <item>VEF - Боливар Венесуэлы</item>
+        <item>ZAR - Южноафриканский рэнд</item>
+        <item>ETH - Ethereum</item>
+    </array>
+
+</resources>

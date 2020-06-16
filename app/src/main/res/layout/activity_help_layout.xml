@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:fitsSystemWindows="true">
+
+    <!-- 顶部  -->
+    <com.quarkonium.qpocket.view.TopBarView
+        android:id="@+id/top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/appbar_top_height" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/top_layout"
+        android:layout_marginBottom="20dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="19dp"
+            android:layout_marginTop="@dimen/dp_15"
+            android:layout_marginRight="19dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            app:cardElevation="3dp"
+            card_view:cardCornerRadius="7dp"
+            card_view:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/help_email"
+                    style="@style/ButtonBackgroundInsideEffectStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:paddingLeft="19dp"
+                    android:paddingRight="19dp">
+
+                    <ImageView
+                        android:id="@+id/help_email_img"
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/about_email" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignTop="@+id/help_email_img"
+                        android:layout_alignBottom="@+id/help_email_img"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:layout_toRightOf="@+id/help_email_img"
+                        android:gravity="center_vertical"
+                        android:singleLine="true"
+                        android:text="@string/help_email_tile"
+                        android:textColor="@color/text_message"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/option_go_icon" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="#ebebeb" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/help_telegram"
+                    style="@style/ButtonBackgroundInsideEffectStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:paddingLeft="19dp"
+                    android:paddingRight="19dp">
+
+                    <ImageView
+                        android:id="@+id/help_telegram_img"
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/about_telegram" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignTop="@+id/help_telegram_img"
+                        android:layout_alignBottom="@+id/help_telegram_img"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:layout_toRightOf="@+id/help_telegram_img"
+                        android:gravity="center_vertical"
+                        android:singleLine="true"
+                        android:text="@string/settings_about_telegram"
+                        android:textColor="@color/text_message"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/option_go_icon" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="#ebebeb"
+                        android:paddingLeft="19dp"
+                        android:paddingRight="19dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/help_weichat"
+                    style="@style/ButtonBackgroundInsideEffectStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:paddingLeft="19dp"
+                    android:paddingRight="19dp">
+
+                    <ImageView
+                        android:id="@+id/help_wechat_img"
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/about_wechat" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignTop="@+id/help_wechat_img"
+                        android:layout_alignBottom="@+id/help_wechat_img"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:layout_toRightOf="@+id/help_wechat_img"
+                        android:gravity="center_vertical"
+                        android:singleLine="true"
+                        android:text="@string/help_wechat_tile"
+                        android:textColor="@color/text_message"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/option_go_icon" />
+                </RelativeLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </androidx.core.widget.NestedScrollView>
+</RelativeLayout>

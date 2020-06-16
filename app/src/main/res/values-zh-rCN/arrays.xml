@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--创建钱包首页-->
+    <array name="create_wallet_titles">
+        <item>数字货币钱包的一站式解决方案</item>
+        <item>支持多种数字资产</item>
+        <item>保证安全可靠</item>
+    </array>
+    <array name="create_wallet_messages">
+        <item>简单，安全，全功能的区块链入口</item>
+        <item>已经支持QKC，ETH， BTC和TRX，更多公链支持陆续上线</item>
+        <item>私钥从不离开手机，加密保存</item>
+    </array>
+
+    <!--导入钱包-->
+    <array name="import_wallet_tag">
+        <item>助记词</item>
+        <item>私钥</item>
+        <item>Keystore</item>
+        <item>观察钱包</item>
+    </array>
+    <array name="import_wallet_tag_cold">
+        <item>助记词</item>
+        <item>私钥</item>
+        <item>Keystore</item>
+    </array>
+
+    <!--交易记录列表-->
+    <array name="wallet_transaction_tag">
+        <item>全部</item>
+        <item>付款</item>
+        <item>收款</item>
+        <item>失败</item>
+    </array>
+
+    <!--本地erc20 token详情界面-->
+    <array name="public_sale_transaction_tag">
+        <item>全部</item>
+        <item>购买</item>
+        <item>转账</item>
+        <item>失败</item>
+    </array>
+
+    <!--Settings 语言-->
+    <array name="settings_languages">
+        <item>系统默认</item>
+        <item>English</item>
+        <item>简体中文</item>
+        <item>한국어</item>
+        <item>Bahasa Indonesia</item>
+        <item>Tiếng Việt</item>
+        <item>Pусский</item>
+    </array>
+
+    <array name="trx_freeze_tags">
+        <item>@string/trx_freeze_tag_freeze</item>
+        <item>@string/trx_freeze_tag_unfreeze</item>
+    </array>
+
+    <!--dapp-->
+
+    <!--dapp qkc-->
+
+    <!--market-->
+
+    <!--market coin 法币-->
+    <array name="setings_coin_all_country">
+        <item>BTC - 比特币</item>
+        <item>ETH - 以太坊</item>
+        <item>USD - 美元</item>
+        <item>CNY - 人民币</item>
+        <item>EUR - 欧元</item>
+        <item>KRW - 韩元</item>
+        <item>IDR - 印度尼西亚卢比</item>
+        <item>INR - 印度卢比</item>
+        <item>RUB - 俄罗斯卢布</item>
+        <item>UAH - 乌克兰格里夫纳</item>
+        <item>VND - 越南盾</item>
+        <item>AED - 阿联酋迪拉姆</item>
+        <item>ARS - 阿根廷比索</item>
+        <item>AUD - 澳元</item>
+        <item>BDT - 孟加拉塔卡</item>
+        <item>BHD - 巴林第纳尔</item>
+        <item>BMD - 百慕大元</item>
+        <item>BRL - 巴西雷亚尔</item>
+        <item>CAD - 加元</item>
+        <item>CHF - 法郎</item>
+        <item>CLP - 智利比索</item>
+        <item>CZK - 捷克克朗</item>
+        <item>DKK - 丹麦克朗</item>
+        <item>GBP - 英镑</item>
+        <item>HKD - 港元</item>
+        <item>HUF - 匈牙利福林</item>
+        <item>ILS - 以色列新谢克尔</item>
+        <item>JPY - 日元</item>
+        <item>KWD - 科威特第纳尔</item>
+        <item>LKR - 斯里兰卡卢比</item>
+        <item>MMK - 缅甸元</item>
+        <item>MXN - 墨西哥比索</item>
+        <item>MYR - 马来西亚林吉特</item>
+        <item>NOK - 挪威克朗</item>
+        <item>NZD - 新西兰元</item>
+        <item>PHP - 菲律宾比索</item>
+        <item>PKR - 巴基斯坦卢比</item>
+        <item>PLN - 波兰兹罗提</item>
+        <item>SAR - 沙特里亚尔</item>
+        <item>SEK - 瑞典克朗</item>
+        <item>SGD - 新加坡元</item>
+        <item>THB - 泰铢</item>
+        <item>TRY - 土耳其里拉</item>
+        <item>TWD - 新台币</item>
+        <item>VEF - 委内瑞拉玻利瓦尔</item>
+        <item>ZAR - 南非兰特</item>
+    </array>
+
+</resources>

@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.quarkonium.qpocket">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+    <uses-permission android:name="com.fingerprints.service.ACCESS_FINGERPRINT_MANAGER" />
+    <uses-permission android:name="com.samsung.android.providers.context.permission.WRITE_USE_APP_FEATURE_SURVEY" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <!-- 以下为友盟push需要的基本权限，需要自行添加至您的AndroidManifest文件中 start-->
+    <uses-permission android:name="android.permission.BROADCAST_PACKAGE_ADDED" />
+    <uses-permission android:name="android.permission.BROADCAST_PACKAGE_CHANGED" />
+    <uses-permission android:name="android.permission.BROADCAST_PACKAGE_INSTALL" />
+    <uses-permission android:name="android.permission.BROADCAST_PACKAGE_REPLACED" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <!-- 以下为友盟push需要的基本权限，需要自行添加至您的AndroidManifest文件中 end-->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <!-- Add this line if your application always requires BLE. More info can be found on:
+         https://developer.android.com/guide/topics/connectivity/bluetooth-le.html#permissions
+      -->
+    <uses-feature
+        android:name="android.hardware.bluetooth_le"
+        android:required="true" />
+
+    <application
+        android:name=".MainApplication"
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:theme="@style/AppTheme"
+        tools:replace="android:name, android:theme, android:allowBackup">
+
+        <!-- 启动页 -->
+        <activity
+            android:name=".model.splash.SplashActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/SplashTheme"
+            tools:ignore="LockedOrientationActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".crash.CrashReportActivity"
+            android:theme="@style/ApiDialog" />
+
+        <activity
+            android:name=".model.wallet.HomeActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+
+        <activity
+            android:name=".model.wallet.CreateWalletActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+
+        <!--备份助记词提示界面-->
+        <activity
+            android:name=".model.wallet.BackupPhraseHintActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+
+        <!--备份助记词-->
+        <activity
+            android:name=".model.wallet.BackupPhraseActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+
+        <!--校验助记词-->
+        <activity
+            android:name=".model.wallet.BackupPhraseInputActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+
+        <!--导入钱包 -->
+        <activity
+            android:name=".model.wallet.ImportWalletActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+
+        <!--主界面 -->
+        <activity
+            android:name=".model.main.MainActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+
+        <!--钱包地址生成二维码-->
+        <activity
+            android:name=".model.main.WalletBitmapAddressActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+
+        <!--二维码扫描-->
+        <activity
+            android:name=".model.main.CaptureActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+
+        <!--钱包管理界面-->
+        <activity
+            android:name=".model.main.WalletManagerActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+
+        <!--钱包编辑导出界面-->
+        <activity
+            android:name=".model.main.WalletEditActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+
+        <!--钱包导出成功界面-->
+        <activity
+            android:name=".model.main.WalletExportSuccessActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+
+        <!--编辑头像-->
+        <activity
+            android:name=".model.main.WalletEditSettingIconActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+
+        <!--事务详情-->
+        <activity
+            android:name=".model.transaction.TransactionDetailActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+
+        <!--事务Item详情-->
+        <activity
+            android:name=".model.transaction.TransactionDetailCostActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+
+        <!--创建QKC transaction界面-->
+        <activity
+            android:name=".model.transaction.TransactionCreateActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+
+        <!--发送QKC界面-->
+        <activity
+            android:name=".model.transaction.TransactionSendActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+
+        <activity
+            android:name=".model.transaction.PublicSaleDetailActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+
+        <!--token详情界面-->
+        <activity
+            android:name=".model.transaction.OtherTokenDetailActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+
+        <!--创建公募token 购买界面-->
+        <activity
+            android:name=".model.transaction.PublicSaleTransactionCreateActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+
+        <!--公募token交易记录详情页-->
+        <activity
+            android:name=".model.transaction.TransactionPublicDetailCostActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+
+        <!--merge QKC-->
+        <activity
+            android:name=".model.transaction.MergeActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+
+        <!--设置关于-->
+        <activity
+            android:name=".model.main.SettingsAboutActivity"
+            android:configChanges="locale"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+
+        <!--用户隐私-->
+        <activity
+            android:name=".model.main.SettingsTermsOfUseActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+
+        <!--设置语言-->
+        <activity
+            android:name=".model.main.SettingsLanguagesActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/LanguageTheme"
+            tools:ignore="LockedOrientationActivity" />
+
+        <!--添加token-->
+        <activity
+            android:name=".model.main.AddTokenActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+
+        <!--锁屏界面-->
+        <activity
+            android:name=".model.lock.LockPatternActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+
+        <!--token推荐页-->
+        <activity
+            android:name=".model.main.TokenListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan"
+            tools:ignore="LockedOrientationActivity" />
+
+        <!--tron冻结界面-->
+        <activity
+            android:name=".model.transaction.TRXFreezeActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan"
+            tools:ignore="LockedOrientationActivity" />
+
+        <!--帮助界面-->
+        <activity
+            android:name=".model.main.HelpActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+
+        <!--txid查询界面-->
+        <activity
+            android:name=".model.transaction.TxWebViewActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+
+        <activity
+            android:name=".model.main.CoinsActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+
+        <!--地址本-->
+        <activity
+            android:name=".model.book.AddressBookActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+
+        <activity
+            android:name=".model.book.AddressBookCreateActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+
+        <activity
+            android:name=".model.unlock.UnlockManagerActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+
+        <activity
+            android:name=".model.wallet.CreateChildAccountActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+    </application>
+</manifest>

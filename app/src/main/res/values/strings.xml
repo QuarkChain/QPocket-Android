@@ -1,0 +1,739 @@
+<resources>
+    <!--常量-->
+    <string name="next">Next</string>
+    <string name="copy">Copy</string>
+    <string name="cancel">Cancel</string>
+    <string name="confirm">OK</string>
+    <string name="done">Done</string>
+    <string name="ok">OK</string>
+    <string name="password">Password</string>
+    <string name="update">Update</string>
+    <string name="none">None</string>
+    <string name="delete">Delete</string>
+
+    <string name="network_error">Network error, please try again later.</string>
+    <!--==================================================-->
+    <!--做当前语言区分-->
+    <string name="cn_current_language">language</string>
+
+    <!--权限-->
+    <string name="permission_declined">QPocket does not have the permission to access %s. Please go to Settings to grant permission.</string>
+    <string name="permission_camera">Camera</string>
+    <string name="permission_storage">Storage</string>
+    <string name="permission_location">Location</string>
+
+    <!--crash 界面-->
+    <string name="tips_forcequit">Oops! There was an unexpected error. Please click \'Submit\' to report the problem. Thank you! </string>
+    <string name="menu_report">Submit</string>
+
+    <!--创建钱包首页-->
+    <string name="create_wallet_new">CREATE WALLET</string>
+    <string name="create_wallet_import">IMPORT WALLET</string>
+
+
+    <!--创建钱包-->
+    <string name="create_wallet_title">Create Wallet</string>
+    <string name="create_wallet_btn">Create</string>
+    <string name="create_wallet_password">Wallet Password</string>
+    <string name="create_wallet_confirm_password">Confirm Password</string>
+    <string name="create_wallet_hint">Password Hint (Optional)</string>
+
+    <!--创建钱包->密码校验-->
+    <string name="create_password_not_equals">Passwords don\'t match</string>
+    <string name="create_password_fail">Create wallet fail!</string>
+
+
+    <!--备份助记词提示-->
+    <string name="backup_wallet_title">Backup Phrase</string>
+    <string name="backup_wallet_skip">Skip</string>
+    <string name="create_wallet_btn_start">Start</string>
+    <string name="backup_wallet_info">Backup phrase is the only way to restore your wallet. Save them somewhere safe and secure.</string>
+    <string name="backup_wallet_info_hint">Please ensure that you are not being watched when executing backup.</string>
+
+
+    <!--记忆助记词-->
+    <string name="backup_wallet_remember_title">Backup Phrase</string>
+    <string name="backup_wallet_remember_hint">Backup the following phrases and we\'ll verify them in the next step.</string>
+
+
+    <!--确认助记词-->
+    <string name="backup_wallet_input_hint_title">Verify Phrase</string>
+    <string name="backup_wallet_input_hint">Tap the words to put them next to each other in the correct order.</string>
+    <string name="backup_wallet_input_fail">Incorrect order</string>
+
+
+    <!--导入钱包-->
+    <string name="import_wallet_title">Import Wallet</string>
+
+    <string name="import_wallet_input_phrase_hint">Phases separated by space</string>
+    <string name="import_wallet_input_keystore_hint">keystore Json</string>
+    <string name="import_wallet_input_private_hint">Private Key</string>
+    <string name="import_wallet_input_watch_hint">%s Address</string>
+    <string name="import_wallet_btn">Import</string>
+
+    <string name="import_phrase_tip">Words separated by a space.(Usually contains 12 words)</string>
+    <string name="import_private_tip">Typically 64 alphanumeric characters.</string>
+    <string name="import_keystore_tip">Several lines of text beginning with \"{…}\" plus the password you used to encrypt it.</string>
+    <string name="create_password_tip">Set Password</string>
+
+    <string name="import_wallet_fail_exit">The wallet has already existed</string>
+    <string name="import_wallet_fail_phrase">Invalid Phrase</string>
+    <string name="import_wallet_fail_private_key">Invalid Private Key</string>
+    <string name="import_wallet_fail_keystore">Invalid Keystore</string>
+    <string name="import_wallet_fail_watch">Invalid %s Address</string>
+
+    <string name="import_wallet_qkc">QuarkChain</string>
+    <string name="import_wallet_eth">Ethereum</string>
+    <string name="import_wallet_trx">TRX</string>
+
+    <!--主界面-->
+    <string name="main_menu_tag_wallet">Wallet</string>
+    <string name="main_menu_tag_setting">Settings</string>
+    <string name="main_menu_tag_dapp">DApps</string>
+
+
+    <!--主界面 钱包-->
+    <string name="wallet_shard_id">Shard: %s</string>
+    <string name="wallet_token_total_symbol">QKC</string>
+    <string name="wallet_copy_address_label">Address</string>
+
+
+    <!--钱包二维码-->
+    <string name="wallet_qr_address">QuarkChain Address</string>
+    <string name="wallet_qr_address_title">Receive</string>
+    <string name="wallet_qr_address_title2">Receive</string>
+    <string name="error_fail_generate_qr">Could not generate qr code.</string>
+    <string name="wallet_qr_eth_address">Ethereum Address</string>
+
+    <!--扫描二维码-->
+    <string name="wallet_qr_scan_title">Scan</string>
+    <string name="wallet_qr_light_up">Light on</string>
+    <string name="wallet_qr_light_down">Light off</string>
+    <string name="wallet_qr_scan_fail">Scan failed</string>
+    <string name="wallet_qr_scan_album">Album</string>
+
+    <!--钱包管理-->
+    <string name="wallet_manager_title">My Wallet</string>
+
+    <!--钱包编辑-->
+    <string name="wallet_edit_title">Wallet Management</string>
+    <string name="wallet_edit_export_ks">Export Keystore</string>
+    <string name="wallet_edit_export_pk">Export Private Key</string>
+    <string name="wallet_edit_export_phrase">Backup Phrase</string>
+    <string name="wallet_edit_export_password">Enter Password</string>
+    <string name="wallet_edit_delete">Delete Wallet</string>
+    <string name="wallet_edit_setting_icon">Change Wallet Icon</string>
+    <string name="wallet_edit_setting_name">Change Wallet Name</string>
+    <string name="wallet_edit_dialog_name_title">Change Wallet Name</string>
+    <string name="name">Name</string>
+
+    <!--钱包导出成功-->
+    <string name="wallet_export_success_phrase_pk_tip">Do NOT backup the private key to email, note application and instant messenger.</string>
+    <string name="wallet_export_success_phrase_ky_tip">Do NOT backup the keystore to email, note application and instant messenger.</string>
+    <string name="wallet_export_success_offline">Transport Offline</string>
+    <string name="wallet_export_success_offline_pk_tip">Do NOT transport the private key using internet transportation tool.</string>
+    <string name="wallet_export_success_offline_ky_tip">Do NOT transport the keystore using internet transportation tool.</string>
+    <string name="wallet_export_private_key">Private Key</string>
+    <string name="wallet_export_keystore">Keystore</string>
+    <string name="copy_success">Copied</string>
+
+    <!--钱包头像设置-->
+    <string name="wallet_edit_icon">Wallet Icon</string>
+
+
+    <!--交易记录列表-->
+    <string name="wallet_transaction_detail_title">Detail</string>
+    <string name="wallet_transaction_total_token_title">Total:</string>
+    <string name="wallet_transaction_merge">Merge</string>
+
+    <!--交易记录Item详情-->
+    <string name="wallet_transaction_detail_item_title">Transaction</string>
+    <string name="wallet_transaction_detail_amount">Amount:</string>
+    <string name="wallet_transaction_detail_actual">Actual Tx Cost:</string>
+    <string name="wallet_transaction_from">From</string>
+    <string name="wallet_transaction_to">To</string>
+    <string name="wallet_transaction_from2">From:</string>
+    <string name="wallet_transaction_to2">To:</string>
+    <string name="wallet_transaction_pending">Sending</string>
+    <string name="wallet_transaction_sent">Sent</string>
+    <string name="wallet_transaction_sent_fail">Failed</string>
+    <string name="wallet_transaction_receive">Received</string>
+    <string name="wallet_transaction_block_title">Block:</string>
+    <string name="wallet_transaction_tx_title">Tx:</string>
+
+
+    <!--创建发送界面-->
+    <string name="wallet_transaction_send_create_title">Send</string>
+    <string name="wallet_transaction_send_hint">Amount To Send</string>
+    <string name="wallet_transaction_to_address_hint">To Address</string>
+    <string name="wallet_transaction_send_gas">Gas Price</string>
+    <string name="wallet_transaction_send_gas_limit">Gas Limit</string>
+    <string name="wallet_transaction_send_gas_gwei">GWei</string>
+    <string name="wallet_transaction_send">Generate Transaction</string>
+    <string name="wallet_transaction_send_fail">Generate Transaction Failed!</string>
+
+    <string name="wallet_transaction_to_address_error">Invalid Address</string>
+    <string name="wallet_transaction_to_amount_error">Invalid Amount</string>
+    <string name="password_error">Password Error</string>
+
+    <!--QKC转账-->
+    <string name="transaction_balance_error_title">Not Enough Balance</string>
+    <string name="transaction_balance_error_message_merge_success_title">Transaction Sent</string>
+    <string name="transaction_balance_error_message_merge_success_message">The merging transactions have been sent, please pull down to refresh until the balance is enough and continue the transaction.</string>
+    <!--TOKEN转账-->
+    <string name="transaction_balance_token_amount_error">Not Enough Token Balance</string>
+    <string name="transaction_balance_token_merge_success_title">Transaction Sent</string>
+    <string name="transaction_balance_token_merge_success_message">The primary shard has been switched to the token\'s shard. Please pull down to refresh until the balance is enough and continue the transaction.</string>
+    <string name="transaction_balance_token_merge_success_message_nochange">Please pull down to refresh until the balance is enough and continue the transaction.</string>
+    <string name="transaction_balance_token_switch_title">Transaction Sent</string>
+    <!--购买TOKEN-->
+    <string name="transaction_balance_public_switch_success_message">The primary shard has been switched to the token\'s shard. Please pull down to refresh until the balance is enough and continue the transaction.</string>
+    <string name="transaction_balance_public_switch_success_message_nochange">Please pull down to refresh until the balance is enough and continue the transaction.</string>
+    <string name="transaction_balance_public_merge_success_message_nochange">Please pull down to refresh until the balance is enough and continue the transaction.</string>
+
+
+    <!--发送界面-->
+    <string name="wallet_transaction_send_title">Transaction Confirm</string>
+    <string name="wallet_transaction_send_amount_title">Amount:</string>
+    <string name="wallet_transaction_send_max_title">Max Transaction Fee:</string>
+    <string name="wallet_transaction_send_hash_title">Signed Transaction Hash:</string>
+    <string name="transaction_send_shard_limit">Cross shard transaction from shard %s to %s</string>
+    <string name="transaction_send_time">(confirmation time is ~90 seconds)</string>
+    <string name="transaction_send_action">Submit Transaction</string>
+    <string name="transaction_send_fail">Transaction Failed</string>
+    <string name="transaction_send_success">Transaction Sent</string>
+    <string name="wallet_transaction_send_token_max_title">Max Transaction Fee:</string>
+
+    <string name="wallet_transaction_send_from">From</string>
+    <string name="wallet_transaction_send_to">To</string>
+
+    <!--本地erc20 token详情界面-->
+    <string name="token_detail_basic">Basic Information</string>
+    <string name="token_detail_token_title">Balance:</string>
+    <string name="token_detail_available_title">Available:</string>
+    <string name="token_detail_website">Website:</string>
+    <string name="token_detail_address">Smart Contract:</string>
+
+    <string name="public_sale_start_title">Start Time:</string>
+    <string name="public_sale_end_title">End Time:</string>
+    <string name="public_sale_buy">Buy</string>
+    <string name="public_sale_contract_address_title">Public Sale Contact Address</string>
+    <string name="wallet_public_transaction_send_hint">Amount</string>
+    <string name="wallet_public_transaction_price_hint">Price</string>
+
+    <string name="public_buy_success">Bought</string>
+    <string name="public_send_success">Transferred</string>
+
+    <!--merge 界面-->
+    <string name="merge_title">Merge</string>
+    <string name="merge_totalFee">Total Amount:</string>
+    <string name="merge_from">From:</string>
+    <string name="merge_to">To:</string>
+    <string name="merge_gasPrice">Balance: %s </string>
+    <string name="merge_gasLimit">Tx Fee: %s </string>
+    <string name="merge_amount">Amount:</string>
+    <string name="merge_send">Submit Transaction</string>
+    <string name="merge_send_fail">Merging transaction from %s failed</string>
+    <string name="merge_edit_gas_price">Gas Price:</string>
+    <string name="merge_edit_gas_limit">Gas Limit:</string>
+
+    <!--Settings 界面-->
+    <string name="settings_language">Languages</string>
+    <string name="settings_help_title">Help</string>
+    <string name="settings_terms_of_use_title">Terms of Service</string>
+    <string name="settings_privacy_police">Privacy Policy</string>
+    <string name="settings_about_title">About</string>
+
+    <!--Settings 关于-->
+    <string name="settings_about_twitter">Twitter</string>
+    <string name="settings_about_weibo">Weibo</string>
+    <string name="settings_about_telegram">Telegram</string>
+    <string name="settings_about_medium">Medium</string>
+
+    <!--Settings 语言-->
+    <string name="settings_languages_title">Languages</string>
+    <string name="settings_languages_save">Save</string>
+
+
+    <!--Watch Tips-->
+    <string name="wallet_watch_error_title">Watch Wallet</string>
+    <string name="wallet_watch_error_message">Watch wallet can\'t export private key or keystore.</string>
+
+    <!--backup Tips-->
+    <string name="wallet_backup_title">Wallet Needs Backup</string>
+    <string name="wallet_backup_error_message">Your wallet\'s phrase hasn\'t been backed up, would you like to backup now?</string>
+
+    <!--change name Tips-->
+    <string name="wallet_edit_change_name_success">Name has been changed</string>
+
+    <!--发送邮件-->
+    <string name="send_email_title">Customer Help</string>
+    <string name="no_email_title">Need to setup email</string>
+    <string name="no_email_message">Mail app needs to be installed and an email account needs to be set up.</string>
+
+    <!--密码校验-->
+    <string name="password_low_title">Password is too simple</string>
+    <string name="password_medium_title">Low Password Strength</string>
+    <string name="password_easy_message">Good passwords are hard to guess. Use uncommon words, non-standard uPPercasing and non-obvious numbers and symbols.</string>
+    <string name="password_high_title">Medium Password Strength</string>
+    <string name="password_high_good_title">Strong Password Strength</string>
+
+    <!--检查更新-->
+    <string name="check_update_new">New Update Available</string>
+    <string name="check_update_title">Check for Update</string>
+    <string name="check_update_up_to_date">Already up to date</string>
+
+    <!--删除钱包文案-->
+    <string name="delete_wallet_amount_title">Delete Wallet</string>
+    <string name="delete_wallet_amount_message">The balance of the wallet isn\'t zero, are you sure to delete it?</string>
+
+
+    <!--指纹识别-->
+    <string name="finger_touch">Touch Sensor</string>
+    <string name="finger_open_tip_title">Enable Touch Sensor</string>
+    <string name="finger_open_tip_msg">Fingerprint can be used to login and authorize transaction instead of tapping password, enable it now? You can also set it up in settings later.</string>
+    <string name="finger_open_success">Enable Succeeded</string>
+    <string name="finger_open_fail">Enable Failed</string>
+
+    <string name="finger_touch_title">Please scan your fingerprint</string>
+    <string name="finger_touch_msg">Use fingerprint to authorize transaction, sign or export</string>
+    <string name="finger_touch_again">Try Again</string>
+    <string name="finger_touch_password">Input password</string>
+
+
+    <!--主页引导-->
+    <string name="guide_button_start">Start Now</string>
+    <string name="guide_button_finish">Finish</string>
+
+    <string name="guide_msg_text1">Welcome to QuarkChain! We have prepared some quick tips to help to get started!</string>
+    <string name="guide_get_qkc">Get QKC</string>
+
+    <!--多次密码失败-->
+    <string name="password_tryAfter">Too many times entered wrong password, please try after %d seconds</string>
+
+    <!--add token-->
+    <string name="add_token_title">Add Token</string>
+    <string name="add_token_button_detect">Detect</string>
+    <string name="add_token_name">Name:</string>
+    <string name="add_token_symbol">Symbol:</string>
+    <string name="add_token_decimal">Decimal:</string>
+    <string name="add_token_contact">Contract Address</string>
+    <string name="add_token_fail">Invalid address of ERC20 contract</string>
+
+    <!--lock界面-->
+    <string name="lock_title">Tap to start verification</string>
+    <string name="lock_wallet_name">Enter %s\'s Password</string>
+
+    <!--助记词国际化-->
+    <string name="phrase_language_en">English</string>
+    <string name="phrase_language_cn">Chinese Simplified</string>
+    <string name="phrase_language_tw">Chinese Traditional</string>
+
+    <!--设置 切换网络-->
+    <string name="settings_network">Switch Network</string>
+    <string name="switch_network_title">Different Networks</string>
+    <string name="switch_network_message">The networks of the scanned address(%s) and your current address(%s) are different, switch the network now?</string>
+
+    <!--add token info-->
+    <string name="add_token_dialog_title">Unknown Token</string>
+    <string name="add_token_dialog_msg">The scanned token isn\'t in the current token list, add it now?</string>
+
+    <!--token list-->
+    <string name="token_list_title">Tokens</string>
+    <string name="token_list_search_hint">Token name or symbol</string>
+
+    <!--public sale内容为空-->
+
+    <!--兑换码-->
+
+
+    <!--加载更多-->
+    <string name="brvah_loading">Loading&#8230;</string>
+    <string name="brvah_load_failed">load more failed</string>
+    <string name="brvah_load_end">No more data</string>
+
+    <!--编辑名称已经存在-->
+
+    <!--dapps-->
+
+    <string name="empty_create_wallet_title">Wallet Needed</string>
+    <string name="empty_create_wallet_msg">Need to create or import a wallet to proceed</string>
+
+    <string name="dapp_open_tips_again">Don\'t show this message again</string>
+    <!--dapps 浏览器-->
+    <string name="setting_clear_dapp">Clear DApp Cache</string>
+
+    <string name="menu_share_url">Share</string>
+    <string name="menu_copy_url">Copy link</string>
+    <string name="menu_open_url">Open in Browser</string>
+
+    <string name="web_error_title">No Response from %s</string>
+    <string name="web_error_message">Please try again later</string>
+
+    <!--dapp setting-->
+    <string name="setting_clear_dapp_title">Clear DApp Cache</string>
+    <string name="setting_clear_dapp_message">This will clear cache, cookies, and other browsing data.</string>
+
+    <!--dapp search-->
+
+    <!--tron-->
+    <string name="trx_total_band_width">Bandwidth Balance：</string>
+    <string name="trx_cost_band_width">Bandwidth Cost：</string>
+    <string name="cant_send_to_own_address">You can\'t send to your own address</string>
+    <string name="transaction_send_title">Transaction Fee:</string>
+    <string name="transaction_unconfirmed">Unconfirmed</string>
+    <string name="wallet_qr_trx_address">TRX Address</string>
+
+    <!--tron 冻结界面-->
+    <string name="trx_freeze_title">Resource</string>
+    <string name="trx_freeze_band">Bandwidth</string>
+    <string name="trx_freeze_frozen_band">Frozen Bandwidth:</string>
+    <string name="trx_freeze_band_width_avaliable">Available %d bp/%d bp</string>
+
+    <string name="trx_freeze_energy">Energy</string>
+    <string name="trx_freeze_frozen_energy">Frozen Energy:</string>
+    <string name="trx_freeze_energy_available">Available %d/%d</string>
+
+    <string name="trx_freeze_tag_freeze">Freeze</string>
+    <string name="trx_freeze_tag_unfreeze">Unfreeze</string>
+    <string name="trx_freeze_amount_hint">Freezing Amount</string>
+    <string name="trx_freeze_type">Type:</string>
+
+    <string name="trx_freeze_hint">Freeze at least 3 days</string>
+    <string name="trx_balance">Available %s TRX</string>
+    <string name="trx_unfreeze_band_time">Bandwidth Expire Date: %s</string>
+    <string name="trx_unfreeze_energy_time">Energy Expire Date: %s</string>
+
+    <string name="trx_freeze_cost_title">Bandwidth not Enough</string>
+    <string name="trx_unfreeze_cost_msg">Bandwidth not enough, need to pay %s TRX, continue?</string>
+    <string name="trx_unfreeze_end_time">Resources need to be frozen at least three days</string>
+
+    <string name="trx_not_enough_cost_msg">Not enough bandwidth or energy，pay %s TRX to do the Transaction?</string>
+
+    <string name="trx_freeze_type_band">BandWidth</string>
+    <string name="trx_freeze_type_energy">Energy</string>
+
+    <!--首页升级-->
+    <string name="guide_load_data">Initializing data&#8230;</string>
+
+    <!--导入钱包-->
+    <string name="import_symbol_type_default">Unknown</string>
+    <string name="import_symbol_type_null">Need to choose a wallet type</string>
+    <string name="import_symbol_watch_address">Address</string>
+
+    <!--导出-->
+    <string name="export_wallet_hint">The exported wallet is a HD wallet, please make sure you\'ve backed up the phase so that you can recover all the coin types(QKC, ETH, TRX, BTC and etc) through the phase. The exported private key or keystore can only recover the current coin type.</string>
+
+    <!--trc20-->
+    <string name="trx_trc20_transaction_empty">TRC20 tokens don\'t support transaction query now. You can tell the transaction status by the balance change.</string>
+
+    <!--public sale trx内容为空-->
+
+
+    <!--ssl 安全隐患-->
+    <string name="ssl_error_title">The site\'s certificate is not trusted!</string>
+    <string name="ssl_error_message">You attempted to reach %s, but the server presented a certificate issued by an entity that is not trusted. You should not proceed if you have never seen this warning before for this site.</string>
+    <string name="ssl_error_ok">Proceed anyway</string>
+    <string name="ssl_error_cancel">Back to safety</string>
+
+
+    <!--trx交易记录-->
+    <string name="tran_vote">Vote</string>
+    <string name="tran_smart">Trigger Smart Contract</string>
+    <string name="tran_freeze">Freeze</string>
+    <string name="tran_unfreeze">UnFreeze</string>
+
+
+    <!--设置界面-->
+
+    <!--登录/注册界面-->
+
+    <!--找回密码-->
+
+    <!--错误提示信息-->
+
+    <!--用户详情页-->
+    <string name="user_info_title">Bounty</string>
+
+    <!--help-->
+    <string name="help_email_tile">Email</string>
+    <string name="help_wechat_tile">Wechat ID</string>
+    <string name="help_weichat_copy_message">QPocket\'s WeChat ID \"qpocketwallet\" has been copied to clipboard, please add it to your WeChat contract to get support.</string>
+    <string name="help_open_wechat_fail">Jump to WeChat failed</string>
+
+    <!--删除钱包-->
+    <string name="delete_wallet_only_one">You must have at least one wallet</string>
+
+    <!--QKC testnet2.5-->
+    <string name="wallet_chain">Chain:</string>
+    <string name="wallet_shard">Shard:</string>
+    <string name="wallet_chain_id">Chain: %s</string>
+    <string name="wallet_balance">Balance</string>
+    <string name="wallet_transaction_switch_chain">Switch Chain/Shard</string>
+
+    <!--wallet页-->
+
+    <!--merge-->
+    <string name="merge_chain_guide">Merge all the balance in the following selected chain/shard into the primary chain/shard.</string>
+    <string name="merge_edit_chain_title">Chain/Shard(%s/%s) to Chain/Shard(%s/%s)</string>
+
+    <!--tx-->
+    <string name="wallet_transaction_address_chain_shard">%s (chain/shard: %s/%s)</string>
+    <string name="merge_chain_shard">chain/shard(%s/%s)</string>
+    <string name="transaction_balance_enough_message_switch">The balance of current chain/shard(%s/%s) is not enough, please select one of the following chain/shard to send %s instead.</string>
+    <string name="transaction_balance_enough_message_merge">Not enough balance in current chain/shard. Please merge other chain/shard\'s %s into this chain/shard.</string>
+    <!--public buy-->
+    <string name="transaction_balance_token_chain_merge">Not enough balance in the chain/shard where the token was deployed. Please merge other chain/shards\'s %s into that chain/shard.</string>
+    <string name="transaction_balance_public_merge_chain_success_message">The primary chain/shard has been switched to the chain/shard where the token was deployed. Please pull down to refresh until the balance is enough and continue the transaction.</string>
+    <!--tx send-->
+    <string name="transaction_send_chain_shard_limit">Cross chain/shard transaction: (%s/%s to %s/%s)</string>
+
+
+    <!--tx detail-->
+    <string name="transaction_more_detail"><u>More details in blockchain explorer</u></string>
+
+    <!--dapp-->
+
+    <!--dapp favorite manager-->
+
+    <!--dapp menu-->
+
+    <string name="white_tips_title">Enable WhiteList</string>
+    <string name="white_tips_msg">This allows QPocket to automatically sign transactions for the current DApp on your behalf until the DApp is closed.</string>
+
+    <!--wallet Manager-->
+
+    <!--二维码扫描-->
+    <string name="qr_coin_not_match">Receipt token does not match with transferred token, please check again.</string>
+    <string name="add_token_dialog_network_title">Unknown Token in testnet</string>
+    <string name="add_token_dialog_network_msg">You are currently in (%s). The scanned token isn\'t in your token list of (%s), add it now?</string>
+
+    <!--email 登录-->
+
+    <!--public sale qkc内容为空-->
+
+    <!--水龙头-->
+    <string name="donate_request">Request Token</string>
+
+
+    <!--market-->
+
+    <!--coin 详情页-->
+
+
+    <!--快讯-->
+
+    <!--快讯分享 目前只有中文有-->
+
+    <string name="share_wechat_success">Share Succeeded</string>
+    <string name="share_wechat_fail">Share Failed</string>
+    <string name="share_wechat_cancel">Shared Cancel</string>
+
+
+    <!--时间格式-->
+
+
+    <!--market coin 法币-->
+    <string name="settings_coin">Currency Unit</string>
+
+    <!--主页 钱包-->
+    <string name="wallet_token_title">Assets</string>
+
+    <!--转账-->
+    <string name="tx_send_all">Send All</string>
+
+    <!--翻译-->
+    <!--添加token-->
+    <string name="add_token_trx_contact">TRC10 ID Or TRC20 Contract Address</string>
+    <string name="add_token_trx_fail">Invalid TRC10 ID Or TRC20 Contract Address</string>
+
+    <!--gas 手续费-->
+    <string name="wallet_transaction_send_gas_title">Miner Fee</string>
+
+    <string name="wallet_transaction_safe">Safe Slow</string>
+    <string name="wallet_transaction_avg">Avg</string>
+    <string name="wallet_transaction_fast">Fast</string>
+
+    <string name="reload">Reload</string>
+    <string name="loading">Loading&#8230;</string>
+    <string name="wallet_transaction_fail_text">Failed to load gas free</string>
+
+    <string name="wallet_transaction_adv">Advanced</string>
+
+    <!--bounty-->
+
+    <!--钱包管理页-->
+    <string name="wallet_manager_total_assets">Total Assets</string>
+
+    <!--Wealth-->
+
+    <!--airdrop-->
+
+    <string name="qkc_name">QuarkChain</string>
+    <string name="eth_name">Ethereum</string>
+    <string name="trx_name">Tron</string>
+    <string name="no_hd_name">Other Wallets</string>
+    <string name="no_hd_name2">- Keystore/Private Key</string>
+    <string name="hd_name">HD Wallets</string>
+    <string name="hd_name2">- Phrases</string>
+
+    <!--dapp-->
+
+    <!--登录-->
+
+    <!--积分系统-->
+
+    <!--积分系统 任务失败-->
+
+    <!--任务界面-->
+
+    <!--Point历史记录-->
+
+    <!--邀请详情页-->
+
+    <!--邀请详情页 历史记录-->
+
+    <!--Rule-->
+
+
+    <!--invite qr code-->
+
+    <string name="share_facebook_uninstalled">You need to install Facebook first</string>
+    <string name="share_twitter_uninstalled">You need to install Twitter first</string>
+    <string name="share_telegram_uninstalled">You need to install Telegram first</string>
+
+    <!--注册界面-->
+
+    <!--积分claim-->
+
+    <!--邀请注册获得积分-->
+
+    <!--地址本-->
+    <string name="address_book_title">Address Book</string>
+    <string name="address_book_empty">Your address book is empty</string>
+    <string name="address_book_add">Add Address</string>
+
+    <!--地址本-->
+    <string name="address_book_network">Address Type:</string>
+    <string name="address_book_name">Name:</string>
+    <string name="address_book_address">Address:</string>
+
+    <string name="address_book_complete">Save</string>
+
+    <string name="delete_book_tips">Do you confirm to delete this address?</string>
+    <string name="add_book_success">Add address succeed</string>
+    <string name="modify_book_success">Modify address succeed</string>
+    <string name="delete_book_success">Delete address succeed</string>
+
+    <!--非中文邀请时，弹框说明-->
+
+
+    <!--合约跨片调用-->
+    <string name="transaction_balance_public_buy_chain_switch">There is not enough token balance on current Chain/Shard(%s/%s), please use the following Chain/Shard to purchase.</string>
+
+    <!--bounty-->
+
+
+    <!--BTC-->
+    <!--钱包创建-->
+    <string name="btc_change_segwit">SegWit</string>
+    <string name="btc_change_normal">Normal</string>
+    <string name="import_wallet_btc_wif_not_com">Only compressed private key can be used to support SegWit</string>
+    <!--钱包管理-->
+
+    <!--btc钱包编辑-->
+    <string name="edit_btc_switch_address">Switch Receiving Address</string>
+    <string name="edit_btc_change_segwit">Switch Address Type</string>
+
+    <!--切换btc钱包模式-->
+
+
+    <!--btc钱包收款地址管理-->
+
+    <!--钱包转账-->
+
+    <!--二维码收款界面-->
+    <string name="wallet_qr_btc_main_address">Main Address</string>
+    <string name="wallet_qr_btc_other_address">Child Address</string>
+
+    <!--UI调整-->
+    <string name="empty_no_result">No Result</string>
+
+    <!--keystore导入-->
+    <string name="keystore_type_error">The designated address type in keystore file is %s</string>
+
+
+    <!--屏幕解锁-->
+    <string name="setting_unlock">Unlock</string>
+    <string name="setting_open_app">Open QPocket</string>
+    <string name="setting_open_app_info">Unlock when re-opening QPocket after 1 minute</string>
+    <string name="setting_wallet_related">Wallet Related</string>
+    <string name="setting_wallet_related_info">Unlock when viewing wallet related information</string>
+    <string name="setting_none">None</string>
+    <string name="setting_none_info">Open QPocket without Touch Sensor unlock</string>
+
+    <string name="setting_unlock_info">You can use unlock setting only if touch sensor is enabled</string>
+
+
+    <!--冷钱包-->
+    <!--冷钱包-->
+    <!--冷钱包-->
+    <!--冷钱包 创建-->
+
+    <!--冷钱包 钱包页-->
+
+    <!--冷钱包 签名信息展示页-->
+
+    <!--冷钱包 签名信息錯誤提示-->
+
+    <!--冷钱包 merge-->
+    <string name="qkc_merge_size_error">Transactions in merge must be less than 20 due to code wallet limitation, please reduce merge</string>
+
+    <!--冷钱包 btc观察钱包-->
+    <string name="import_watch_info">You can watch any public address without divulging your private key, and you can also send transactions by using the corresponding cold wallet to do the offline signing.</string>
+
+    <!--冷钱包 多页签名-->
+
+    <!--通知-->
+
+    <!--硬件钱包-->
+    <!--硬件钱包 扫描钱包-->
+    <!--硬件钱包 链接-->
+
+    <!--硬件钱包 DApp-->
+
+
+    <!--冷钱包说明页-->
+
+    <string name="wallet_ledger_error_title">Hardware Wallet</string>
+    <string name="wallet_ledger_error_message">Hardware wallet can\'t export private key or keystore.</string>
+
+    <!--创建子钱包-->
+    <string name="create_child_account_title">Add Sub Wallet</string>
+    <string name="create_child_account_btn">Add a %s Sub Wallet</string>
+    <string name="create_child_account_tips">Note: Added sub wallet can be restored using the same phrase as other wallets that belong to the same HD wallet.</string>
+    <string name="create_child_account_success">Add Sub Wallet Succeeded</string>
+    <string name="create_child_account_fail">Add Sub Wallet Failed</string>
+    <string name="create_child_account_exist">The sub wallet whose index is %s has already existed, skip all the duplicated sub wallets to add a new sub wallet?</string>
+
+    <!--添加QKC token-->
+    <string name="add_token_qkc_contact">Native Token Name or QRC20 Address</string>
+    <string name="add_token_qkc_fail">Invalid Native Token Name or QRC20 Address</string>
+
+    <!--native token是否支持作为手续费-->
+    <string name="transaction_gas_token_not_support">The selected native token can’t be used as gas in the current chain/shard, please switch to another token and try again.</string>
+    <string name="wallet_native_transaction_gas_enough">The current native token balance isn’t enough to pay the gas fee, please switch to another token and try again.</string>
+    <string name="wallet_qrc20_transaction_gas_enough">The current native token isn’t enough to pay the gas fee, please switch to another token or make the transaction in another chain/shard.</string>
+    <string name="native_gas_token_balance_not_enough">The backup QKC for the current native token isn’t enough to pay the gas fee.</string>
+
+    <string name="wallet_merge_transaction_gas_enough">The balance of %s isn’t enough to pay the gas fee</string>
+    <string name="merge_gas_token_not_support">The balance of %s isn’t enough to pay the gas fee, please switch to anther native token and try again.</string>
+    <string name="merge_gas_token_balance_not_enough">The backup QKC for %s isn’t enough to pay the gas fee</string>
+
+    <!--通知全部已读-->
+
+    <!--删除HD钱包-->
+    <string name="delete_wallet_message">Delete the current sub wallet or all the sub wallets belong to the same HD wallet?</string>
+    <string name="delete_wallet_sub">Delete Current Sub Wallet</string>
+    <string name="delete_wallet_hd">Delete the Whole HD Wallet</string>
+</resources>

@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:fitsSystemWindows="true">
+
+    <!-- 顶部  -->
+    <com.quarkonium.qpocket.view.TopBarView
+        android:id="@+id/top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/appbar_top_height" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/wallet_setting_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top_layout"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="@dimen/dp_15"
+        android:layout_marginRight="17dp"
+        app:cardElevation="2dp"
+        card_view:cardCornerRadius="7dp"
+        card_view:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                style="@style/ButtonBackgroundInsideEffectStyle"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:paddingLeft="9dp"
+                android:paddingRight="9dp">
+
+                <com.quarkonium.qpocket.view.CircleImageView
+                    android:id="@+id/wallet_icon"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/default_wallet_icon" />
+
+                <TextView
+                    android:id="@+id/wallet_name_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/wallet_icon"
+                    android:layout_toRightOf="@+id/wallet_icon"
+                    android:ellipsize="middle"
+                    android:maxWidth="150dp"
+                    android:singleLine="true"
+                    android:textColor="@color/text_title"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/wallet_address_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/wallet_icon"
+                    android:layout_toRightOf="@+id/wallet_icon"
+                    android:ellipsize="middle"
+                    android:maxWidth="150dp"
+                    android:singleLine="true"
+                    android:textColor="@color/color_999999"
+                    android:textSize="12sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="#ebebeb" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/edit_icon_layout"
+                style="@style/ButtonBackgroundInsideEffectStyle"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:paddingLeft="9dp"
+                android:paddingRight="9dp">
+
+                <ImageView
+                    android:id="@+id/edit_icon"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/home_edit_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/edit_icon"
+                    android:gravity="center"
+                    android:text="@string/wallet_edit_setting_icon"
+                    android:textColor="@color/color_666666"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/option_go_icon" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:background="#ebebeb" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/edit_name_layout"
+                style="@style/ButtonBackgroundInsideEffectStyle"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:paddingLeft="9dp"
+                android:paddingRight="9dp">
+
+                <ImageView
+                    android:id="@+id/edit_name"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/home_edit_name" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/edit_name"
+                    android:gravity="center"
+                    android:text="@string/wallet_edit_setting_name"
+                    android:textColor="@color/color_666666"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/option_go_icon" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/wallet_export_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/wallet_setting_layout"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="@dimen/dp_15"
+        android:layout_marginRight="17dp"
+        app:cardElevation="2dp"
+        card_view:cardCornerRadius="7dp"
+        card_view:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                style="@style/ButtonBackgroundInsideEffectStyle"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:paddingLeft="9dp"
+                android:paddingRight="9dp"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/btc_switch_address_icon"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/btc_switch_address_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/btc_switch_address_icon"
+                    android:gravity="center"
+                    android:text="@string/edit_btc_switch_address"
+                    android:textColor="@color/color_666666"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/option_go_icon" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="#ebebeb" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/ButtonBackgroundInsideEffectStyle"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:paddingLeft="9dp"
+                android:paddingRight="9dp"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/btc_change_segwit_icon"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/btc_change_segwit_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/btc_change_segwit_icon"
+                    android:gravity="center"
+                    android:text="@string/edit_btc_change_segwit"
+                    android:textColor="@color/color_666666"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/btc_change_segwit_go"
+                    android:text="@string/btc_change_segwit"
+                    android:textColor="@color/color_999999"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:id="@+id/btc_change_segwit_go"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/option_go_icon" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="#ebebeb" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/export_phrase_btn"
+                style="@style/ButtonBackgroundInsideEffectStyle"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:paddingLeft="9dp"
+                android:paddingRight="9dp">
+
+                <ImageView
+                    android:id="@+id/import_phrase_icon"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/export_phrase_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/import_phrase_icon"
+                    android:gravity="center"
+                    android:text="@string/wallet_edit_export_phrase"
+                    android:textColor="@color/color_666666"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/option_go_icon" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="#ebebeb" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/export_ks_btn"
+                style="@style/ButtonBackgroundInsideEffectStyle"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:paddingLeft="9dp"
+                android:paddingRight="9dp">
+
+                <ImageView
+                    android:id="@+id/export_ks_icon"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/export_keystore_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/export_ks_icon"
+                    android:gravity="center"
+                    android:text="@string/wallet_edit_export_ks"
+                    android:textColor="@color/color_666666"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/option_go_icon" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="#ebebeb" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/export_pk_btn"
+                style="@style/ButtonBackgroundInsideEffectStyle"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:paddingLeft="9dp"
+                android:paddingRight="9dp">
+
+                <ImageView
+                    android:id="@+id/export_pk_icon"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/export_private_key_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/export_pk_icon"
+                    android:gravity="center"
+                    android:text="@string/wallet_edit_export_pk"
+                    android:textColor="@color/color_666666"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/option_go_icon" />
+
+            </RelativeLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/delete_account_action"
+        style="@style/ButtonForegroundEffectStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/wallet_export_layout"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="@dimen/dp_15"
+        android:layout_marginRight="17dp"
+        card_view:cardCornerRadius="7dp"
+        card_view:cardUseCompatPadding="true">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:text="@string/wallet_edit_delete"
+            android:textColor="#ff3233"
+            android:textSize="15sp" />
+    </androidx.cardview.widget.CardView>
+
+    <include
+        android:id="@+id/progress_layout"
+        layout="@layout/progress_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true" />
+</RelativeLayout>

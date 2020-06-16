@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardElevation="2dp"
+    card_view:cardCornerRadius="7dp"
+    card_view:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:padding="19dp">
+
+        <TextView
+            android:id="@+id/balance_pop_tip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:gravity="center_vertical"
+            android:text="@string/transaction_balance_enough_message_switch"
+            android:textColor="@color/text_title"
+            android:textSize="15sp" />
+
+        <com.quarkonium.qpocket.view.WheelView
+            android:id="@+id/pop_wheel_view"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/balance_pop_tip" />
+
+        <TextView
+            android:id="@+id/balance_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/pop_wheel_view"
+            android:layout_alignBottom="@+id/pop_wheel_view"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/pop_wheel_view"
+            android:gravity="center_vertical"
+            android:textColor="@color/text_title"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pop_wheel_view"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/negative_btn"
+                style="@style/ButtonForegroundEffectStyle"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_marginRight="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_gray_bg"
+                android:gravity="center"
+                android:minHeight="36dp"
+                android:text="@string/cancel"
+                android:textColor="#ffffff"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/positive_btn"
+                style="@style/ButtonForegroundEffectStyle"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_black_bg"
+                android:gravity="center"
+                android:minHeight="36dp"
+                android:text="@string/confirm"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

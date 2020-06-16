@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?><!--创建钱包-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tl="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:fitsSystemWindows="true">
+
+    <!-- 顶部  -->
+    <com.quarkonium.qpocket.view.TopBarView
+        android:id="@+id/top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/appbar_top_height" />
+
+    <com.quarkonium.qpocket.view.SlidingTabLayout
+        android:id="@+id/import_wallet_tab_view"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/top_layout"
+        android:layout_marginLeft="-3dp"
+        android:layout_marginTop="@dimen/dp_5"
+        android:layout_marginRight="-3dp"
+        tl:tl_indicator_color="@color/text_title"
+        tl:tl_indicator_height="1.5dp"
+        tl:tl_indicator_margin_bottom="6dp"
+        tl:tl_indicator_width_equal_title="true"
+        tl:tl_tab_space_equal="true"
+        tl:tl_textSelectColor="@color/text_title"
+        tl:tl_textUnselectColor="@color/text_hint" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/import_wallet_view_page"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/import_wallet_tab_view" />
+
+    <include
+        android:id="@+id/progress_layout"
+        layout="@layout/progress_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true" />
+</RelativeLayout>

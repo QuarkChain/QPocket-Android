@@ -1,0 +1,574 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--常量-->
+    <string name="next">Далее</string>
+    <string name="copy">Копировать</string>
+    <string name="cancel">Отменить</string>
+    <string name="confirm">Подтвердить</string>
+    <string name="done">Выпол.</string>
+    <string name="ok">Подтвердить</string>
+    <string name="password">Пароль</string>
+    <string name="update">Модернизировать</string>
+    <string name="none">Нет</string>
+    <string name="delete">Удалить</string>
+
+    <string name="network_error">Сеть ненормальная, попробуйте позже</string>
+    <!--==================================================-->
+
+
+    <!--权限-->
+    <string name="permission_declined">Не удалось получить разрешение %s, пожалуйста, активизировать «разрешение» в настройках</string>
+    <string name="permission_camera">Видеокамера</string>
+    <string name="permission_storage">Пространство памяти</string>
+
+    <!--crash 界面-->
+    <string name="tips_forcequit">Очень жать, программа вышла ненормально! Пожалуйста, нажмите «Отправить», чтобы отправить сообщение об ошибке. Спасибо!</string>
+    <string name="menu_report">Представить</string>
+
+
+    <!--创建钱包首页-->
+    <string name="create_wallet_new">Создать кошелек</string>
+    <string name="create_wallet_import">Импортировать кошелек</string>
+
+    <!--创建钱包-->
+    <string name="create_wallet_title">Создать кошелек</string>
+    <string name="create_wallet_btn">Создать</string>
+    <string name="create_wallet_password">Пароль кошелька</string>
+    <string name="create_wallet_confirm_password">Подтвердить пароль</string>
+    <string name="create_wallet_hint">Подсказка к паролю (необязательно)</string>
+
+    <!--创建钱包->密码校验-->
+    <string name="create_password_not_equals">Неправильные пароли, пожалуйста, введите заново</string>
+    <string name="create_password_fail">Не удалось создать кошелек, попробуйте еще раз</string>
+
+    <!--备份助记词提示-->
+    <string name="backup_wallet_title">Копировать мнемонику</string>
+    <string name="backup_wallet_skip">Скакать</string>
+    <string name="create_wallet_btn_start">Начать</string>
+    <string name="backup_wallet_info">Скопированная мнемоника будет единственным способом восстановить ваш кошелек. Пожалуйста, сохраните его бережно.</string>
+    <string name="backup_wallet_info_hint">Необходимо создать копию мнемоники в безопасном условии.</string>
+
+    <!--记忆助记词-->
+    <string name="backup_wallet_remember_title">Копировать мнемонику</string>
+    <string name="backup_wallet_remember_hint">Создайте копию следующей мнемоники, а на следующем шаге будет проверить правильность скопированной мнемоники.</string>
+
+    <!--确认助记词-->
+    <string name="backup_wallet_input_hint_title">Подтвердить мнемонику</string>
+    <string name="backup_wallet_input_hint">Пожалуйста, нажмите на мнемонику по ей последовательности, чтобы подтвердить правильность копии.</string>
+    <string name="backup_wallet_input_fail">Последовательность слов мнемоники неправильная</string>
+
+
+    <!--导入钱包-->
+    <string name="import_wallet_title">Импортировать кошелек</string>
+
+    <string name="import_wallet_input_phrase_hint">Введите мнемонику, разделенную пробелами</string>
+    <string name="import_wallet_input_keystore_hint">Содержание файла «Keystore» (хранилища ключей)</string>
+    <string name="import_wallet_input_private_hint">Закрытый ключ</string>
+    <string name="import_wallet_input_watch_hint">%s адрес</string>
+    <string name="import_wallet_btn">Импорт</string>
+
+    <string name="import_phrase_tip">Несколько английских слов, разделенных пробелами (обычно 12)</string>
+    <string name="import_private_tip">Комбинация из 64 букв и цифр</string>
+    <string name="import_keystore_tip">Содержимое файла хранилища ключей Keystore и пароль, используемые для шифрования файла</string>
+    <string name="create_password_tip">Установить пароль</string>
+
+    <string name="import_wallet_fail_exit">Кошелек уже существует</string>
+    <string name="import_wallet_fail_phrase">Неверная мнемоника</string>
+    <string name="import_wallet_fail_private_key">Неверный закрытый ключ</string>
+    <string name="import_wallet_fail_keystore">Неверные хранилище ключей Keystore</string>
+    <string name="import_wallet_fail_watch">Неверный %s адрес</string>
+
+    <string name="import_wallet_qkc">QuarkChain</string>
+    <string name="import_wallet_eth">Ethernet</string>
+    <string name="import_wallet_trx">Tron</string>
+
+    <!--主界面-->
+    <string name="main_menu_tag_wallet">Кошелек</string>
+    <string name="main_menu_tag_setting">настройки</string>
+    <string name="main_menu_tag_dapp">Приложение</string>
+
+    <!--主界面 钱包-->
+    <string name="wallet_shard_id">Сегмент:%s</string>
+    <string name="wallet_token_total_symbol">QKC</string>
+    <string name="wallet_copy_address_label">Адрес</string>
+
+    <!--钱包二维码-->
+    <string name="wallet_qr_address">Адрес QuarkChain</string>
+    <string name="wallet_qr_address_title">Задолженность</string>
+    <string name="wallet_qr_address_title2">Задолженность</string>
+    <string name="error_fail_generate_qr">Невозможно создать QR-код.</string>
+    <string name="wallet_qr_eth_address">Адрес Ethernet</string>
+
+    <!--扫描二维码-->
+    <string name="wallet_qr_scan_title">Сканирование кода</string>
+    <string name="wallet_qr_light_up">Осветить легким троганием</string>
+    <string name="wallet_qr_light_down">Выключить легким троганием</string>
+    <string name="wallet_qr_scan_fail">Сканирование не удалось</string>
+    <string name="wallet_qr_scan_album">Альбом</string>
+
+
+    <!--钱包管理-->
+    <string name="wallet_manager_title">Список кошельков</string>
+
+    <string name="wallet_edit_title">Управление кошельком</string>
+    <string name="wallet_edit_export_ks">Экспорт Keystore</string>
+    <string name="wallet_edit_export_pk">Экспорт ключа</string>
+    <string name="wallet_edit_export_phrase">Экспорт мнемоники</string>
+    <string name="wallet_edit_export_password">Введите пароль</string>
+    <string name="wallet_edit_delete">Удалить кошелек</string>
+    <string name="wallet_edit_setting_icon">Сменить аватар</string>
+    <string name="wallet_edit_setting_name">Изменить имя</string>
+    <string name="wallet_edit_dialog_name_title">Изменить название кошелька</string>
+    <string name="name">Название кошелька</string>
+
+    <!--钱包导出成功-->
+    <string name="wallet_export_success_phrase_pk_tip">Не скопируйте свой личный закрытый ключ в почтовый ящик, ноту или APP приложение для обмена мгновенными сообщениями.</string>
+    <string name="wallet_export_success_phrase_ky_tip">Не скопируйте Keystore в почтовый ящик, ноту или APP приложения для обмена мгновенными сообщениями.</string>
+    <string name="wallet_export_success_offline">Оффлайная передача</string>
+    <string name="wallet_export_success_offline_pk_tip">Не передавайте этот закрытый ключ через инструмент передачи по сети.</string>
+    <string name="wallet_export_success_offline_ky_tip">Не передавайте хранилище ключей Keystore через средство передачи по сети.</string>
+    <string name="wallet_export_private_key">Закрытый ключ</string>
+    <string name="wallet_export_keystore">Keystore</string>
+    <string name="copy_success">Успешная копия</string>
+
+    <!--钱包头像设置-->
+    <string name="wallet_edit_icon">Аватар кошелека</string>
+
+    <!--交易记录列表-->
+    <string name="wallet_transaction_detail_title">Детали кошелька</string>
+    <string name="wallet_transaction_total_token_title">Общий:</string>
+    <string name="wallet_transaction_merge">Сорт. Ост.</string>
+
+    <!--交易记录Item详情-->
+    <string name="wallet_transaction_detail_item_title">Детали сделки</string>
+    <string name="wallet_transaction_detail_amount">Сумма сделки:</string>
+    <string name="wallet_transaction_detail_actual">Стоимость майнера:</string>
+    <string name="wallet_transaction_from">Платежный адрес</string>
+    <string name="wallet_transaction_to">Адрес получения средств</string>
+    <string name="wallet_transaction_from2">Платежный адрес:</string>
+    <string name="wallet_transaction_to2">Адрес получения средств:</string>
+    <string name="wallet_transaction_sent">Успешная транзакция</string>
+    <string name="wallet_transaction_pending">В процессе транзакции</string>
+    <string name="wallet_transaction_sent_fail">Сделка не удалась</string>
+    <string name="wallet_transaction_receive">Успешное получение средств</string>
+    <string name="wallet_transaction_block_title">Торговый сегмент:</string>
+    <string name="wallet_transaction_tx_title">Номер торгового ордера:</string>
+
+    <!--创建发送界面-->
+    <string name="wallet_transaction_send_create_title">Платеж</string>
+    <string name="wallet_transaction_send_hint">Сумма платежа</string>
+    <string name="wallet_transaction_to_address_hint">Адрес получения средств</string>
+    <string name="wallet_transaction_send_gas">Цена Gas</string>
+    <string name="wallet_transaction_send_gas_limit">Верхний предел Gas</string>
+    <string name="wallet_transaction_send_gas_gwei">GWei</string>
+    <string name="wallet_transaction_send">Генерация сделки</string>
+    <string name="wallet_transaction_send_fail">Генерация сделки не удалась</string>
+
+    <string name="wallet_transaction_to_address_error">Неверный адрес</string>
+    <string name="wallet_transaction_to_amount_error">Неверное количество</string>
+    <string name="password_error">Неверный пароль</string>
+
+    <!--QKC转账-->
+    <string name="transaction_balance_error_title">Недостаточный остаток</string>
+    <string name="transaction_balance_error_message_merge_success_title">Успешно выполнена сортировка сегментов</string>
+    <string name="transaction_balance_error_message_merge_success_message">Успешно выполнена сортировка сегментов. Пожалуйста, потяните вниз позже, чтобы проверить изменение остатка и начать сделку снова.</string>
+    <string name="transaction_balance_token_amount_error">Недостаточный остаток на токене</string>
+    <string name="transaction_balance_token_merge_success_title">Успешно выполнена сортировка сегментов</string>
+    <string name="transaction_balance_token_merge_success_message">После успешной сегментации, блок был переключен в сегмент токена, пожалуйста, потяните страницу вниз позже, чтобы проверить изменение остатка счета, а затем снова инициируйте сделку.</string>
+    <string name="transaction_balance_token_merge_success_message_nochange">Успешно выполнена сортировка сегментов. Пожалуйста, потяните вниз позже, чтобы проверить изменение остатка и начать сделку снова.</string>
+    <string name="transaction_balance_token_switch_title">Сделка отправлена</string>
+    <string name="transaction_balance_public_switch_success_message">Сделка была отправлена, сегмент был переключен на сегмент токена, пожалуйста, потяните страницу позже, чтобы проверить изменение остатка, а затем снова инициируйте транзакцию.</string>
+    <string name="transaction_balance_public_switch_success_message_nochange">Сделка была отправлена, пожалуйста, потяните ее позже, чтобы посмотреть изменение остатка и начать сделку заново.</string>
+    <string name="transaction_balance_public_merge_success_message_nochange">Успешно выполнена сортировка сегментов. Пожалуйста, потяните вниз позже, чтобы проверить изменение остатка и начать сделку снова.</string>
+    <string name="wallet_transaction_send_from">Платеж</string>
+    <string name="wallet_transaction_send_to">Задолженность</string>
+    <string name="wallet_transaction_send_title">Подтвердить сделку</string>
+    <string name="wallet_transaction_send_amount_title">Сумма транзакции:</string>
+    <string name="wallet_transaction_send_max_title">Лимит платы за майнера:</string>
+    <string name="wallet_transaction_send_hash_title">Подпись сделки:</string>
+    <string name="transaction_send_shard_limit">Данная сделка является межсегментной сделкой от сегмента %s до сегмента %s</string>
+    <string name="transaction_send_time">(Время подтверждения составляет около 90 секунд)</string>
+    <string name="transaction_send_action">Отправить сделку</string>
+    <string name="transaction_send_fail">Сделка не удалась</string>
+    <string name="transaction_send_success">Сделка отправлена</string>
+    <string name="wallet_transaction_send_token_max_title">Лимит платы за майнера:</string>
+    <string name="token_detail_basic">Основная информация</string>
+    <string name="token_detail_token_title">Личный баланс:</string>
+    <string name="token_detail_available_title">На продажу:</string>
+    <string name="token_detail_website">Официальный сайт:</string>
+    <string name="token_detail_address">Умный контракт:</string>
+    <string name="public_sale_start_title">Время начала:</string>
+    <string name="public_sale_end_title">Время окончания:</string>
+    <string name="public_sale_buy">Покупка</string>
+    <string name="public_sale_contract_address_title">Адрес публичного договора</string>
+    <string name="wallet_public_transaction_send_hint">Количество покупки</string>
+    <string name="wallet_public_transaction_price_hint">Потраченная сумма</string>
+    <string name="public_buy_success">Успешная покупка</string>
+    <string name="public_send_success">Успешная транзакция</string>
+    <string name="merge_title">Сорт. Ост.</string>
+    <string name="merge_totalFee">Общая сумма переведенных средств:</string>
+    <string name="merge_from">Из счёта:</string>
+    <string name="merge_to">В счёт:</string>
+    <string name="merge_gasPrice">Баланс: %s </string>
+    <string name="merge_gasLimit">У майнера: %s </string>
+    <string name="merge_amount">Сумма сделки:</string>
+    <string name="merge_send">Отправить сделку</string>
+    <string name="merge_send_fail">Не удалось выполнить транзакцию у %s</string>
+    <string name="merge_edit_gas_price">Цена Gas:</string>
+    <string name="merge_edit_gas_limit">Предел Gas:</string>
+    <string name="settings_language">Язык</string>
+    <string name="settings_help_title">Помощь</string>
+    <string name="settings_terms_of_use_title">Условия обслуживания</string>
+    <string name="settings_privacy_police">Конфиденциа.</string>
+
+    <string name="settings_about_title">Про</string>
+    <string name="settings_about_twitter">Twitter</string>
+    <string name="settings_about_weibo">Weibo</string>
+    <string name="settings_about_telegram">Telegram</string>
+    <string name="settings_about_medium">Medium</string>
+
+    <string name="settings_languages_title">Переключить язык</string>
+    <string name="settings_languages_save">Сохранить</string>
+    <string name="wallet_watch_error_title">Наблюдать кошелек</string>
+    <string name="wallet_watch_error_message">Смотровой кошелек не может экспортировать личный ключ или Keystore.</string>
+    <string name="wallet_backup_title">Кошелек не резервирован</string>
+    <string name="wallet_backup_error_message">Текущий кошелек еще не был скопирован, сейчас же копировать его?</string>
+    <string name="wallet_edit_change_name_success">Изменено успешно</string>
+    <string name="send_email_title">Поддержка клиентов</string>
+    <string name="no_email_title">Аккаунт почты не установлен</string>
+    <string name="no_email_message">Требуется приложение и надо настроить почтовый аккаунт ля отправки электронной почты.</string>
+    <string name="password_low_title">Пароль слишком прост</string>
+    <string name="password_medium_title">Низкая надежность пароля</string>
+    <string name="password_easy_message">Пароли высокой прочности трудно взломать, поэтому рекомендуется использовать комбинацию прописных и строчных букв, цифр и специальных символов для установки пароля.</string>
+    <string name="password_high_title">Пароль средней надежности</string>
+    <string name="password_high_good_title">Пароль высокой надежности</string>
+    <string name="check_update_new">Найдена новая версия</string>
+    <string name="check_update_title">Проверить обновление</string>
+    <string name="check_update_up_to_date">Уже последняя версия</string>
+    <string name="delete_wallet_amount_title">Удалить кошелек</string>
+    <string name="delete_wallet_amount_message">Баланс на счете в кошельке не был очищен, подтвердите удаление?</string>
+    <string name="finger_touch">Отпечаток пальца</string>
+    <string name="finger_open_tip_title">Включить отпечаток пальца</string>
+    <string name="finger_open_tip_msg">Отпечатки пальцев можно использовать вместо паролей для проверки вашей личности при входе в систему и торговле подписями. Включить эту функцию сейчас? Вы также можете вручную включить её позже на странице настроек.</string>
+    <string name="finger_open_success">Успешно включен</string>
+    <string name="finger_open_fail">Не удалось включить</string>
+    <string name="finger_touch_title">Пожалуйста, введите ваш отпечаток пальца</string>
+    <string name="finger_touch_msg">Используйте отпечаток пальца, чтобы авторизовать сделку, подписать или экспортировать кошелек</string>
+    <string name="finger_touch_again">Попробуй еще раз</string>
+    <string name="finger_touch_password">Введите пароль</string>
+    <string name="guide_button_start">Начать сейчас</string>
+    <string name="guide_button_finish">Совершено</string>
+    <string name="guide_msg_text1">Добро пожаловать в цепочку кварков (QuarkChain)! Мы подготовили несколько советов, которые помогут вам быстро начать работу.</string>
+    <string name="guide_get_qkc">Получить QKC</string>
+    <string name="password_tryAfter">Слишком много ошибок пароля, повторите попытку через %d секунд.</string>
+    <string name="add_token_title">Добавить токен</string>
+    <string name="add_token_button_detect">Проверка умных контрактов</string>
+    <string name="add_token_name">Название:</string>
+    <string name="add_token_symbol">Знак:</string>
+    <string name="add_token_decimal">Точность:</string>
+    <string name="add_token_contact">Адрес договора</string>
+    <string name="add_token_fail">Неверный адрес контракта ERC20</string>
+    <string name="lock_title">Возбуждение подтверждения кликом</string>
+    <string name="lock_wallet_name">Введите пароль для %s</string>
+    <string name="phrase_language_en">Английский</string>
+    <string name="phrase_language_cn">Упрощенный китайский</string>
+    <string name="phrase_language_tw">Традиционный китайский</string>
+    <string name="settings_network">Переключить сеть</string>
+    <string name="switch_network_title">Сеть по адресу получения средств отличается от текущей сети</string>
+    <string name="switch_network_message">Адрес (%s), распознанный сканированием кодов, не находится в той же сети, что и адрес (%s) вашего текущего кошелька. Переключить ли его на другую сеть?</string>
+    <string name="add_token_dialog_title">Неизвестный токен</string>
+    <string name="add_token_dialog_msg">Токены, распознанные сканированием кодов, отсутствуют в текущем списке паролей. Сейчас добавить их?</string>
+    <string name="token_list_title">Токен</string>
+    <string name="token_list_search_hint">Название или знак токена</string>
+
+    <!--public sale内容为空-->
+
+    <!--兑换码-->
+
+    <!--加载更多-->
+    <string name="brvah_loading">Загрузка в &#8230;</string>
+    <string name="brvah_load_failed">Загрузка не удалась, пожалуйста, щелкните это для повторной попытки.</string>
+    <string name="brvah_load_end">Нет больше данных</string>
+    <string name="empty_create_wallet_title">Кошелек не создан</string>
+    <string name="empty_create_wallet_msg">Для продолжения необходимо создать или импортировать кошелек</string>
+    <string name="dapp_open_tips_again">Больше не проверить в следующий раз</string>
+    <string name="setting_clear_dapp">Очистить кэш DApp</string>
+    <string name="menu_share_url">Пересылка</string>
+    <string name="menu_copy_url">Скопировать ссылку</string>
+    <string name="menu_open_url">Открыть в браузере</string>
+    <string name="web_error_title">%s не отвечает</string>
+    <string name="web_error_message">Пожалуйста, попробуйте позже</string>
+    <string name="setting_clear_dapp_title">Очистить кэш DApp</string>
+    <string name="setting_clear_dapp_message">По этой операции очистится кэш, куки и другие данные просмотра.</string>
+    <string name="trx_total_band_width">Текущая ширина полосы:</string>
+    <string name="trx_cost_band_width">Стоимость за ширину полосы:</string>
+    <string name="cant_send_to_own_address">Адреса отправки и получения не могут быть одинаковыми</string>
+    <string name="transaction_send_title">Оплата на майнеров:</string>
+    <string name="transaction_unconfirmed">Не подтверждено</string>
+    <string name="wallet_qr_trx_address">Адрес Трон (TRON)</string>
+    <string name="trx_freeze_title">Ресурсы</string>
+    <string name="trx_freeze_band">Ширина полосы</string>
+    <string name="trx_freeze_frozen_band">Замороженная ширина полосы:</string>
+    <string name="trx_freeze_band_width_avaliable">Доступно %d bp /%d bp</string>
+    <string name="trx_freeze_energy">Энергия</string>
+    <string name="trx_freeze_frozen_energy">Замороженная энергия:</string>
+    <string name="trx_freeze_energy_available">Доступно %d /%d</string>
+    <string name="trx_freeze_tag_freeze">Замерзать</string>
+    <string name="trx_freeze_tag_unfreeze">Освободить</string>
+    <string name="trx_freeze_amount_hint">Количество замороженных</string>
+    <string name="trx_freeze_type">Тип:</string>
+    <string name="trx_freeze_hint">Заморозить не менее 3 дней</string>
+    <string name="trx_balance">Доступно %s TRX</string>
+    <string name="trx_unfreeze_band_time">Ширина полосы истекла: %s</string>
+    <string name="trx_unfreeze_energy_time">Энергия истекла: %s</string>
+    <string name="trx_freeze_cost_title">Недостаточная доступная ширина полосы</string>
+    <string name="trx_unfreeze_cost_msg">Ширина полосы, необходимая для размораживания, недостаточна. Для завершения операции размораживания необходимо заплатить %s TRX. Продолжить?</string>
+    <string name="trx_unfreeze_end_time">Ресурсы необходимо размораживать как минимум через три дня после замораживания.</string>
+    <string name="trx_not_enough_cost_msg">Недостаточная пропускная способность или энергия, для этой сделки должны заплатить %s TRX, продолжить?</string>
+    <string name="trx_freeze_type_band">Ширина полосы</string>
+    <string name="trx_freeze_type_energy">Энергия</string>
+
+    <!--首页升级-->
+    <string name="guide_load_data">Загрузка данных &#8230;</string>
+    <string name="import_symbol_type_default">Неизвестно</string>
+    <string name="import_symbol_type_null">Нужно выбрать тип кошелька для импорта</string>
+    <string name="import_symbol_watch_address">Адрес</string>
+    <string name="export_wallet_hint">Текущий кошелек - это HD-кошелек. Убедитесь, что для мнемоники кошелька было выполнено резервное копирование. С помощью мнемоники можно восстановить все виды валют (QKC, ETH, TRX, BTC и другие валюты). Восстановить можно только кошельки текущей валюты, когда скопированы только закрытый ключ или хранилище ключей Keystore.</string>
+    <string name="trx_trc20_transaction_empty">Для жетонов TRC20 пока не поддерживается функция запроса сделок. Пожалуйста, оцените возможность успешной транзакции по изменению баланса токена.</string>
+    <string name="ssl_error_title">Сертификат сайта, который вы посещаете, недействителен</string>
+    <string name="ssl_error_message">Вы пытаетесь получить доступ к сайту %s, сертификат которого не выдан доверенным центром сертификации CA. Если вы никогда не видели такого предупреждения раньше, мы рекомендуем вам не продолжать посещать.</string>
+    <string name="ssl_error_ok">Все еще продолжаю</string>
+    <string name="ssl_error_cancel">Отменить доступ</string>
+    <string name="tran_vote">Голосовать</string>
+    <string name="tran_smart">Взаимодействие умных контрактов</string>
+    <string name="tran_freeze">Замерзать</string>
+    <string name="tran_unfreeze">Освободить</string>
+    <string name="user_info_title">Баунти-план</string>
+    <string name="help_email_tile">Почта</string>
+    <string name="help_wechat_tile">ПоддержкаWCh</string>
+    <string name="help_weichat_copy_message">Аккаунт обслуживания клиентов qpocketwallet в «WeChat» был скопирован в буфер обмена, после чего перейдите в «WeChat», добавьте его в друзья для получения онлайн-поддержки.</string>
+    <string name="help_open_wechat_fail">Перейти к «WeChat» не удалось</string>
+    <string name="delete_wallet_only_one">Вам нужен как минимум один кошелек</string>
+    <string name="wallet_chain">Цепочка:</string>
+    <string name="wallet_shard">Сегмент:</string>
+    <string name="wallet_chain_id">Цепочка: %s</string>
+    <string name="wallet_balance">Остаток</string>
+    <string name="wallet_transaction_switch_chain">Выбрать цеп./сег.</string>
+    <string name="merge_chain_guide">Перенести все QKC в выбранной цепочке / сегменте в текущую цепочку / сегмент.</string>
+    <string name="merge_edit_chain_title">От цепочки / сегмента (%s /%s) до цепочки / сегмента (%s /%s)</string>
+    <string name="wallet_transaction_address_chain_shard">%s (цепочка / сегмент: %s /%s)</string>
+    <string name="merge_chain_shard">Цепочка / сегмент (%s /%s)</string>
+    <string name="transaction_balance_enough_message_switch">Остаток на счете текущей цепочки / сегмента (%s /%s) недостаточен. Пожалуйста, выберите следующий сегмент %s с достаточным балансом на транзакцию.</string>
+    <string name="transaction_balance_enough_message_merge">Остаток текущей цепочки / сегмента недостаточен. Сортируйте остаток других цепочек / фрагментов %s в текущую цепочку / сегмент.</string>
+    <string name="transaction_balance_token_chain_merge">Остаток цепочки / сегмента токена недостаточен. Отсортируйте остаток других цепей / сегментов %s в указанную цепочку / сегмент.</string>
+    <string name="transaction_balance_public_merge_chain_success_message">Когда успешно выполнена сортировка остатка и переключено на цепочку / сегмент токена, потяните страницу вниз позже, чтобы проверить изменение остаток, а затем снова начните сделку.</string>
+    <string name="transaction_send_chain_shard_limit">Данная сделка является сделкой между несколькими цепочками / сегментами: (от%s /%s до%s /%s)</string>
+
+
+    <!--tx detail-->
+    <string name="transaction_more_detail"><u>Посмотреть в браузере блокчейна</u></string>
+
+    <!--dapp-->
+
+    <!--dapp favorite manager-->
+    <string name="white_tips_title">Включить автоматическую подпись</string>
+    <string name="white_tips_msg">QPocket автоматически подпишет следующую сделку для текущего приложения и больше не будет запрашивать у вас авторизацию и подтверждение сделок, пока вы не закроете приложение.</string>
+    <string name="qr_coin_not_match">Текущая валюта получаемых средстсв по текущему QR-коду не соответствует валюте транзакции, пожалуйста, проверьте.</string>
+    <string name="add_token_dialog_network_title">Неизвестная жетонов в испытательной сети</string>
+    <string name="add_token_dialog_network_msg">Вы находитесь в испытательной сети (%s). Отсканированный жетон отсутствует в списке цифровых валют текущей испытательной сети (%s), добавить?</string>
+    <string name="donate_request">На тест жетонов</string>
+
+    <!--coin 详情页-->
+
+    <string name="share_wechat_success">Пересылка выполнена успешно</string>
+    <string name="share_wechat_fail">Пересылаться не удалось</string>
+    <string name="share_wechat_cancel">Отменить обмен</string>
+    <string name="settings_coin">Денежная единица</string>
+    <string name="wallet_token_title">Активы</string>
+    <string name="tx_send_all">Отправлены</string>
+    <string name="add_token_trx_contact">Адреса договоров TRC10 ID или TRC20</string>
+    <string name="add_token_trx_fail">Неверный адрес договора TRC10 или  TRC20</string>
+    <string name="wallet_transaction_send_gas_title">Комиссия за\nсделки</string>
+    <string name="wallet_transaction_safe">Низкое</string>
+    <string name="wallet_transaction_avg">Среднее</string>
+    <string name="wallet_transaction_fast">Высокое</string>
+    <string name="reload">Перезагружать</string>
+    <string name="wallet_transaction_fail_text">Не удалось загрузить плату на майнера</string>
+    <string name="wallet_transaction_adv">Верхнее</string>
+    <string name="loading">Загрузка в &#8230;</string>
+
+
+    <!--bounty-->
+
+    <!--钱包管理页-->
+    <string name="wallet_manager_total_assets">Всего активов</string>
+
+    <!--airdrop-->
+
+    <string name="qkc_name">QuarkChain (Кварковая цепочка)</string>
+    <string name="eth_name">Ethernet</string>
+    <string name="trx_name">Tron</string>
+    <string name="no_hd_name">Другие кошельки</string>
+    <string name="no_hd_name2">- Keystore/Закрытый ключ</string>
+    <string name="hd_name">HD кошелек</string>
+    <string name="hd_name2">- Мнемоника</string>
+
+    <!--dapp-->
+
+
+    <!--登录-->
+
+    <!--积分系统-->
+
+    <!--积分系统 任务失败-->
+
+    <!--任务界面-->
+
+    <!--Point历史记录-->
+
+    <!--邀请详情页-->
+
+    <!--邀请详情页 历史记录-->
+
+    <!--Rule-->
+
+
+    <!--invite qr code-->
+
+    <string name="share_facebook_uninstalled">You need to install Facebook first</string>
+    <string name="share_twitter_uninstalled">You need to install Twitter first</string>
+    <string name="share_telegram_uninstalled">You need to install Telegram first</string>
+
+    <!--注册界面-->
+
+    <!--积分claim-->
+
+    <!--邀请注册获得积分-->
+
+    <!--地址本-->
+    <string name="address_book_title">Адрескнига</string>
+    <string name="address_book_empty">Пустота в текущей книжке</string>
+    <string name="address_book_add">Добавить адрес</string>
+    <string name="address_book_network">Тип адреса:</string>
+    <string name="address_book_name">Название кошелька:</string>
+    <string name="address_book_address">Адрес кошелька:</string>
+    <string name="address_book_complete">Сохранить</string>
+    <string name="delete_book_tips">Подтвердить удаление адреса?</string>
+    <string name="add_book_success">Успешно добавлен адрес </string>
+    <string name="modify_book_success">Успешно изменен адрес </string>
+    <string name="delete_book_success">Успешно удален адрес</string>
+    <!--非中文邀请时，弹框说明-->
+
+    <!--合约跨片调用-->
+    <string name="transaction_balance_public_buy_chain_switch">Остаток этой цепочки / сегмента (%s /%s) недостаточен. Выберите цепочку / сегмент на покупку. </string>
+
+
+    <!--bounty-->
+
+
+    <!--BTC-->
+    <!--钱包创建-->
+    <string name="btc_change_segwit">SegWit</string>
+    <string name="btc_change_normal">Обычный</string>
+    <string name="import_wallet_btc_wif_not_com">SegWit поддерживает сжатые закрытые ключи</string>
+    <!--钱包管理-->
+
+    <!--btc钱包编辑-->
+    <string name="edit_btc_switch_address">Изменить адрес суб-квитации</string>
+    <string name="edit_btc_change_segwit">Изменить тип адреса</string>
+
+    <!--切换btc钱包模式-->
+
+
+    <!--btc钱包收款地址管理-->
+
+    <!--钱包转账-->
+
+    <!--二维码收款界面-->
+    <string name="wallet_qr_btc_main_address">Основной адрес</string>
+    <string name="wallet_qr_btc_other_address">Суб-адрес</string>
+
+    <!--UI调整-->
+    <string name="empty_no_result">Нет результата</string>
+
+    <!--keystore导入-->
+    <string name="keystore_type_error">Тип адреса в хранилище ключей: %s</string>
+
+    <!--屏幕解锁-->
+    <string name="setting_unlock">Разблокировка</string>
+    <string name="setting_open_app">В QPocket</string>
+    <string name="setting_open_app_info">Надо разблокировать через 1 минуту</string>
+    <string name="setting_wallet_related">На страницу кошелька</string>
+    <string name="setting_wallet_related_info">Надо разблокировать при просмотре страниц кошелька</string>
+    <string name="setting_none">Защиты нет</string>
+    <string name="setting_none_info">Для входа в QPocket не требуется проверка</string>
+
+    <string name="setting_unlock_info">Настройки разблокировки возможны при активизации отпечатка пальца</string>
+
+
+    <!--冷钱包-->
+    <!--冷钱包-->
+    <!--冷钱包-->
+    <!--冷钱包 创建-->
+
+    <!--冷钱包 钱包页-->
+
+    <!--冷钱包 签名信息展示页-->
+
+    <!--冷钱包 签名信息錯誤提示-->
+
+    <!--冷钱包 merge-->
+    <string name="qkc_merge_size_error">По ограничению холодным кошельком, остаток на балансе не может превышать 20, уменьшите количество сделок.</string>
+
+    <!--冷钱包 btc观察钱包-->
+    <string name="import_watch_info">Вы можете просмотреть баланс и историю транзакций, импортировав только адрес кошелька, или подать транзакции совместно с холодным кошельком.</string>
+
+    <!--冷钱包 多页签名-->
+
+
+    <!--通知-->
+
+
+    <!--硬件钱包-->
+    <!--硬件钱包 扫描钱包-->
+    <!--硬件钱包 链接-->
+
+    <!--硬件钱包 DApp-->
+
+
+    <!--冷钱包说明页-->
+
+    <string name="wallet_ledger_error_title">Аппаратное обеспечение кошелька</string>
+    <string name="wallet_ledger_error_message">Аппаратное обеспечение кошелька не может экспортировать личный ключ или Keystore.</string>
+
+
+    <!--创建子钱包-->
+    <string name="create_child_account_title">Добавьте дочерние кошельки</string>
+    <string name="create_child_account_btn">Добавьте дочерний кошелек %s</string>
+    <string name="create_child_account_tips">Подсказывание: все добавленные дочерние кошельки могут восстановиться совместно с вспоминающими словами для них.</string>
+    <string name="create_child_account_success">Успешно добавлены дочерние кошельки</string>
+    <string name="create_child_account_fail">Неудачно добавлено дочерних кошельков</string>
+    <string name="create_child_account_exist">Дочерний кошелек %s существует, добавите новый, пропустя существующие дочерние кошельки?</string>
+
+    <!--添加QKC token-->
+    <string name="add_token_qkc_contact"><font size="11">Название оригинальных койнов，адрес QRC20</font></string>
+    <string name="add_token_qkc_fail">Название недействующих койнов или адресов договора QRC20</string>
+
+    <!--native token是否支持作为手续费-->
+    <string name="transaction_gas_token_not_support">Выбранные вами  оригинальные койны не поддерживаются для платежа расходов рудников в текущей цепи / сегменте, переключите к другим оригинальным койнам.</string>
+    <string name="wallet_native_transaction_gas_enough">Остаток выбранного оригинального койна не достаточен для платежа расходов рудников, переключите к другим оригинальным койнам.</string>
+    <string name="wallet_qrc20_transaction_gas_enough">Остаток выбранного оригинального койна не достаточен для платежа расходов рудников, переключите к другим оригинальным койнам или другим секциям / цепям для платежа.</string>
+    <string name="native_gas_token_balance_not_enough">Резерв текущего оригинального койна не достаточен для платежа комиссионного сбора текущей сделки.</string>
+
+    <string name="wallet_merge_transaction_gas_enough">Остаток %s не достаточен для платежа расходов рудников</string>
+    <string name="merge_gas_token_not_support">Остаток %s не достаточен для платежа расходов рудников, переключите к другим оригинальным койнам с достаточной суммой.</string>
+    <string name="merge_gas_token_balance_not_enough">Остаток %s не достаточен для платежа комиссионного сбора текущей сделки.</string>
+
+    <!--通知全部已读-->
+
+    <!--删除HD钱包-->
+    <string name="delete_wallet_message">Удалите текущий или все в кошельке HD?</string>
+    <string name="delete_wallet_sub">Удалить текущий</string>
+    <string name="delete_wallet_hd">Удалить все кошельки HD</string>
+</resources>

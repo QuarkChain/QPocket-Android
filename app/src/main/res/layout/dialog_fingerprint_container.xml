@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (C) 2015 The Android Open Source Project
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~      http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License
+  -->
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardElevation="2dp"
+    card_view:cardCornerRadius="7dp"
+    card_view:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:id="@+id/fingerprint_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:clickable="true"
+        android:orientation="vertical"
+        android:paddingTop="20dp"
+        android:paddingBottom="18dp">
+
+        <TextView
+            android:id="@+id/fingerprint_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:text="@string/finger_touch_title"
+            android:textColor="@color/text_title"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="20dp"
+            android:text="@string/finger_touch_msg"
+            android:textColor="@color/text_title"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="11dp"
+            android:layout_marginRight="11dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/negative_btn"
+                style="@style/ButtonForegroundEffectStyle"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_gray_bg"
+                android:gravity="center"
+                android:minHeight="36dp"
+                android:singleLine="true"
+                android:text="@string/cancel"
+                android:textColor="#ffffff"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/positive_btn"
+                style="@style/ButtonForegroundEffectStyle"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="7dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_black_bg"
+                android:ellipsize="middle"
+                android:gravity="center"
+                android:minHeight="36dp"
+                android:singleLine="true"
+                android:text="@string/finger_touch_password"
+                android:textColor="#ffffff"
+                android:textSize="13sp"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/password_inner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:clickable="true"
+        android:orientation="vertical"
+        android:paddingLeft="15dp"
+        android:paddingTop="33dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="18dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/dialog_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:text="@string/wallet_edit_export_password"
+            android:textColor="@color/text_title"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginBottom="30dp">
+
+            <EditText
+                android:id="@+id/personal_nick_name"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@null"
+                android:drawableBottom="@drawable/edit_text_bg"
+                android:drawablePadding="2dp"
+                android:gravity="bottom|left"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                android:maxLength="20"
+                android:singleLine="true"
+                android:textColor="@color/text_title"
+                android:textColorHint="#d6d6d6"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/show_pd"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="4dp"
+                android:padding="11dp"
+                android:src="@drawable/hide_password" />
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/password_negative_btn"
+                style="@style/ButtonForegroundEffectStyle"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_marginRight="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_gray_bg"
+                android:gravity="center"
+                android:minHeight="36dp"
+                android:text="@string/cancel"
+                android:textColor="#ffffff"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/password_positive_btn"
+                style="@style/ButtonForegroundEffectStyle"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_black_bg"
+                android:gravity="center"
+                android:minHeight="36dp"
+                android:text="@string/confirm"
+                android:textColor="#ffffff"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

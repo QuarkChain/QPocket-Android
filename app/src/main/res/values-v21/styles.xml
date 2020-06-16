@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="ButtonBackgroundEffectStyle">
+        <item name="android:background">?attr/selectableItemBackgroundBorderless</item>
+    </style>
+
+    <style name="ButtonBackgroundInsideEffectStyle">
+        <item name="android:background">?attr/selectableItemBackground</item>
+    </style>
+
+    <style name="ButtonForegroundEffectStyle">
+        <item name="android:foreground">?attr/selectableItemBackgroundBorderless</item>
+    </style>
+
+</resources>

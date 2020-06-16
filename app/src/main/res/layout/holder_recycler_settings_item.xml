@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/ButtonBackgroundInsideEffectStyle"
+    android:layout_width="match_parent"
+    android:layout_height="56dp"
+    android:paddingLeft="19dp"
+    android:paddingRight="19dp">
+
+    <ImageView
+        android:id="@+id/settings_img"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:layout_centerVertical="true" />
+
+    <TextView
+        android:id="@+id/settings_name"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignTop="@+id/settings_img"
+        android:layout_alignBottom="@+id/settings_img"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@+id/settings_img"
+        android:gravity="center_vertical"
+        android:singleLine="true"
+        android:textColor="@color/color_666666"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/settings_state"
+        android:layout_width="23dp"
+        android:layout_height="23dp"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="15dp"
+        android:layout_toLeftOf="@+id/settings_right_img"
+        android:background="@drawable/setting_state_bg"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/settings_right_img"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/option_go_icon" />
+
+    <com.quarkonium.qpocket.view.SwitchButton
+        android:id="@+id/settings_right_toogle"
+        android:layout_width="48dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone"
+        app:sb_checked_color="@color/text_title"
+        app:sb_show_indicator="false" />
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_alignParentBottom="true"
+        android:background="#ebebeb"
+        android:paddingLeft="19dp"
+        android:paddingRight="19dp" />
+</RelativeLayout>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--创建钱包首页-->
+    <array name="create_wallet_titles">
+        <item>All-in-One Crypto Wallet</item>
+        <item>Multiple Crypto Assets</item>
+        <item>Private &#38; Secure</item>
+    </array>
+    <array name="create_wallet_messages">
+        <item>Simple, secure and fully functional portal to blockchain</item>
+        <item>Support QKC, ETH, BTC and TRX now. More to come!</item>
+        <item>Private keys never leave the device</item>
+    </array>
+
+    <!--导入钱包-->
+    <array name="import_wallet_tag">
+        <item>Phrase</item>
+        <item>Private Key</item>
+        <item>Keystore</item>
+        <item>Watch</item>
+    </array>
+    <array name="import_wallet_tag_cold">
+        <item>Phrase</item>
+        <item>Private Key</item>
+        <item>Keystore</item>
+    </array>
+
+    <!--交易记录列表-->
+    <array name="wallet_transaction_tag">
+        <item>All</item>
+        <item>Sent</item>
+        <item>Received</item>
+        <item>Failed</item>
+    </array>
+
+    <!--本地erc20 token详情界面-->
+    <array name="public_sale_transaction_tag">
+        <item>All</item>
+        <item>Buy</item>
+        <item>Transfer</item>
+        <item>Failed</item>
+    </array>
+
+    <!--Settings 语言-->
+    <array name="settings_languages">
+        <item>System Default</item>
+        <item>English</item>
+        <item>简体中文</item>
+        <item>한국어</item>
+        <item>Bahasa Indonesia</item>
+        <item>Tiếng Việt</item>
+        <item>Pусский</item>
+    </array>
+
+    <array name="trx_freeze_tags">
+        <item>@string/trx_freeze_tag_freeze</item>
+        <item>@string/trx_freeze_tag_unfreeze</item>
+    </array>
+
+    <!--dapp-->
+
+    <!--dapp qkc-->
+
+    <!--market-->
+
+    <!--market coin 法币-->
+    <array name="setings_coin_all_country">
+        <item>BTC - Bitcoin</item>
+        <item>ETH - Ethereum</item>
+        <item>USD - US Dollar</item>
+        <item>CNY - Chinese Yuan</item>
+        <item>EUR - Euro</item>
+        <item>KRW - South Korean Won</item>
+        <item>IDR - Indonesian Rupiah</item>
+        <item>INR - Indian Rupee</item>
+        <item>RUB - Russian Ruble</item>
+        <item>UAH - Ukrainian Hryvnia</item>
+        <item>VND - Vietnamese Dong</item>
+        <item>AED - United Arad Emirates Dirham</item>
+        <item>ARS - Argentine Peso</item>
+        <item>AUD - Australian Dollar</item>
+        <item>BDT - Bangladeshi Taka</item>
+        <item>BHD - Bahraini Dinar</item>
+        <item>BMD - Bermudan Dollar</item>
+        <item>BRL - Brazilian Real</item>
+        <item>CAD - Canadian Dollar</item>
+        <item>CHF - Swiss Franc</item>
+        <item>CLP - Chilean Peso</item>
+        <item>CZK - Czech Koruna</item>
+        <item>DKK - Danish Krone</item>
+        <item>GBP - British Pound</item>
+        <item>HKD - Hong Kong Dollar</item>
+        <item>HUF - Hungarian Forint</item>
+        <item>ILS - Israeli New Shekel</item>
+        <item>JPY - Japanese Yen</item>
+        <item>KWD - Kuwaiti Dinar</item>
+        <item>LKR - Sri Lankan Rupee</item>
+        <item>MMK - Myanmar Kyat</item>
+        <item>MXN - Mexican Peso</item>
+        <item>MYR - Malaysian Ringgit</item>
+        <item>NOK - Norwegian Krone</item>
+        <item>NZD - New Zealand Dollar</item>
+        <item>PHP - Philippine Piso</item>
+        <item>PKR - Pakistani Rupee</item>
+        <item>PLN - Polish Zloty</item>
+        <item>SAR - Saudi Riyal</item>
+        <item>SEK - Swedish Krona</item>
+        <item>SGD - Singapore Dollar</item>
+        <item>THB - Thai Baht</item>
+        <item>TRY - Turkish Lira</item>
+        <item>TWD - New Taiwan Dollar</item>
+        <item>VEF - Venezuelan Bolivar</item>
+        <item>ZAR - South African Rand</item>
+    </array>
+
+</resources>

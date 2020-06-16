@@ -1,0 +1,561 @@
+<resources>
+    <!--常量-->
+    <string name="next">Bước tiếp theo</string>
+    <string name="copy">Sao chép</string>
+    <string name="cancel">Hủy</string>
+    <string name="confirm">Xác nhận</string>
+    <string name="done">Hoàn thành</string>
+    <string name="ok">Xác nhận</string>
+    <string name="password">Mật khẩu</string>
+    <string name="update">Nâng cấp</string>
+    <string name="none">Không có</string>
+    <string name="delete">Xóa bỏ</string>
+
+    <string name="network_error">Mạng khác thường, xin thử lại sau</string>
+    <!--==================================================-->
+
+
+    <!--权限-->
+    <string name="permission_declined">Không thể có được quyền hạn %s, xin vào Cài đặt và chọn quyền hạn.</string>
+    <string name="permission_camera">Điện thoại di động</string>
+    <string name="permission_storage">Không gian lưu trữ</string>
+
+    <!--crash 界面-->
+    <string name="tips_forcequit">Rất tiếc, trình tự thoát ra bất thường! Hãy nhấp chọn "gửi" báo cáo sai sót. Xin cảm ơn!</string>
+    <string name="menu_report">Gửi đi</string>
+
+    <!--创建钱包首页-->
+    <string name="create_wallet_new">Tạo ví</string>
+    <string name="create_wallet_import">Nhập vào ví</string>
+
+
+    <!--创建钱包-->
+    <string name="create_wallet_title">Tạo ví</string>
+    <string name="create_wallet_btn">Khởi tạo</string>
+    <string name="create_wallet_password">Mật khẩu ví</string>
+    <string name="create_wallet_confirm_password">Xác nhận mật khẩu</string>
+    <string name="create_wallet_hint">Gợi ý mật khẩu (tùy chọn)</string>
+    <string name="create_password_not_equals">Mật khẩu không đồng nhất, vui lòng nhập lại</string>
+    <string name="create_password_fail">Tạo ví thất bại, xin thử lại</string>
+    <string name="backup_wallet_title">Sao lưu mã ghi nhớ</string>
+    <string name="backup_wallet_skip">Bỏ qua</string>
+    <string name="create_wallet_btn_start">Bắt đầu</string>
+    <string name="backup_wallet_info">Sao lưu mã ghi nhớ là cách thức duy nhất tìm lại ví. Vui lòng bảo quản tốt.</string>
+    <string name="backup_wallet_info_hint">Hãy xác nhận sao lưu mã ghi nhớ được tiến hành trong môi trường an toàn.</string>
+    <string name="backup_wallet_remember_title">Sao lưu mã ghi nhớ</string>
+    <string name="backup_wallet_remember_hint">Sao lưu mã ghi nhớ sau, chúng tôi sẽ nghiệm chứng xem sao lưu có chính xác không?</string>
+    <string name="backup_wallet_input_hint_title">Xác nhận mã ghi nhớ</string>
+    <string name="backup_wallet_input_hint">Hãy nhấp vào mã ghi nhớ theo thứ tự để đảm bảo bạn sao lưu chính xác.</string>
+    <string name="backup_wallet_input_fail">Thứ tự mã ghi nhớ không chính xác</string>
+    <string name="import_wallet_title">Nhập vào ví</string>
+    <string name="import_wallet_input_phrase_hint">Nhập mã ghi nhớ, dùng dấu cách</string>
+    <string name="import_wallet_input_keystore_hint">Nội dung văn bản Keystore</string>
+    <string name="import_wallet_input_private_hint">khóa riêng</string>
+    <string name="import_wallet_input_watch_hint">Địa chỉ %s</string>
+    <string name="import_wallet_btn">Nhập vào</string>
+    <string name="import_phrase_tip">Dùng dấu cách giữa  các chữ (thường csó 12 chữ)</string>
+    <string name="import_private_tip">Tổ hợp 64 chữ, số</string>
+    <string name="import_keystore_tip">Nội dung Keystore và mã hóa tệp này</string>
+    <string name="create_password_tip">Cài đặt mật mã</string>
+    <string name="import_wallet_fail_exit">ví này đã tồn tại</string>
+    <string name="import_wallet_fail_phrase">Mã ghi nhớ vô hiệu lực</string>
+    <string name="import_wallet_fail_private_key">khóa riêng vô hiệu lực</string>
+    <string name="import_wallet_fail_keystore">Keystore vô hiệu lực</string>
+    <string name="import_wallet_fail_watch">Địa chỉ %s vô hiệu lực</string>
+    <string name="import_wallet_qkc">QuarkChain</string>
+    <string name="import_wallet_eth">Ethereum</string>
+    <string name="import_wallet_trx">TRX</string>
+    <string name="main_menu_tag_wallet">ví</string>
+    <string name="main_menu_tag_setting">Cài đặt</string>
+    <string name="main_menu_tag_dapp">Ứng dụng</string>
+    <string name="wallet_shard_id">Phân đoạn: %s</string>
+    <string name="wallet_token_total_symbol">QKC</string>
+    <string name="wallet_copy_address_label">Địa chỉ</string>
+    <string name="wallet_qr_address">Địa chỉ QuarkChain</string>
+    <string name="wallet_qr_address_title">Khoản thu</string>
+    <string name="wallet_qr_address_title2">Khoản thu</string>
+    <string name="error_fail_generate_qr">Không thể tạo mã QR</string>
+    <string name="wallet_qr_eth_address">Địa chỉ Ethereum</string>
+    <string name="wallet_qr_scan_title">quét mã</string>
+    <string name="wallet_qr_light_up">Chạm nhẹ chiếu sáng</string>
+    <string name="wallet_qr_light_down">Chạm nhẹ để đóng</string>
+    <string name="wallet_qr_scan_fail">Scan thất bại</string>
+    <string name="wallet_qr_scan_album">Thư viện ảnh</string>
+    <string name="wallet_manager_title">Danh sách ví</string>
+    <string name="wallet_edit_title">Quản lý ví</string>
+    <string name="wallet_edit_export_ks">Dẫn ra Keystore</string>
+    <string name="wallet_edit_export_pk">Dẫn ra khóa riêng</string>
+    <string name="wallet_edit_export_phrase">Dẫn ra mã ghi nhớ</string>
+    <string name="wallet_edit_export_password">Nhập mật khẩu</string>
+    <string name="wallet_edit_delete">Xóa bỏ ví</string>
+    <string name="wallet_edit_setting_icon">Thay hình đại diện</string>
+    <string name="wallet_edit_setting_name">Sửa đổi tên</string>
+    <string name="wallet_edit_dialog_name_title">Sửa đổi tên ví</string>
+    <string name="name">Tên ví</string>
+    <string name="wallet_export_success_phrase_pk_tip">Không sao lưu khóa riêng vào thư, sổ tay hoặc ứng dụng nhắn tin tức thời.</string>
+    <string name="wallet_export_success_phrase_ky_tip">Không sao lưu Keystore vào thư, sổ tay hoặc ứng dụng nhắn tin tức thời.</string>
+    <string name="wallet_export_success_offline">chuyển ngoại tuyến</string>
+    <string name="wallet_export_success_offline_pk_tip">Không chuyển khóa riêng thông qua công cụ chuyển trên mạng</string>
+    <string name="wallet_export_success_offline_ky_tip">Không chuyển Keystore thông qua công cụ chuyển trên mạng</string>
+    <string name="wallet_export_private_key">khóa riêng</string>
+    <string name="wallet_export_keystore">Keystore</string>
+    <string name="copy_success">Sao chép thành công</string>
+    <string name="wallet_edit_icon">Ảnh đại diện ví</string>
+    <string name="wallet_transaction_detail_title">Chi tiết ví</string>
+    <string name="wallet_transaction_total_token_title">Tổng số dư:</string>
+    <string name="wallet_transaction_merge">Chỉnh lý số dư</string>
+    <string name="wallet_transaction_detail_item_title">Chi tiết giao dịch</string>
+    <string name="wallet_transaction_detail_amount">Số tiền giao dịch</string>
+    <string name="wallet_transaction_detail_actual">Phí khai thác</string>
+    <string name="wallet_transaction_from">Địa chỉ thanh toán tiền</string>
+    <string name="wallet_transaction_to">Địa chỉ nhận tiền</string>
+    <string name="wallet_transaction_from2">Địa chỉ thanh toán tiền</string>
+    <string name="wallet_transaction_to2">Địa chỉ nhận tiền</string>
+    <string name="wallet_transaction_pending">Đang chuyển khoản</string>
+    <string name="wallet_transaction_sent">Chuyển khoản thành công</string>
+    <string name="wallet_transaction_sent_fail">Giao dịch thất bại</string>
+    <string name="wallet_transaction_receive">Thu tiền thành công</string>
+    <string name="wallet_transaction_block_title">Khối giao dịch</string>
+    <string name="wallet_transaction_tx_title">Mã giao dịch</string>
+
+
+    <!--创建发送界面-->
+    <string name="wallet_transaction_send_create_title">Khoản chi</string>
+    <string name="wallet_transaction_send_hint">Số tiền chi</string>
+    <string name="wallet_transaction_to_address_hint">Địa chỉ nhận tiền</string>
+    <string name="wallet_transaction_send_gas">Giá Gas</string>
+    <string name="wallet_transaction_send_gas_limit">Giới hạn Gas</string>
+    <string name="wallet_transaction_send_gas_gwei">GWei</string>
+    <string name="wallet_transaction_send">khởi tạo giao dịch</string>
+    <string name="wallet_transaction_send_fail">Khời tạo giao dịch thất bại</string>
+
+    <string name="wallet_transaction_to_address_error">Địa chỉ vô hiệu lực</string>
+    <string name="wallet_transaction_to_amount_error">Số lượng vô hiệu lực</string>
+    <string name="password_error">Mật khẩu sai</string>
+
+    <!--QKC转账-->
+    <string name="transaction_balance_error_title">số dư không đủ</string>
+    <string name="transaction_balance_error_message_merge_success_title">Chỉnh lý phân đoạn thành công</string>
+    <string name="transaction_balance_error_message_merge_success_message">Chỉnh lý phân đoạn thành công, vui lòng kéo xuống để làm mới, sau khi thấy số dư có thay đổi thì hãy gửi tiếp giao dịch.</string>
+    <string name="transaction_balance_token_amount_error">Số dư Token không đủ</string>
+    <string name="transaction_balance_token_merge_success_title">Chỉnh lý phân đoạn thành công</string>
+    <string name="transaction_balance_token_merge_success_message">Chỉnh sửa phân đoạn thành công, phân đoạn đã chuyển đổi đến phân đoạn có token. vui lòng kéo xuống để làm mới, sau khi thấy số dư có thay đổi thì hãy gửi tiếp giao dịch.</string>
+    <string name="transaction_balance_token_merge_success_message_nochange">Chỉnh lý phân đoạn thành công, vui lòng kéo xuống để làm mới, sau khi thấy số dư có thay đổi thì hãy gửi tiếp giao dịch.</string>
+    <string name="transaction_balance_token_switch_title">Đã gửi giao dịch</string>
+    <string name="transaction_balance_public_switch_success_message">Đã gửi giao dịch, phân đoạn đã được chuyển đổi đến giao dịch Token để phân đoạn, vui lòng kéo xuống để làm mới, sau khi thấy số dư có thay đổi thì hãy gửi tiếp giao dịch.</string>
+    <string name="transaction_balance_public_switch_success_message_nochange">Đã gửi giao dịch, vui lòng kéo xuống để làm mới, sau khi thấy số dư có thay đổi thì hãy gửi tiếp giao dịch.</string>
+    <string name="transaction_balance_public_merge_success_message_nochange">Chỉnh lý phân đoạn thành công, vui lòng kéo xuống để làm mới, sau khi thấy số dư có thay đổi thì hãy gửi tiếp giao dịch.</string>
+
+
+    <!--发送界面-->
+    <string name="wallet_transaction_send_title">Xác nhận giao dịch</string>
+    <string name="wallet_transaction_send_amount_title">Số tiền chuyển khoản</string>
+    <string name="wallet_transaction_send_max_title">Phí giao dịch lớn nhất:</string>
+    <string name="wallet_transaction_send_hash_title">kí giao dịch:</string>
+    <string name="transaction_send_shard_limit">Giao dịch này là giao dịch phân đoạn chéo từ phân đoạn %s đến %s.</string>
+    <string name="transaction_send_time">(thời gian xác nhận là khoảng 90s)</string>
+    <string name="transaction_send_action">Gửi giao dịch</string>
+    <string name="transaction_send_fail">Giao dịch thất bại</string>
+    <string name="transaction_send_success">Đã gửi giao dịch</string>
+    <string name="wallet_transaction_send_token_max_title">Phí giao dịch lớn nhất:</string>
+
+    <string name="wallet_transaction_send_from">Khoản chi</string>
+    <string name="wallet_transaction_send_to">Khoản thu</string>
+
+    <!--本地erc20 token详情界面-->
+    <string name="token_detail_basic">Thông tin cơ bản</string>
+    <string name="token_detail_token_title">số dư cá nhân</string>
+    <string name="token_detail_available_title">Số lượng có thể bán:</string>
+    <string name="token_detail_website">Trang web chính thức:</string>
+    <string name="token_detail_address">Hợp đồng thông minh:</string>
+    <string name="public_sale_start_title">Thời gian bắt đầu:</string>
+    <string name="public_sale_end_title">Thời gian kết thúc:</string>
+    <string name="public_sale_buy">mua</string>
+    <string name="public_sale_contract_address_title">Địa chỉ hợp đồng bán công khai</string>
+    <string name="wallet_public_transaction_send_hint">Số lượng mua</string>
+    <string name="wallet_public_transaction_price_hint">Số tiền tiêu phí</string>
+    <string name="public_buy_success">mua thành công</string>
+    <string name="public_send_success">Chuyển khoản thành công</string>
+    <string name="merge_title">Chỉnh lý số dư</string>
+    <string name="merge_totalFee">Tổng số tiền chuyển khoản</string>
+    <string name="merge_from">Chuyển ra:</string>
+    <string name="merge_to">Chuyển vào:</string>
+    <string name="merge_gasPrice">số dư: %s</string>
+    <string name="merge_gasLimit">Phí khai thác: %s</string>
+    <string name="merge_amount">Số tiền giao dịch</string>
+    <string name="merge_send">Gửi giao dịch</string>
+    <string name="merge_send_fail">Giao dịch chuyển khoản %s thất bại</string>
+    <string name="merge_edit_gas_price">Giá Gas</string>
+    <string name="merge_edit_gas_limit">Hạn mức Gas:</string>
+
+    <!--Settings 界面-->
+    <string name="settings_language">Ngôn ngữ</string>
+    <string name="settings_help_title">Giúp đỡ</string>
+    <string name="settings_terms_of_use_title">Điều khoản dịch vụ</string>
+    <string name="settings_privacy_police">Chính sách bảo mật</string>
+    <string name="settings_about_title">Liên quan đến</string>
+    <string name="settings_about_twitter">Twitter</string>
+    <string name="settings_about_weibo">Weibo</string>
+    <string name="settings_about_telegram">Telegram</string>
+    <string name="settings_about_medium">Medium</string>
+    <string name="settings_languages_title">Chuyển đổi ngôn ngữ</string>
+    <string name="settings_languages_save">Lưu lại</string>
+    <string name="wallet_watch_error_title">Quan sát ví</string>
+    <string name="wallet_watch_error_message">Ví quan sát  không thể xuất khóa riêng hoặc Keystore.</string>
+    <string name="wallet_backup_title">Chưa sao lưu ví</string>
+    <string name="wallet_backup_error_message">Nếu ví chưa được sao lưu, lập tức sao lưu?</string>
+    <string name="wallet_edit_change_name_success">Sửa đổi thành công</string>
+    <string name="send_email_title">Hỗ trợ khách hàng</string>
+    <string name="no_email_title">Chưa cài đặt email</string>
+    <string name="no_email_message">Cần ứng dụng "mail", xin cài đặt tài khoản mail để gửi thư điện tử.</string>
+    <string name="password_low_title">Mật khẩu quá đơn giản</string>
+    <string name="password_medium_title">Độ mạnh của mật khẩu thấp</string>
+    <string name="password_easy_message">Mật mã có độ mạnh cao rất khó đoán, khuyên dùng kết hợp chữ thường, chữ hoa, số và các kí tự đặc biệt làm mật khẩu.</string>
+    <string name="password_high_title">Độ mạnh mật khẩu mức trung bình</string>
+    <string name="password_high_good_title">Độ mạnh mật khẩu cao</string>
+    <string name="check_update_new">Phát hiện phiên bản mới</string>
+    <string name="check_update_title">Kiểm tra cập nhật</string>
+    <string name="check_update_up_to_date">Đã là phiên bản mới nhất</string>
+    <string name="delete_wallet_amount_title">Xóa bỏ ví</string>
+    <string name="delete_wallet_amount_message">Số dư trong tài khoản ví này vẫn còn, bạn muốn xóa bỏ?</string>
+    <string name="finger_touch">Vân tay</string>
+    <string name="finger_open_tip_title">Dùng vân tay</string>
+    <string name="finger_open_tip_msg">Khi đăng nhập và kí giao dịch, vân tay có thể thay thế mật khẩu để xác minh danh tính của bạn, muốn kích hoạt ngay không? Bạn cũng có thể mở nó sau đó trên trang cài đặt.</string>
+    <string name="finger_open_success">Kích hoạt thành công</string>
+    <string name="finger_open_fail">Kích hoạt thất bại</string>
+    <string name="finger_touch_title">Xin nhập vân tay</string>
+    <string name="finger_touch_msg">Dùng vân tay ủy quyền khởi xướng, kí giao dịch hoặc dẫn xuất ví.</string>
+    <string name="finger_touch_again">Thử lại lần nữa</string>
+    <string name="finger_touch_password">Nhập mật khẩu</string>
+    <string name="guide_button_start">Bắt đầu ngay</string>
+    <string name="guide_button_finish">Hoàn thành</string>
+    <string name="guide_msg_text1">Chào mừng sử dụng QuarkChain! Chúng tôi đã chuẩn bị một số mẹo để giúp bạn nhanh chóng sử dụng.</string>
+    <string name="guide_get_qkc">Có được QKC</string>
+    <string name="password_tryAfter">Nhầm mật khẩu nhiều lần, vui lòng thử lại sau %d giây.</string>
+    <string name="add_token_title">Thêm Token</string>
+    <string name="add_token_button_detect">Kiểm tra hợp đồng thông minh</string>
+    <string name="add_token_name">Tên:</string>
+    <string name="add_token_symbol">Kí hiệu:</string>
+    <string name="add_token_decimal">Độ chuẩn xác:</string>
+    <string name="add_token_contact">Địa chỉ hợp đồng</string>
+    <string name="add_token_fail">Địa chỉ hợp đồng ERC20 vô hiệu lực</string>
+    <string name="lock_title">Nhấp chuột để bắt đầu xác minh</string>
+    <string name="lock_wallet_name">Nhập mật khẩu %s</string>
+    <string name="phrase_language_en">Tiếng anh</string>
+    <string name="phrase_language_cn">Tiếng Trung giản thể</string>
+    <string name="phrase_language_tw">Tiếng trung phồn thể</string>
+    <string name="settings_network">Chuyển đổi mạng</string>
+    <string name="switch_network_title">Mạng địa chỉ nhận tiền và mạng hiện tại không đồng nhất</string>
+    <string name="switch_network_message">Địa chỉ (%s) quét mã và địa chỉ ví hiện tại (%s) không cùng mạng, chuyển đến mạng của đối phương không?</string>
+    <string name="add_token_dialog_title">Token chưa rõ</string>
+    <string name="add_token_dialog_msg">Token được quét mã không có trong danh mục Token, có bổ sung thêm ngay không?</string>
+    <string name="token_list_title">Token</string>
+    <string name="token_list_search_hint">Tên và kí hiệu Token</string>
+
+    <!--public sale内容为空-->
+
+    <!--兑换码-->
+
+
+    <!--加载更多-->
+    <string name="brvah_loading">Đang tải&#8230;</string>
+    <string name="brvah_load_failed">Tải thất bại, nhấp vào thử lại</string>
+    <string name="brvah_load_end">Hết số liệu</string>
+
+    <!--编辑名称已经存在-->
+
+    <!--dapps-->
+
+    <string name="empty_create_wallet_title">Chưa tạo ví</string>
+    <string name="empty_create_wallet_msg">Cần tạo hoặc dẫn nhập một ví mới có thể tiếp tục</string>
+
+    <string name="dapp_open_tips_again">Sẽ không hiển thị lại</string>
+    <!--dapps 浏览器-->
+    <string name="setting_clear_dapp">Xóa bộ nhớ DApp</string>
+    <string name="menu_share_url">Chia sẻ</string>
+    <string name="menu_copy_url">Sao chép link</string>
+    <string name="menu_open_url">Mở trong trình duyệt</string>
+    <string name="web_error_title">%s không phản ứng</string>
+    <string name="web_error_message">Xin thử lại sau</string>
+    <string name="setting_clear_dapp_title">Xóa bộ nhớ DApp</string>
+    <string name="setting_clear_dapp_message">Sẽ xóa bộ nhớ, Cookie và dữ liệu duyệt web khác</string>
+
+    <!--tron-->
+    <string name="trx_total_band_width">Băng thông hiện tại:</string>
+    <string name="trx_cost_band_width">Chi phí băng thông:</string>
+    <string name="cant_send_to_own_address">Địa chỉ gửi và nhận không được giống nhau.</string>
+    <string name="transaction_send_title">Phí giao dịch:</string>
+    <string name="transaction_unconfirmed">Chưa xác nhận</string>
+    <string name="wallet_qr_trx_address">Địa chỉ TRX</string>
+
+    <!--tron 冻结界面-->
+    <string name="trx_freeze_title">Nguồn</string>
+    <string name="trx_freeze_band">Băng thông</string>
+    <string name="trx_freeze_frozen_band">Đã đóng băng băng thông:</string>
+    <string name="trx_freeze_band_width_avaliable">Có thể dùng %d bp/%d bp</string>
+
+    <string name="trx_freeze_energy">Năng lượng</string>
+    <string name="trx_freeze_frozen_energy">Năng lượng đã đóng băng</string>
+    <string name="trx_freeze_energy_available">Có thể dùng %d/%d</string>
+
+    <string name="trx_freeze_tag_freeze">Đóng băng</string>
+    <string name="trx_freeze_tag_unfreeze">Giải đóng băng</string>
+    <string name="trx_freeze_amount_hint">Số lượng đóng băng</string>
+    <string name="trx_freeze_type">Loại hình:</string>
+
+    <string name="trx_freeze_hint">Đóng băng ít nhất 3 ngày</string>
+    <string name="trx_balance">Có thể dùng %s TRX</string>
+    <string name="trx_unfreeze_band_time">Băng thông hết hạn: %s</string>
+    <string name="trx_unfreeze_energy_time">Năng lượng hết hạn: %s</string>
+
+    <string name="trx_freeze_cost_title">Lượng băng thông không đủ dùng</string>
+    <string name="trx_unfreeze_cost_msg">%s TRX hoàn thành thao tác giải đóng băng, có tiếp tục không?</string>
+    <string name="trx_unfreeze_end_time">Cần ít nhất sau 3 ngày đóng băng mới có thể giải đóng băng nguồn.</string>
+
+    <string name="trx_not_enough_cost_msg">Băng thông hoặc năng lượng không đủ, lần giao dịch này cần chi trả %s TRX, có tiếp tục không?</string>
+
+    <string name="trx_freeze_type_band">Băng thông</string>
+    <string name="trx_freeze_type_energy">Năng lượng</string>
+
+    <!--首页升级-->
+    <string name="guide_load_data">Đang tải dữ liệu&#8230;</string>
+    <string name="import_symbol_type_default">Chưa biết</string>
+    <string name="import_symbol_type_null">Cần chọn loại dẫn vào ví</string>
+    <string name="import_symbol_watch_address">Địa chỉ</string>
+    <string name="export_wallet_hint">ví hiện tại là ví HD, hãy đảm bảo đã sao lưu mã ghi nhớ của ví này, căn cứ theo mã ghi nhớ mới có thể lấy lại các loại tiền (QKC, ETH, TRX, BTC và các loại khác). Nếu chỉ sao lưu khóa riêng hoặc Keystore thì chỉ lấy lại ví của loại tiền hiện tại.</string>
+    <string name="trx_trc20_transaction_empty">TRC20 tạm thời không hỗ trợ chức năng kiếm tìm giao dịch, vui lòng căn cứ vào sự biến đổi của số dư để phán đoán kết quả chuyển khoản liệu có thành công?</string>
+    <string name="ssl_error_title">Chứng chỉ mạng bạn đang truy cập không hợp lệ</string>
+    <string name="ssl_error_message">Bạn đang thử truy cập trang web %s, trang web này chưa được CA cấp chứng chỉ. Nếu bạn chưa thấy cảnh báo như thế này trước đây, chúng tôi khuyên bạn không nên tiếp tục truy cập.</string>
+    <string name="ssl_error_ok">Vẫn tiếp tục</string>
+    <string name="ssl_error_cancel">Hủy truy cập</string>
+    <string name="tran_vote">Bình chọn</string>
+    <string name="tran_smart">Tương tác hợp đồng thông minh</string>
+    <string name="tran_freeze">Đóng băng</string>
+    <string name="tran_unfreeze">Giải đóng băng</string>
+    <string name="user_info_title">Kế hoạch tiền thưởng</string>
+    <string name="help_email_tile">Thư điện tử</string>
+    <string name="help_wechat_tile">Wechat dịch vụ khách hàng</string>
+    <string name="help_weichat_copy_message">Đã sao chép số wechat dịch vụ khách hàng qpocketwallet đến bảng chia cắt, xin vui lòng chuyển đến wechat, thêm bạn bè mới để nhận sự hỗ trợ online.</string>
+    <string name="help_open_wechat_fail">Chuyển đến wechat thất bại</string>
+    <string name="delete_wallet_only_one">Bạn phải có ít nhất 1 ví</string>
+    <string name="wallet_chain">Chuỗi:</string>
+    <string name="wallet_shard">Phân đoạn:</string>
+    <string name="wallet_chain_id">Chuỗi: %s</string>
+    <string name="wallet_balance">số dư</string>
+    <string name="wallet_transaction_switch_chain">Chọn chuỗi/ phân đoạn</string>
+    <string name="merge_chain_guide">Đã chuyển khoản toàn bộ QKC trong chuỗi/ phân đoạn đã lựa chọn sau đến chuỗi/ phân đoạn hiện tại.</string>
+    <string name="merge_edit_chain_title">Từ chuỗi/ phân đoạn (%s/%s) đến chuỗi/ phân đoạn (%s/%s)</string>
+    <string name="wallet_transaction_address_chain_shard">%s (chuỗi / phân đoạn:%s/%s)</string>
+    <string name="merge_chain_shard">chuỗi/phân đoạn (%s/%s)</string>
+    <string name="transaction_balance_enough_message_switch">số dư trong chuỗi/ phân đoạn (%s/%s) không đủ, xin chọn phân đoạn đủ số dư để chuyển khoản %s.</string>
+    <string name="transaction_balance_enough_message_merge">số dư trong chuỗi/ phân đoạn không đủ, xin vui lòng chỉnh lý số dư %s trong chuỗi/ phân đoạn khác đến chuỗi/ phân đoạn hiện tại.</string>
+    <string name="transaction_balance_token_chain_merge">số dư của token trong chuỗi/ phân đoạn không đủ, xin vui lòng chỉnh lý số dư %s trong chuỗi/ phân đoạn khác đến chuỗi/ phân đoạn hiện tại.</string>
+    <string name="transaction_balance_public_merge_chain_success_message">Chỉnh lý phân đoạn thành công, đã chuyển đổi đến chuỗi/ phân đoạn token, vui lòng kéo xuống để làm mới, sau khi thấy số dư có thay đổi thì hãy gửi tiếp giao dịch.</string>
+    <string name="transaction_send_chain_shard_limit">Giao dịch này là giao dịch chuỗi / phân khúc chéo: (từ %s/%s đến%s/%s)</string>
+
+
+    <!--tx detail-->
+    <string name="transaction_more_detail"><u>Xem trong trình duyệt blockchain</u></string>
+
+    <!--dapp-->
+    <string name="white_tips_title">Mở chế độ tự động kí</string>
+    <string name="white_tips_msg">QPocket sẽ tự động kí đối với giao dịch tiếp theo trong ứng dựng hiện tại, sẽ không hỏi bạn về sự ủy quyền và xác nhận giao dịch cho đến khi bạn thoát ứng dụng này.</string>
+    <string name="qr_coin_not_match">Loại tiền trong QR code và loại tiền chuyển khoản không đồng nhất, vui lòng kiểm tra.</string>
+    <string name="add_token_dialog_network_title">mạng thử nghiệm không biết Token</string>
+    <string name="add_token_dialog_network_msg">Bạn đang (%s) trong mạng thử nghiệm, token được quét mã không có trong danh mục token mạng thử nghiệm (%s) hiện tại, có muốn thêm không?</string>
+    <string name="donate_request">Xin kiểm tra Token</string>
+
+    <!--coin 详情页-->
+
+
+    <!--快讯-->
+
+    <!--快讯分享 目前只有中文有-->
+    <string name="share_wechat_success">Chia sẻ thành cônh</string>
+    <string name="share_wechat_fail">Chia sẻ thất bại</string>
+    <string name="share_wechat_cancel">Hủy chia sẻ</string>
+    <string name="settings_coin">Đơn vị tiền</string>
+    <string name="wallet_token_title">Tài sản</string>
+    <string name="tx_send_all">Gửi tất cả</string>
+
+    <!--翻译-->
+    <!--添加token-->
+    <string name="add_token_trx_contact">Địa chỉ hợp đồngTRC10 ID hoặc TRC20</string>
+    <string name="add_token_trx_fail">Địa chỉ hợp đồngTRC10 ID hoặc TRC20 vô hiệu lực</string>
+
+    <!--gas 手续费-->
+    <string name="wallet_transaction_send_gas_title">Phí giao dịch</string>
+
+    <string name="wallet_transaction_safe">Hơi thấp</string>
+    <string name="wallet_transaction_avg">Giá trị trung bình</string>
+    <string name="wallet_transaction_fast">Hơi nhanh</string>
+
+    <string name="reload">Tải lại</string>
+    <string name="loading">Đang tải&#8230;</string>
+    <string name="wallet_transaction_fail_text">Tải phí khai thác thất bại</string>
+
+    <string name="wallet_transaction_adv">Cao cấp </string>
+
+    <!--bounty-->
+
+    <!--钱包管理页-->
+    <string name="wallet_manager_total_assets">Tổng tài sản</string>
+
+    <!--Wealth-->
+
+    <!--airdrop-->
+
+    <string name="qkc_name">QuarkChain</string>
+    <string name="eth_name">ETH</string>
+    <string name="trx_name">Tron</string>
+    <string name="no_hd_name">Các ví khác</string>
+    <string name="no_hd_name2">- Keystore/ khóa riêng</string>
+    <string name="hd_name">ví HD</string>
+    <string name="hd_name2">- Mã ghi nhớ</string>
+
+    <!--dapp-->
+
+    <!--登录-->
+
+    <!--积分系统-->
+
+    <!--积分系统 任务失败-->
+
+
+    <!--invite qr code-->
+
+    <string name="share_facebook_uninstalled">You need to install Facebook first</string>
+    <string name="share_twitter_uninstalled">You need to install Twitter first</string>
+    <string name="share_telegram_uninstalled">You need to install Telegram first</string>
+
+    <!--注册界面-->
+
+    <!--积分claim-->
+
+    <!--邀请注册获得积分-->
+
+    <!--地址本-->
+    <string name="address_book_title">Sổ địa chỉ</string>
+    <string name="address_book_empty">Sổ địa chỉ hiện tại trống</string>
+    <string name="address_book_add">Thêm địa chỉ ví</string>
+    <string name="address_book_network">Loại địa chỉ:</string>
+    <string name="address_book_name">Tên ví:</string>
+    <string name="address_book_address">Địa chỉ ví:</string>
+    <string name="address_book_complete">Lưu lại</string>
+    <string name="delete_book_tips">Xác nhận xóa địa chỉ?</string>
+    <string name="add_book_success">Thêm địa chỉ thành công</string>
+    <string name="modify_book_success">Sửa đổi địa chỉ thành công</string>
+    <string name="delete_book_success">Xóa  địa chỉ thành công</string>
+
+    <!--非中文邀请时，弹框说明-->
+
+    <!--合约跨片调用-->
+    <string name="transaction_balance_public_buy_chain_switch">Số dư trong chuỗi/ phân đoạn (%s/%s) hiện tại không đủ. Xin chọn chuỗi/phân đoạn sau để tiến hành việc mua.</string>
+
+    <!--bounty-->
+
+
+    <!--BTC-->
+    <!--钱包创建-->
+    <string name="btc_change_segwit">SegWit</string>
+    <string name="btc_change_normal">Phổ thông</string>
+    <string name="import_wallet_btc_wif_not_com">SegWit chỉ hỗ trợ khóa riêng dạng nén</string>
+    <!--钱包管理-->
+
+    <!--btc钱包编辑-->
+    <string name="edit_btc_switch_address">Chuyển đổi địa chỉ nhận tiền phụ</string>
+    <string name="edit_btc_change_segwit">Chuyển đổi loại địa chỉ</string>
+
+    <!--切换btc钱包模式-->
+
+
+    <!--btc钱包收款地址管理-->
+
+    <!--钱包转账-->
+
+    <!--二维码收款界面-->
+    <string name="wallet_qr_btc_main_address">Địa chỉ chính</string>
+    <string name="wallet_qr_btc_other_address">Địa chỉ phụ</string>
+
+    <!--UI调整-->
+    <string name="empty_no_result">Không có kết quả</string>
+
+    <!--keystore导入-->
+    <string name="keystore_type_error">Loại địa chi chỉ định trong Keystore là %s</string>
+
+    <!--屏幕解锁-->
+    <string name="setting_unlock">Cài đặt mở khóa</string>
+    <string name="setting_open_app">Vào QPocket</string>
+    <string name="setting_open_app_info">Cần mở khóa khi vào lại QPocket sau 1 phút</string>
+    <string name="setting_wallet_related">Chuyển đến trang liên quan đến ví</string>
+    <string name="setting_wallet_related_info">Cần mở khóa khi xem trang liên quan đến ví</string>
+    <string name="setting_none">Không vần bảo vệ</string>
+    <string name="setting_none_info">Không cần xác minh mở khóa khi vào QPocket</string>
+
+    <string name="setting_unlock_info">Chỉ có thể cài đặt mở khóa bằng vân tay</string>
+
+
+    <!--冷钱包-->
+    <!--冷钱包-->
+    <!--冷钱包-->
+    <!--冷钱包 创建-->
+
+    <!--冷钱包 钱包页-->
+
+    <!--冷钱包 签名信息展示页-->
+
+    <!--冷钱包 签名信息錯誤提示-->
+
+    <!--冷钱包 merge-->
+    <string name="qkc_merge_size_error">Do hạn chế của ví lạnh, giao dịch bao hàm trong só dư chỉnh lý không được vượt quá 20. Vui lòng giảm số lượng giao dịch và thử lại.</string>
+
+    <!--冷钱包 btc观察钱包-->
+    <string name="import_watch_info">Bạn có thể xem số dư và lịch sử giao dịch bằng cách chỉ nhập vào địa chỉ ví, cũng có thể thông qua phối hợp sử dụng ví lạnh để hoàn thành việc gửi giao dịch.</string>
+
+    <!--冷钱包 多页签名-->
+
+
+    <!--通知-->
+
+
+    <!--硬件钱包-->
+    <!--硬件钱包 扫描钱包-->
+    <!--硬件钱包 链接-->
+
+    <!--硬件钱包 DApp-->
+
+
+    <!--冷钱包说明页-->
+
+    <string name="wallet_ledger_error_title">Ví phần cứng</string>
+    <string name="wallet_ledger_error_message">Ví phần cứng không thể xuất khóa riêng hoặc Keystore.</string>
+
+    <!--创建子钱包-->
+    <string name="create_child_account_title">Thêm ví phụ</string>
+    <string name="create_child_account_btn">Thêm ví phụ %s</string>
+    <string name="create_child_account_tips">Mẹo: Mọi ví phụ thêm vào đều có thể được khôi phục toàn bộ bằng cách nhập cùng một mã ghi nhớ mà chúng thuộc về</string>
+    <string name="create_child_account_success">Thêm ví phụ thành công</string>
+    <string name="create_child_account_fail">Thêm ví phụ thất bại</string>
+    <string name="create_child_account_exist">Ví phụ có số thứ tự %s đã tồn tại. Bạn có muốn thêm ví phụ mới sau khi bỏ qua tất cả các ví phụ hiện có không?</string>
+
+    <!--添加QKC token-->
+    <string name="add_token_qkc_contact"><font size="12">Tên Token gốc/địa chỉ hợp đồng QRC20</font></string>
+    <string name="add_token_qkc_fail">Tên Token gốc hoặc địa chỉ hợp đồng QRC20 không hợp lệ</string>
+
+    <!--native token是否支持作为手续费-->
+    <string name="transaction_gas_token_not_support">Token gốc bạn đã chọn trong chuỗi/ phân đoạn hiện tại không hỗ trợ sử dụng làm phí khai thác. Vui lòng chuyển đến Token gốc khác và thử lại.</string>
+    <string name="wallet_native_transaction_gas_enough">Số dư của Token gốc được chọn hiện tại không đủ để trả phí khai thác, vui lòng chuyển đến Token gốc khác và thử lại.</string>
+    <string name="wallet_qrc20_transaction_gas_enough">Số dư của Token gốc được chọn hiện tại không đủ để trả phí khai thác, vui lòng thử các Token gốc khác làm phí xử lý hoặc chuyển khoản thông qua các chuỗi/ phân đoạn khác.</string>
+    <string name="native_gas_token_balance_not_enough">Số tiền dự trữ của Token gốc hiện tại không đủ để thanh toán phí xử lý lần giao dịch này.</string>
+
+    <string name="wallet_merge_transaction_gas_enough">Số dư của %s không đủ để trả phí khai thác</string>
+    <string name="merge_gas_token_not_support">Số dư của %s không đủ để trả phí khai thác, vui lòng chuyển sang Token gốc khác có đủ số dư và thử lại.</string>
+    <string name="merge_gas_token_balance_not_enough">Tiền dự trữ của Token gốc %s không đủ trả phí xử lý cho giao dịch này.</string>
+
+    <!--通知全部已读-->
+
+    <!--删除HD钱包-->
+    <string name="delete_wallet_message">Bạn muốn xóa ví phụ hiện tại hay xóa tất cả ví phụ trong ví HD?</string>
+    <string name="delete_wallet_sub">Xóa ví phụ hiện tại</string>
+    <string name="delete_wallet_hd">Xóa toàn bộ ví HD</string>
+</resources>

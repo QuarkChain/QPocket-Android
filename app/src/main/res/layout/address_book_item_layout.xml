@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="19dp"
+    android:layout_marginRight="19dp"
+    android:layout_marginBottom="15dp"
+    app:cardElevation="3dp"
+    card_view:cardCornerRadius="7dp"
+    card_view:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        style="@style/ButtonForegroundEffectStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/address_book_icon"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="19dp"
+            android:layout_marginTop="19dp"
+            android:layout_marginBottom="19dp"
+            android:background="@drawable/address_book_icon_bg"
+            android:padding="1.5dp" />
+
+        <TextView
+            android:id="@+id/address_book_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/address_book_icon"
+            android:layout_marginLeft="12dp"
+            android:layout_toLeftOf="@+id/address_book_copy"
+            android:layout_toRightOf="@+id/address_book_icon"
+            android:singleLine="true"
+            android:textColor="@color/text_title"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/address_book_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/address_book_icon"
+            android:layout_marginLeft="12dp"
+            android:layout_toLeftOf="@+id/address_book_copy"
+            android:layout_toRightOf="@+id/address_book_icon"
+            android:singleLine="true"
+            android:textColor="@color/text_title"
+            android:textSize="10sp" />
+
+        <ImageView
+            android:id="@+id/address_book_copy"
+            style="@style/ButtonBackgroundEffectStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="-10dp"
+            android:layout_toLeftOf="@+id/address_book_edit"
+            android:padding="15dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/address_bool_copy" />
+
+        <ImageView
+            android:id="@+id/address_book_edit"
+            style="@style/ButtonBackgroundEffectStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="15dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/address_bool_edit" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:fitsSystemWindows="true">
+
+    <com.quarkonium.qpocket.view.ScrollGallery
+        android:id="@+id/create_home_view_page"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="65dp"
+        app:layout_constraintDimensionRatio="h,3:2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.quarkonium.qpocket.view.BannerIndicator
+        android:id="@+id/banner_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/create_home_view_page" />
+
+    <TextView
+        android:id="@+id/new_account_action"
+        style="@style/ButtonForegroundEffectStyle"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/btn_black_bg"
+        android:gravity="center"
+        android:text="@string/create_wallet_new"
+        android:textColor="#ffffff"
+        android:textSize="12sp"
+        app:layout_constraintTop_toBottomOf="@+id/banner_indicator" />
+
+    <TextView
+        android:id="@+id/import_account_action"
+        style="@style/ButtonForegroundEffectStyle"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/btn_white_bg"
+        android:gravity="center"
+        android:text="@string/create_wallet_import"
+        android:textColor="#212121"
+        android:textSize="12sp"
+        app:layout_constraintTop_toBottomOf="@+id/new_account_action" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp_14"
+        android:drawableLeft="@drawable/home_bottom_logo"
+        android:drawablePadding="12dp"
+        android:text="@string/app_name"
+        android:textColor="#bdbdbd"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <ImageView
+        android:id="@+id/re_take"
+        style="@style/ButtonBackgroundEffectStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/appbar_top_height"
+        android:layout_marginLeft="4dp"
+        android:padding="15dp"
+        android:scaleType="center"
+        android:src="@drawable/appbar_back_icon"
+        android:visibility="gone"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

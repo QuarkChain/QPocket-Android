@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <cn.bingoogolapple.qrcode.zbar.ZBarView
+        android:id="@+id/zbarview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:qrcv_animTime="1000"
+        app:qrcv_borderColor="@android:color/transparent"
+        app:qrcv_borderSize="0dp"
+        app:qrcv_cornerColor="@color/white"
+        app:qrcv_cornerLength="30dp"
+        app:qrcv_cornerSize="3dp"
+        app:qrcv_isAutoZoom="true"
+        app:qrcv_isBarcode="false"
+        app:qrcv_isOnlyDecodeScanBoxArea="false"
+        app:qrcv_isShowDefaultScanLineDrawable="true"
+        app:qrcv_isShowLocationPoint="true"
+        app:qrcv_rectWidth="200dp"
+        app:qrcv_scanLineColor="@color/white"
+        app:qrcv_toolbarHeight="56dp"
+        app:qrcv_topOffset="105dp" />
+
+    <TextView
+        android:id="@+id/scanner_light"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="75dp"
+        android:drawableTop="@drawable/sacn_light_up"
+        android:drawablePadding="10dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:text="@string/wallet_qr_light_up"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:textColor="#ffffff"
+        android:textSize="15sp"
+        android:visibility="gone" />
+
+    <include
+        android:id="@+id/progress_layout"
+        layout="@layout/progress_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true" />
+
+    <!-- 顶部  -->
+    <com.quarkonium.qpocket.view.TopBarView
+        android:id="@+id/top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/appbar_top_height" />
+</RelativeLayout>

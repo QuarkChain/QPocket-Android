@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tl="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:fitsSystemWindows="true">
+
+    <!-- 顶部  -->
+    <com.quarkonium.qpocket.view.TopBarView
+        android:id="@+id/top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/appbar_top_height" />
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/transaction_swipe_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/transaction_bottom"
+        android:layout_below="@+id/top_layout"
+        android:paddingBottom="20dp">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="19dp"
+            android:paddingRight="19dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="25dp"
+                    app:cardElevation="2dp"
+                    card_view:cardCornerRadius="7dp"
+                    card_view:cardUseCompatPadding="true">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#ffffff">
+
+                        <TextView
+                            android:id="@+id/transaction_total_token_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="19dp"
+                            android:layout_marginTop="25dp"
+                            android:text="@string/wallet_token_total_symbol"
+                            android:textColor="@color/text_title"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/transaction_total_token"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginTop="26dp"
+                            android:layout_marginRight="19dp"
+                            android:singleLine="true"
+                            android:textColor="@color/text_title"
+                            android:textSize="13sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/transaction_total_token_price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/transaction_total_token"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="19dp"
+                            android:layout_marginBottom="15dp"
+                            android:singleLine="true"
+                            android:textColor="@color/text_message"
+                            android:textSize="13sp" />
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/transaction_shard_recycler_view"
+                            android:layout_width="match_parent"
+                            android:layout_height="155dp"
+                            android:layout_below="@+id/transaction_total_token_price"
+                            android:layout_marginLeft="14dp"
+                            android:layout_marginRight="14dp" />
+
+                        <TextView
+                            android:id="@+id/transaction_switch_shard"
+                            style="@style/ButtonBackgroundInsideEffectStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/transaction_shard_recycler_view"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:drawableRight="@drawable/switch_drop"
+                            android:drawablePadding="15dp"
+                            android:gravity="center"
+                            android:paddingLeft="19dp"
+                            android:paddingTop="15dp"
+                            android:paddingRight="19dp"
+                            android:paddingBottom="15dp"
+                            android:text="@string/wallet_transaction_switch_chain"
+                            android:textColor="@color/text_title"
+                            android:textSize="12sp" />
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/transaction_shard_recycler_view"
+                            android:layout_alignTop="@+id/transaction_switch_shard"
+                            android:layout_alignBottom="@+id/transaction_switch_shard"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="19dp">
+
+                            <TextView
+                                android:id="@+id/transaction_token_merge"
+                                style="@style/ButtonForegroundEffectStyle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="25dp"
+                                android:layout_centerVertical="true"
+                                android:background="@drawable/btn_black_bg"
+                                android:gravity="center"
+                                android:paddingLeft="15dp"
+                                android:paddingRight="15dp"
+                                android:text="@string/wallet_transaction_merge"
+                                android:textColor="#ffffff"
+                                android:textSize="12sp" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <com.scwang.smartrefresh.layout.SmartRefreshLayout
+                    android:id="@+id/detail_tx_swipe"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#ffffff"
+                        app:cardElevation="2dp"
+                        card_view:cardCornerRadius="7dp"
+                        card_view:cardUseCompatPadding="true">
+
+                        <com.quarkonium.qpocket.view.SlidingTabLayout
+                            android:id="@+id/transaction_tab_view"
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            app:tl_textsize="14sp"
+                            app:tl_textBold="true"
+                            tl:tl_indicator_color="@color/text_title"
+                            tl:tl_indicator_height="1.5dp"
+                            tl:tl_indicator_margin_bottom="15dp"
+                            tl:tl_indicator_width_equal_title="true"
+                            tl:tl_tab_space_equal="true"
+                            tl:tl_textSelectColor="@color/text_title"
+                            tl:tl_textUnselectColor="@color/text_hint" />
+
+                        <androidx.viewpager.widget.ViewPager
+                            android:id="@+id/wallet_transaction_view_page"
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:layout_marginLeft="19dp"
+                            android:layout_marginTop="60dp"
+                            android:layout_marginRight="19dp" />
+
+                        <include
+                            android:id="@+id/tx_empty_layout"
+                            layout="@layout/search_empty_layout3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="60dp"
+                            android:visibility="gone" />
+                    </androidx.cardview.widget.CardView>
+                </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <LinearLayout
+        android:id="@+id/transaction_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="19dp"
+        android:layout_marginRight="19dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/transaction_receive"
+            style="@style/ButtonForegroundEffectStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_black_bg"
+            android:gravity="center"
+            android:text="@string/wallet_qr_address_title"
+            android:textColor="#ffffff"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/transaction_send"
+            style="@style/ButtonForegroundEffectStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/btn_black_bg"
+            android:gravity="center"
+            android:text="@string/wallet_transaction_send_create_title"
+            android:textColor="#ffffff"
+            android:textSize="15sp" />
+    </LinearLayout>
+</RelativeLayout>

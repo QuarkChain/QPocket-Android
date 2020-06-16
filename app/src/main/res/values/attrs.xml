@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="TintImageView">
+        <attr name="tintList" format="color" />
+    </declare-styleable>
+
+
+    <attr name="tl_divider_color" format="color" />
+    <attr name="tl_divider_padding" format="dimension" />
+    <attr name="tl_divider_width" format="dimension" />
+    <attr name="tl_indicator_anim_duration" format="integer" />
+    <attr name="tl_indicator_anim_enable" format="boolean" />
+    <attr name="tl_indicator_bounce_enable" format="boolean" />
+    <attr name="tl_indicator_color" format="color" />
+    <attr name="tl_indicator_corner_radius" format="dimension" />
+    <attr name="tl_indicator_gravity" format="enum">
+        <enum name="TOP" value="48" />
+        <enum name="BOTTOM" value="80" />
+    </attr>
+    <attr name="tl_indicator_height" format="dimension" />
+    <attr name="tl_indicator_margin_bottom" format="dimension" />
+    <attr name="tl_indicator_margin_left" format="dimension" />
+    <attr name="tl_indicator_margin_right" format="dimension" />
+    <attr name="tl_indicator_margin_top" format="dimension" />
+    <attr name="tl_indicator_style" format="enum">
+        <enum name="NORMAL" value="0" />
+        <enum name="TRIANGLE" value="1" />
+        <enum name="BLOCK" value="2" />
+    </attr>
+    <attr name="tl_indicator_width" format="dimension" />
+    <attr name="tl_indicator_width_equal_title" format="boolean" />
+    <attr name="tl_tab_padding" format="dimension" />
+    <attr name="tl_tab_space_equal" format="boolean" />
+    <attr name="tl_tab_width" format="dimension" />
+    <attr name="tl_textAllCaps" format="boolean" />
+    <attr name="tl_textBold" format="boolean" />
+    <attr name="tl_textSelectColor" format="color" />
+    <attr name="tl_textUnselectColor" format="color" />
+    <attr name="tl_textsize" format="dimension" />
+    <attr name="tl_underline_color" format="color" />
+    <attr name="tl_underline_gravity" format="enum">
+        <enum name="TOP" value="48" />
+        <enum name="BOTTOM" value="80" />
+    </attr>
+    <attr name="tl_underline_height" format="dimension" />
+    <declare-styleable name="CommonTabLayout">
+        <attr name="tl_indicator_color" />
+        <attr name="tl_indicator_height" />
+        <attr name="tl_indicator_width" />
+        <attr name="tl_indicator_margin_left" />
+        <attr name="tl_indicator_margin_top" />
+        <attr name="tl_indicator_margin_right" />
+        <attr name="tl_indicator_margin_bottom" />
+        <attr name="tl_indicator_corner_radius" />
+        <attr name="tl_indicator_gravity" />
+        <attr name="tl_indicator_style" />
+        <attr name="tl_indicator_anim_enable" />
+        <attr name="tl_indicator_anim_duration" />
+        <attr name="tl_indicator_bounce_enable" />
+        <attr name="tl_underline_color" />
+        <attr name="tl_underline_height" />
+        <attr name="tl_underline_gravity" />
+        <attr name="tl_divider_color" />
+        <attr name="tl_divider_width" />
+        <attr name="tl_divider_padding" />
+        <attr name="tl_tab_padding" />
+        <attr name="tl_tab_space_equal" />
+        <attr name="tl_tab_width" />
+        <attr name="tl_textsize" />
+        <attr name="tl_textSelectColor" />
+        <attr name="tl_textUnselectColor" />
+        <attr name="tl_textBold" />
+        <attr name="tl_textAllCaps" />
+        <attr name="tl_iconWidth" format="dimension" />
+        <attr name="tl_iconHeight" format="dimension" />
+        <attr name="tl_iconVisible" format="boolean" />
+        <attr name="tl_iconGravity" format="enum">
+            <enum name="LEFT" value="3" />
+            <enum name="TOP" value="48" />
+            <enum name="RIGHT" value="5" />
+            <enum name="BOTTOM" value="80" />
+        </attr>
+        <attr name="tl_iconMargin" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="MsgView">
+        <attr name="mv_backgroundColor" format="color" />
+        <attr name="mv_cornerRadius" format="dimension" />
+        <attr name="mv_strokeWidth" format="dimension" />
+        <attr name="mv_strokeColor" format="color" />
+        <attr name="mv_isRadiusHalfHeight" format="boolean" />
+        <attr name="mv_isWidthHeightEqual" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="SegmentTabLayout">
+        <attr name="tl_indicator_color" />
+        <attr name="tl_indicator_height" />
+        <attr name="tl_indicator_margin_left" />
+        <attr name="tl_indicator_margin_top" />
+        <attr name="tl_indicator_margin_right" />
+        <attr name="tl_indicator_margin_bottom" />
+        <attr name="tl_indicator_corner_radius" />
+        <attr name="tl_indicator_anim_enable" />
+        <attr name="tl_indicator_anim_duration" />
+        <attr name="tl_indicator_bounce_enable" />
+        <attr name="tl_divider_color" />
+        <attr name="tl_divider_width" />
+        <attr name="tl_divider_padding" />
+        <attr name="tl_tab_padding" />
+        <attr name="tl_tab_space_equal" />
+        <attr name="tl_tab_width" />
+        <attr name="tl_textsize" />
+        <attr name="tl_textSelectColor" />
+        <attr name="tl_textUnselectColor" />
+        <attr name="tl_textBold" />
+        <attr name="tl_textAllCaps" />
+        <attr name="tl_bar_color" format="color" />
+        <attr name="tl_bar_stroke_color" format="color" />
+        <attr name="tl_bar_stroke_width" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="SlidingTabLayout">
+        <attr name="tl_indicator_color" />
+        <attr name="tl_indicator_height" />
+        <attr name="tl_indicator_width" />
+        <attr name="tl_indicator_margin_left" />
+        <attr name="tl_indicator_margin_top" />
+        <attr name="tl_indicator_margin_right" />
+        <attr name="tl_indicator_margin_bottom" />
+        <attr name="tl_indicator_corner_radius" />
+        <attr name="tl_indicator_gravity" />
+        <attr name="tl_indicator_style" />
+        <attr name="tl_indicator_width_equal_title" />
+        <attr name="tl_underline_color" />
+        <attr name="tl_underline_height" />
+        <attr name="tl_underline_gravity" />
+        <attr name="tl_divider_color" />
+        <attr name="tl_divider_width" />
+        <attr name="tl_divider_padding" />
+        <attr name="tl_tab_padding" />
+        <attr name="tl_tab_space_equal" />
+        <attr name="tl_tab_width" />
+        <attr name="tl_textsize" />
+        <attr name="tl_textSelectColor" />
+        <attr name="tl_textUnselectColor" />
+        <attr name="tl_textBold" />
+        <attr name="tl_textAllCaps" />
+    </declare-styleable>
+
+
+    <declare-styleable name="CircleImageView">
+        <attr name="civ_border_width" format="dimension" />
+        <attr name="civ_border_color" format="color" />
+        <attr name="civ_border_overlay" format="boolean" />
+        <attr name="civ_fill_color" format="color" />
+    </declare-styleable>
+
+
+    <!--corner_color 边角颜色，
+    scanner_color 扫描线颜色
+    possible_result_color 扫描点颜色
+    frame_color 扫描框边线颜色
+    mask_color 模糊区域颜色
+    label_text  框上方提示
+    -->
+    <declare-styleable name="ViewfinderView">
+        <attr name="corner_color" format="color" />
+        <attr name="laser_color" format="color" />
+        <attr name="frame_color" format="color" />
+        <attr name="mask_color" format="color" />
+        <attr name="result_point_color" format="color" />
+        <attr name="result_color" format="color" />
+        <attr name="label_text_color" format="color" />
+        <attr name="label_text" format="string" />
+        <attr name="label_text_size" format="float" />
+    </declare-styleable>
+
+    <declare-styleable name="SoftRadioButton">
+        <attr name="text" format="string" />
+        <attr name="textSize" format="dimension" />
+        <attr name="textColorChecked" format="color" />
+        <attr name="textColor" format="color" />
+        <attr name="upImage" format="reference" />
+        <attr name="downImage" format="reference" />
+        <attr name="upImageChecked" format="reference" />
+        <attr name="downImageChecked" format="reference" />
+        <attr name="canChecked" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="CollapsibleTextView">
+        <attr name="suffixColor" format="color" />
+        <attr name="collapsedLines" format="integer" />
+        <attr name="collapsedText" format="reference" />
+        <attr name="expandedText" format="reference" />
+        <attr name="suffixTrigger" format="boolean" />
+    </declare-styleable>
+
+    <attr name="autoScaleTextViewStyle" />
+    <declare-styleable name="AutoScaleTextView">
+        <attr name="minTextSize" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="vericationCodeInput">
+        <attr name="box" format="integer" />
+        <attr name="child_h_padding" format="dimension" />
+        <attr name="child_v_padding" format="dimension" />
+        <attr name="child_width" format="dimension" />
+        <attr name="child_height" format="dimension" />
+        <attr name="padding" format="dimension" />
+        <attr name="box_bg_focus" format="reference" />
+        <attr name="box_bg_normal" format="reference" />
+        <attr name="inputType" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="MaxHeightLinearLayout">
+        <attr name="max_height" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="SwitchButton">
+        <attr name="sb_shadow_radius" format="reference|dimension" />
+        <attr name="sb_shadow_offset" format="reference|dimension" />
+        <attr name="sb_shadow_color" format="reference|color" />
+        <attr name="sb_uncheck_color" format="reference|color" />
+        <attr name="sb_checked_color" format="reference|color" />
+        <attr name="sb_border_width" format="reference|dimension" />
+        <attr name="sb_checkline_color" format="reference|color" />
+        <attr name="sb_checkline_width" format="reference|dimension" />
+        <attr name="sb_uncheckcircle_color" format="reference|color" />
+        <attr name="sb_uncheckcircle_width" format="reference|dimension" />
+        <attr name="sb_uncheckcircle_radius" format="reference|dimension" />
+        <attr name="sb_checked" format="reference|boolean" />
+        <attr name="sb_shadow_effect" format="reference|boolean" />
+        <attr name="sb_effect_duration" format="reference|integer" />
+        <attr name="sb_button_color" format="reference|color" />
+        <attr name="sb_show_indicator" format="reference|boolean" />
+        <attr name="sb_background" format="reference|color" />
+        <attr name="sb_enable_effect" format="reference|boolean" />
+    </declare-styleable>
+</resources>

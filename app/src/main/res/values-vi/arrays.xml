@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--创建钱包首页-->
+    <array name="create_wallet_titles">
+        <item>Phương án giải quyết mọi vấn đề về ví số</item>
+        <item>Hỗ trợ nhiều loại tài sản số</item>
+        <item>Bảo đảm, an toàn, đáng tin</item>
+    </array>
+    <array name="create_wallet_messages">
+        <item>Cổng vào blockchain đơn giản, an toàn, chức năng toàn diện</item>
+        <item>Đã hỗ trợ QKC, ETH, BTC và TRX, và càng nhiều sự hỗ trợ khác sẽ liên tục cập nhật.</item>
+        <item>Khóa riêng không dời di dộng, hãy lưu mã hóa.</item>
+    </array>
+
+    <!--导入钱包-->
+    <array name="import_wallet_tag">
+        <item>Mã ghi nhớ</item>
+        <item>khóa riêng</item>
+        <item>Keystore</item>
+        <item>Quan sát ví</item>
+    </array>
+    <array name="import_wallet_tag_cold">
+        <item>Mã ghi nhớ</item>
+        <item>khóa riêng</item>
+        <item>Keystore</item>
+    </array>
+
+    <!--交易记录列表-->
+    <array name="wallet_transaction_tag">
+        <item>Toàn bộ</item>
+        <item>Khoản chi</item>
+        <item>Khoản thu</item>
+        <item>Thất bại</item>
+    </array>
+
+    <!--本地erc20 token详情界面-->
+    <array name="public_sale_transaction_tag">
+        <item>Toàn bộ</item>
+        <item>mua</item>
+        <item>Chuyển khoản</item>
+        <item>Thất bại</item>
+    </array>
+
+    <!--Settings 语言-->
+    <array name="settings_languages">
+        <item>Hệ thống mặc định</item>
+        <item>English</item>
+        <item>简体中文</item>
+        <item>한국어</item>
+        <item>Bahasa Indonesia</item>
+        <item>Tiếng Việt</item>
+        <item>Pусский</item>
+    </array>
+
+    <array name="trx_freeze_tags">
+        <item>@string/trx_freeze_tag_freeze</item>
+        <item>@string/trx_freeze_tag_unfreeze</item>
+    </array>
+
+    <!--dapp-->
+
+    <!--dapp qkc-->
+
+    <!--market-->
+
+    <!--market coin 法币-->
+    <array name="setings_coin_all_country">
+        <item>BTC - Bitcoin</item>
+        <item>ETH - Ethereum</item>
+        <item>USD - Đô la Mỹ</item>
+        <item>CNY - Nhân dân tệ</item>
+        <item>EUR - Đồng Euro</item>
+        <item>KRW - Won Hàn Quốc</item>
+        <item>IDR - Rupee Indonesia</item>
+        <item>INR - Rupee Ấn Độ</item>
+        <item>RUB - Rúp Nga</item>
+        <item>UAH - Hryvnia Ucraina</item>
+        <item>VND - Đồng Việt Nam</item>
+        <item>AED - Ả Rập thống nhất</item>
+        <item>ARS - Peso Argentina</item>
+        <item>AUD - Đô la Úc</item>
+        <item>BDT - Taka Banglades</item>
+        <item>BHD - Dinar Bahrain</item>
+        <item>BMD - Đô la quần đảo Bermudan</item>
+        <item>BRL - Real Brazil</item>
+        <item>CAD - Đô la Canada</item>
+        <item>CHF - Franc Thụy Sỹ</item>
+        <item>CLP - Peso Chile</item>
+        <item>CZK - Koruna Séc</item>
+        <item>DKK - Krone Đan Mạch</item>
+        <item>GBP - Bảng Anh</item>
+        <item>HKD - Đô la Hong Kong</item>
+        <item>HUF - Forint Hungary</item>
+        <item>ILS - New Shekel Isael</item>
+        <item>JPY - Yên Nhật</item>
+        <item>KWD - Dinar Kuwaiti</item>
+        <item>LKR - Rupee Sri Lanka</item>
+        <item>MMK - Đô la Myanmar</item>
+        <item>MXN - Peso Mexico</item>
+        <item>MYR - Ringgit Malaysia</item>
+        <item>NOK - Krone Nauy</item>
+        <item>NZD - Đô la New Zealand</item>
+        <item>PHP - Peso Philippine</item>
+        <item>PKR - Rupee Pakistan</item>
+        <item>PLN - Zloty Ba Lan</item>
+        <item>SAR - Riyal Ả rập Saudi</item>
+        <item>SEK - Krona Thụy Điển</item>
+        <item>SGD - Đô la Singapore</item>
+        <item>THB - Baht Thái Lan</item>
+        <item>TRY - Lira Thổ Nhĩ Kì</item>
+        <item>TWD - Đô la Đài Loan mới</item>
+        <item>VEF - Bolivar Venezuela</item>
+        <item>ZAR - Rand Nam Phi</item>
+    </array>
+
+</resources>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+
+    <string name="app_name" translatable="false">QPocket</string>
+
+    <!--创建钱包-> 数据库名字-->
+    <array name="setting_network_eth" translatable="false">
+        <item>mainnet</item>
+        <item>ropsten(testnet)</item>
+        <item>kovan(testnet)</item>
+        <item>rinkeby(testnet)</item>
+    </array>
+    <array name="setting_network_qkc" translatable="false">
+        <item>mainnet</item>
+        <item>devnet</item>
+    </array>
+
+    <string name="create_wallet_first_name" translatable="false">HD-Wallet</string>
+    <string name="create_wallet_other_name" translatable="false">HD-Wallet %d</string>
+    <string name="create_wallet_first_name_qkc" translatable="false">QKC-Wallet</string>
+    <string name="create_wallet_other_name_qkc" translatable="false">QKC-Wallet %d</string>
+    <string name="create_wallet_first_name_eth" translatable="false">ETH-Wallet</string>
+    <string name="create_wallet_other_name_eth" translatable="false">ETH-Wallet %d</string>
+    <string name="create_wallet_first_name_trx" translatable="false">TRX-Wallet</string>
+    <string name="create_wallet_other_name_trx" translatable="false">TRX-Wallet %d</string>
+    <string name="create_wallet_first_name_btc" translatable="false">BTC-Wallet</string>
+    <string name="create_wallet_other_name_btc" translatable="false">BTC-Wallet %d</string>
+
+    <!--常用符号-->
+    <string name="qkc" translatable="false">QKC</string>
+    <string name="eth" translatable="false">ETH</string>
+    <string name="trx" translatable="false">TRX</string>
+
+    <!--tron常量-->
+    <string name="net_limit_key" translatable="false">net_limit_key</string>
+    <string name="net_used_key" translatable="false">net_used_key</string>
+    <string name="net_free_limit_key" translatable="false">net_free_limit_key</string>
+    <string name="net_free_used_key" translatable="false">net_free_used_key</string>
+    <string name="energy_limit_key" translatable="false">energy_limit_key</string>
+    <string name="energy_used_key" translatable="false">energy_used_key</string>
+    <string name="frozen_key" translatable="false">frozen_key</string>
+    <string name="frozen_energy_key" translatable="false">frozen_energy_key</string>
+
+    <string name="trx_trc10_token_detail_address" translatable="false">ID：</string>
+    <string name="trx_freeze_value" translatable="false">%s TRX</string>
+    <string name="trx_freeze_default_value" translatable="false">0 TRX</string>
+
+    <!--常量-->
+    <string name="home" translatable="false">home</string>
+
+    <string name="channel" translatable="false">GooglePlay</string>
+
+    <!--中文分享-->
+    <string name="share_not_install_wechat" translatable="false">您需要安装微信客户端</string>
+    <string name="share_wechat_unsupport" translatable="false">您的微信客户端版本过低</string>
+
+    <!--快讯-->
+
+    <!--积分系统-->
+
+    <string name="web_view_title" translatable="false">Web View</string>
+
+    <!--交易记录列表-->
+    <string name="wallet_transaction_total_token" translatable="false">%s QKC</string>
+    <string name="wallet_transaction_total_default_token" translatable="false">0 QKC</string>
+    <string name="wallet_transaction_gas_default" translatable="false">0 QKC</string>
+    <!--创建发送界面-->
+    <string name="wallet_transaction_send_gas_limit_count" translatable="false">30000</string>
+    <!--本地erc20 token详情界面-->
+    <string name="public_sale_price" translatable="false">1 QKC=%s %s</string>
+    <string name="public_sale_eth_price" translatable="false">1 ETH=%s %s</string>
+
+    <string name="hd_tag" translatable="false">HD</string>
+</resources>

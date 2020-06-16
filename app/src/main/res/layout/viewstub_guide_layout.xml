@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#80000000"
+    android:clickable="true"
+    android:focusable="true">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide_line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.7" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/guide_text_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:background="#ffffff"
+        app:cardElevation="2dp"
+        app:layout_constraintBottom_toTopOf="@id/guide_line"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1"
+        card_view:cardCornerRadius="7dp"
+        card_view:cardUseCompatPadding="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp_20">
+
+            <ImageView
+                android:id="@+id/guide_img"
+                android:layout_width="@dimen/dp_100"
+                android:layout_height="@dimen/dp_100"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_marginBottom="@dimen/dp_25"
+                android:src="@drawable/guide_img01" />
+
+            <TextView
+                android:id="@+id/guide_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/guide_img"
+                android:text="@string/guide_msg_text1"
+                android:textColor="@color/text_title"
+                android:textSize="@dimen/sp_12"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/transaction_bottom"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/guide_text"
+                android:layout_marginTop="@dimen/dp_20"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/ButtonForegroundEffectStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_normal2_bg"
+                    android:gravity="center"
+                    android:text="@string/guide_get_qkc"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp"
+                    android:visibility="gone" />
+
+                <TextView
+                    style="@style/ButtonForegroundEffectStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_back_selector"
+                    android:gravity="center"
+                    android:text="@string/guide_button_start"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp" />
+            </LinearLayout>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/guide_text_layout"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1">
+
+        <com.quarkonium.qpocket.view.GuideLineView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:minWidth="16dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/guide_balance"
+            android:visibility="gone" />
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

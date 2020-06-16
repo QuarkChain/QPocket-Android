@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <!--占位，确定宽度-->
+    <RelativeLayout
+        android:id="@+id/merge_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="19dp"
+        android:visibility="invisible">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="@string/merge_from"
+            android:textColor="#3ea5ff"
+            android:textSize="11sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="@string/merge_to"
+            android:textColor="#03c873"
+            android:textSize="11sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/merge_from_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="19dp"
+        android:layout_marginTop="25dp"
+        android:text="@string/merge_from"
+        android:textColor="#3ea5ff"
+        android:textSize="11sp" />
+
+    <TextView
+        android:id="@+id/merge_from"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="25dp"
+        android:layout_toRightOf="@+id/merge_title"
+        android:textColor="@color/text_message"
+        android:textSize="11sp" />
+
+    <TextView
+        android:id="@+id/merge_gas_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="19dp"
+        android:layout_toRightOf="@+id/merge_from"
+        android:gravity="right"
+        android:textColor="@color/text_message"
+        android:textSize="11sp" />
+
+    <TextView
+        android:id="@+id/merge_send_token_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/merge_gas_price"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="3dp"
+        android:layout_marginRight="19dp"
+        android:gravity="right"
+        android:textColor="@color/text_message"
+        android:textSize="11sp" />
+
+    <TextView
+        android:id="@+id/merge_to_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/merge_send_token_price"
+        android:layout_marginLeft="19dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/merge_to"
+        android:textColor="#03c873"
+        android:textSize="11sp" />
+
+    <TextView
+        android:id="@+id/merge_to"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/merge_send_token_price"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="12dp"
+        android:layout_toRightOf="@+id/merge_title"
+        android:textColor="@color/text_message"
+        android:textSize="11sp" />
+
+    <TextView
+        android:id="@+id/merge_gas_limit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/merge_send_token_price"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="19dp"
+        android:layout_toRightOf="@+id/merge_to"
+        android:gravity="right"
+        android:textColor="@color/text_message"
+        android:textSize="11sp" />
+
+    <TextView
+        android:id="@+id/merge_send_free_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/merge_gas_limit"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="3dp"
+        android:layout_marginRight="19dp"
+        android:gravity="right"
+        android:textColor="@color/text_message"
+        android:textSize="11sp" />
+
+    <TextView
+        android:id="@+id/merge_amount_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/merge_send_free_price"
+        android:layout_marginLeft="19dp"
+        android:layout_marginTop="25dp"
+        android:text="@string/merge_amount"
+        android:textColor="@color/text_message"
+        android:textSize="11sp" />
+
+    <TextView
+        android:id="@+id/merge_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/merge_send_free_price"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="25dp"
+        android:layout_toRightOf="@+id/merge_amount_title"
+        android:textColor="@color/text_title"
+        android:textSize="11sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/merge_amount_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/merge_amount"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="3dp"
+        android:layout_toRightOf="@+id/merge_amount_title"
+        android:textColor="@color/text_message"
+        android:textSize="11sp" />
+
+    <ImageView
+        android:id="@+id/merge_edit"
+        style="@style/ButtonBackgroundEffectStyle"
+        android:layout_width="52dp"
+        android:layout_height="52dp"
+        android:layout_below="@+id/merge_send_free_price"
+        android:layout_marginTop="5dp"
+        android:layout_toLeftOf="@+id/merge_selected"
+        android:paddingLeft="15dp"
+        android:paddingTop="15dp"
+        android:paddingRight="8dp"
+        android:paddingBottom="15dp"
+        android:src="@drawable/merge_edit" />
+
+    <ImageView
+        android:id="@+id/merge_selected"
+        style="@style/ButtonBackgroundEffectStyle"
+        android:layout_width="52dp"
+        android:layout_height="52dp"
+        android:layout_below="@+id/merge_send_free_price"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="4dp"
+        android:paddingLeft="8dp"
+        android:paddingTop="15dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="15dp"
+        android:src="@drawable/check_box_selected" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/merge_amount_price"
+        android:layout_marginLeft="19dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="19dp"
+        android:background="#ebebeb" />
+</RelativeLayout>

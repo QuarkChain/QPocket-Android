@@ -1,0 +1,46 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+buildscript {
+
+    repositories {
+        //阿里云maven库
+        maven { url 'http://maven.aliyun.com/nexus/content/groups/public/' }
+        maven { url 'http://maven.aliyun.com/nexus/content/repositories/jcenter' }
+        maven { url 'http://maven.aliyun.com/nexus/content/repositories/google' }
+        maven { url 'http://maven.aliyun.com/nexus/content/repositories/gradle-plugin' }
+
+        maven { url 'https://dl.bintray.com/umsdk/release' }
+        mavenCentral()
+        google()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:4.0.0'
+
+        classpath 'com.google.protobuf:protobuf-gradle-plugin:0.8.12'
+
+        classpath 'com.github.nrudenko:gradle-android-cq-plugin:0.1.4'
+        classpath 'com.tencent.bugly:symtabfileuploader:2.1.2'
+    }
+}
+
+allprojects {
+    repositories {
+        //阿里云maven库
+        maven { url 'http://maven.aliyun.com/nexus/content/groups/public/' }
+        maven { url 'http://maven.aliyun.com/nexus/content/repositories/jcenter' }
+        maven { url 'http://maven.aliyun.com/nexus/content/repositories/google' }
+        maven { url 'http://maven.aliyun.com/nexus/content/repositories/gradle-plugin' }
+
+        //RecyclerView 仓库
+        maven { url "https://jitpack.io" }
+        //LeanCloud 的包仓库
+        maven { url "http://mvn.leancloud.cn/nexus/content/repositories/public" }
+        //友盟
+        maven { url 'https://dl.bintray.com/umsdk/release' }
+        mavenLocal()
+        google()
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

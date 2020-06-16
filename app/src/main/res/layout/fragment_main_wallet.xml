@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:clickable="true">
+
+    <!-- 顶部  -->
+    <com.quarkonium.qpocket.view.TouchRelativeLayout
+        android:id="@+id/top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/appbar_top_height"
+        android:background="@drawable/top_bar_bg"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp">
+
+        <RelativeLayout
+            android:id="@+id/wallet_manager_layout"
+            style="@style/ButtonBackgroundEffectStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp">
+
+            <ImageView
+                android:id="@+id/wallet_manager"
+                android:layout_width="33dp"
+                android:layout_height="33dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/wallet_icon_bg"
+                android:padding="1dp"
+                android:src="@drawable/wallet_switch_qkc_selected" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/wallet_manager"
+                android:layout_alignBottom="@+id/wallet_manager"
+                android:src="@drawable/wallet_drop" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/wallet_qr_camera"
+            style="@style/ButtonBackgroundEffectStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="5dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp">
+
+            <ImageView
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_action_scan" />
+        </RelativeLayout>
+    </com.quarkonium.qpocket.view.TouchRelativeLayout>
+
+    <androidx.swiperefreshlayout.widget.MySwipeRefreshLayout
+        android:id="@+id/main_wallet_swipe"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/top_layout">
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.appbar.AppBarLayout
+                android:id="@+id/appbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                app:elevation="0dp">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/middle_wallet_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_150"
+                    android:layout_marginLeft="17dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="17dp"
+                    android:layout_marginBottom="15dp"
+                    app:cardElevation="3dp"
+                    app:cardPreventCornerOverlap="false"
+                    app:layout_scrollFlags="scroll|enterAlwaysCollapsed"
+                    card_view:cardCornerRadius="7dp"
+                    card_view:cardUseCompatPadding="true">
+
+                    <RelativeLayout
+                        android:id="@+id/main_card_bg_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/main_card_bg">
+
+                        <RelativeLayout
+                            android:id="@+id/wallet_layout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginLeft="19dp"
+                            android:layout_marginTop="19dp"
+                            android:layout_marginRight="19dp">
+
+                            <com.quarkonium.qpocket.view.CircleImageView
+                                android:id="@+id/wallet_icon"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_marginBottom="15dp"
+                                android:src="@drawable/default_wallet_icon" />
+
+                            <com.quarkonium.qpocket.view.CircleImageView
+                                android:id="@+id/wallet_backup_info"
+                                android:layout_width="8dp"
+                                android:layout_height="8dp"
+                                android:layout_toRightOf="@+id/wallet_icon"
+                                android:src="#ff3233"
+                                android:visibility="gone" />
+
+                            <TextView
+                                android:id="@+id/wallet_name_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignTop="@+id/wallet_icon"
+                                android:layout_marginLeft="15dp"
+                                android:layout_toRightOf="@+id/wallet_icon"
+                                android:drawablePadding="8dp"
+                                android:ellipsize="end"
+                                android:maxWidth="110dp"
+                                android:singleLine="true"
+                                android:textColor="@color/text_title"
+                                android:textSize="14sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/wallet_hd_count_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignTop="@+id/wallet_name_text"
+                                android:layout_alignBottom="@+id/wallet_name_text"
+                                android:layout_marginLeft="6dp"
+                                android:layout_marginTop="3dp"
+                                android:layout_marginBottom="3dp"
+                                android:layout_toRightOf="@+id/wallet_name_text"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="3dp"
+                                android:paddingRight="3dp"
+                                android:paddingBottom="1dp"
+                                android:singleLine="true"
+                                android:textColor="@color/white"
+                                android:textSize="9dp"
+                                android:visibility="gone" />
+
+                            <TextView
+                                android:id="@+id/wallet_address_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignBottom="@+id/wallet_icon"
+                                android:layout_marginLeft="15dp"
+                                android:layout_toRightOf="@+id/wallet_icon"
+                                android:ellipsize="middle"
+                                android:singleLine="true"
+                                android:textColor="@color/text_title"
+                                android:textSize="12sp" />
+
+                            <ImageView
+                                android:id="@+id/wallet_copy_view"
+                                style="@style/ButtonBackgroundEffectStyle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignBottom="@+id/wallet_icon"
+                                android:layout_marginLeft="3dp"
+                                android:layout_marginBottom="-16dp"
+                                android:layout_toRightOf="@+id/wallet_address_text"
+                                android:paddingLeft="15dp"
+                                android:paddingTop="15dp"
+                                android:paddingRight="5dp"
+                                android:paddingBottom="15dp"
+                                android:scaleType="center"
+                                android:src="@drawable/copy_icon" />
+
+                            <ImageView
+                                android:id="@+id/wallet_qr_address"
+                                style="@style/ButtonBackgroundEffectStyle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignBottom="@+id/wallet_icon"
+                                android:layout_marginBottom="-16dp"
+                                android:layout_toRightOf="@+id/wallet_copy_view"
+                                android:paddingLeft="5dp"
+                                android:paddingTop="15dp"
+                                android:paddingRight="15dp"
+                                android:paddingBottom="15dp"
+                                android:scaleType="center"
+                                android:src="@drawable/ic_action_deposit" />
+                        </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/wallet_chain_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/wallet_layout"
+                            android:layout_marginLeft="74dp"
+                            android:layout_marginTop="-10dp"
+                            android:textColor="@color/text_title"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/wallet_shard_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/wallet_layout"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginTop="-10dp"
+                            android:layout_toRightOf="@+id/wallet_chain_text"
+                            android:textColor="@color/text_title"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/main_wallet_price_symbol"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginLeft="25dp"
+                            android:paddingBottom="25dp"
+                            android:textColor="@color/text_title"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/main_wallet_price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBaseline="@+id/main_wallet_price_symbol"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginLeft="5dp"
+                            android:layout_toRightOf="@+id/main_wallet_price_symbol"
+                            android:paddingBottom="20dp"
+                            android:textColor="@color/text_title"
+                            android:textSize="28sp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:id="@+id/wallet_watch_flag"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="5dp"
+                            android:src="@drawable/wallet_watch"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+            </com.google.android.material.appbar.AppBarLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+                <androidx.core.widget.NestedScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </androidx.core.widget.NestedScrollView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/bottom_wallet_token_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="17dp"
+                    android:layout_marginRight="17dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="#ffffff"
+                    app:cardElevation="3dp"
+                    card_view:cardCornerRadius="7dp"
+                    card_view:cardUseCompatPadding="true">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="64dp"
+                        android:paddingLeft="19dp"
+                        android:paddingRight="19dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="@string/wallet_token_title"
+                            android:textColor="@color/text_title"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:id="@+id/wallet_add_token"
+                            style="@style/ButtonBackgroundEffectStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="-15dp"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="15dp"
+                            android:src="@drawable/add_wallet" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginLeft="19dp"
+                        android:layout_marginTop="64dp"
+                        android:layout_marginRight="19dp"
+                        android:background="#ebebeb" />
+
+                    <View
+                        android:id="@+id/empty_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="64dp"
+                        android:layout_marginTop="65dp"
+                        android:paddingLeft="19dp"
+                        android:paddingRight="19dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="65dp"
+                        android:orientation="vertical">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/main_wallet_token_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:visibility="gone" />
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+            </RelativeLayout>
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    </androidx.swiperefreshlayout.widget.MySwipeRefreshLayout>
+
+    <include
+        android:id="@+id/progress_layout"
+        layout="@layout/progress_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true" />
+</RelativeLayout>

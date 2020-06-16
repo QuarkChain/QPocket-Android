@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.quarkonium.qpocket.view.SwipeMenuLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true">
+
+    <RelativeLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:paddingLeft="19dp"
+        android:paddingRight="19dp">
+
+        <TextView
+            android:id="@+id/token_symbol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_toLeftOf="@+id/token_toggle"
+            android:layout_toRightOf="@+id/token_icon_layout"
+            android:singleLine="true"
+            android:textColor="@color/text_title"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/token_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/token_symbol"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_toLeftOf="@+id/token_toggle"
+            android:layout_toRightOf="@+id/token_icon_layout"
+            android:singleLine="true"
+            android:textColor="@color/text_title"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/token_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/token_name"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="20dp"
+            android:layout_toLeftOf="@+id/token_toggle"
+            android:layout_toRightOf="@+id/token_icon_layout"
+            android:ellipsize="middle"
+            android:singleLine="true"
+            android:textColor="@color/text_title"
+            android:textSize="13sp" />
+
+        <FrameLayout
+            android:id="@+id/token_icon_layout"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/token_coin_icon_bg"
+            android:padding="5dp">
+
+            <ImageView
+                android:id="@+id/token_img"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/token_default_icon" />
+        </FrameLayout>
+
+        <com.quarkonium.qpocket.view.SwitchButton
+            android:id="@+id/token_toggle"
+            android:layout_width="48dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            app:sb_checked_color="@color/text_title"
+            app:sb_show_indicator="false" />
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/token_address"
+            android:background="#ebebeb"
+            android:paddingLeft="19dp"
+            android:paddingRight="19dp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/btnDelete"
+        android:layout_width="75dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/selector_red"
+        android:gravity="center"
+        android:text="@string/delete"
+        android:textColor="@android:color/white"
+        android:textSize="15sp" />
+</com.quarkonium.qpocket.view.SwipeMenuLayout>

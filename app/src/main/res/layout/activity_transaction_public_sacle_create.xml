@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:fitsSystemWindows="true">
+
+    <!-- 顶部  -->
+    <com.quarkonium.qpocket.view.TopBarView
+        android:id="@+id/top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/appbar_top_height" />
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/transaction_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/account_action_next"
+        android:layout_below="@+id/top_layout"
+        android:paddingLeft="19dp"
+        android:paddingRight="19dp"
+        android:paddingBottom="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_15"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="2dp"
+                card_view:cardCornerRadius="7dp"
+                card_view:cardUseCompatPadding="true">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffff"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/transaction_send_amount"
+                        style="@style/login_edit_text"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="19dp"
+                        android:layout_marginTop="35dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_toLeftOf="@+id/transaction_send_token"
+                        android:background="@null"
+                        android:drawableBottom="@drawable/edit_text_bg"
+                        android:drawablePadding="5dp"
+                        android:hint="@string/wallet_public_transaction_send_hint"
+                        android:inputType="numberDecimal"
+                        android:maxLength="-1"
+                        android:singleLine="true"
+                        android:textColorHint="#d6d6d6"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/transaction_send_token"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="35dp"
+                        android:layout_marginRight="19dp"
+                        android:textColor="@color/text_title"
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:id="@+id/transaction_send_total_cost"
+                        style="@style/login_edit_text"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/transaction_send_amount"
+                        android:layout_marginLeft="19dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_toLeftOf="@+id/transaction_send_price_sym"
+                        android:background="@null"
+                        android:drawableBottom="@drawable/edit_text_bg"
+                        android:drawablePadding="5dp"
+                        android:hint="@string/wallet_public_transaction_price_hint"
+                        android:inputType="numberDecimal"
+                        android:maxLength="-1"
+                        android:singleLine="true"
+                        android:textColorHint="#d6d6d6"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/transaction_send_price_sym"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/transaction_send_amount"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginRight="19dp"
+                        android:text="@string/wallet_token_total_symbol"
+                        android:textColor="@color/text_title"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/transaction_send_to"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/transaction_send_total_cost"
+                        android:layout_marginLeft="19dp"
+                        android:layout_marginTop="30dp"
+                        android:text="@string/public_sale_contract_address_title"
+                        android:textColor="@color/text_title"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <com.quarkonium.qpocket.view.JustifyTextView
+                        android:id="@+id/transaction_send_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/transaction_send_to"
+                        android:layout_marginLeft="19dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="19dp"
+                        android:textColor="@color/text_message"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/transaction_send_from"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/transaction_send_address"
+                        android:layout_marginLeft="19dp"
+                        android:layout_marginTop="25dp"
+                        android:text="@string/wallet_transaction_from"
+                        android:textColor="#03c873"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <com.quarkonium.qpocket.view.JustifyTextView
+                        android:id="@+id/transaction_from_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/transaction_send_from"
+                        android:layout_marginLeft="19dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="19dp"
+                        android:textColor="@color/text_message"
+                        android:textSize="13sp" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp"
+                        android:layout_below="@+id/transaction_from_address"
+                        android:layout_marginTop="30dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/tran_send_line" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                app:cardElevation="2dp"
+                card_view:cardCornerRadius="7dp"
+                card_view:cardUseCompatPadding="true">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffff"
+                    android:paddingLeft="19dp"
+                    android:paddingRight="19dp"
+                    android:paddingBottom="19dp">
+
+                    <TextView
+                        android:id="@+id/transaction_send_gas_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="19dp"
+                        android:text="@string/wallet_transaction_send_gas"
+                        android:textColor="@color/text_title"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tx_gas_token_symbol"
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="17dp"
+                        android:layout_toRightOf="@+id/transaction_send_gas_title"
+                        android:background="@drawable/create_wallet_language_bg"
+                        android:drawableRight="@drawable/create_wallet_language"
+                        android:drawablePadding="10dp"
+                        android:gravity="center"
+                        android:minWidth="70dp"
+                        android:paddingLeft="12dp"
+                        android:paddingRight="12dp"
+                        android:text="@string/qkc"
+                        android:textColor="@color/text_title"
+                        android:textSize="12sp"
+                        android:visibility="gone" />
+
+                    <EditText
+                        android:id="@+id/transaction_send_gas"
+                        style="@style/login_edit_text"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/transaction_send_gas_title"
+                        android:layout_marginTop="5dp"
+                        android:background="@null"
+                        android:drawableBottom="@drawable/edit_text_bg"
+                        android:inputType="numberDecimal"
+                        android:maxLength="-1"
+                        android:padding="3dp"
+                        android:paddingRight="30dp"
+                        android:singleLine="true"
+                        android:textColorHint="@color/text_message"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/transaction_send_gas"
+                        android:layout_alignBottom="@+id/transaction_send_gas"
+                        android:layout_alignParentRight="true"
+                        android:text="@string/wallet_transaction_send_gas_gwei"
+                        android:textColor="@color/text_message"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/transaction_send_gas_limit_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/transaction_send_gas"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/wallet_transaction_send_gas_limit"
+                        android:textColor="@color/text_title"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/transaction_send_gas_limit"
+                        style="@style/login_edit_text"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/transaction_send_gas_limit_title"
+                        android:layout_marginTop="5dp"
+                        android:background="@null"
+                        android:drawableBottom="@drawable/edit_text_bg"
+                        android:inputType="number"
+                        android:maxLength="-1"
+                        android:padding="3dp"
+                        android:singleLine="true"
+                        android:text="@string/wallet_transaction_send_gas_limit_count"
+                        android:textColorHint="@color/text_message"
+                        android:textSize="13sp" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <include
+                android:id="@+id/error_layout"
+                layout="@layout/error_text_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="19dp"
+                android:layout_marginRight="19dp" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <TextView
+        android:id="@+id/account_action_next"
+        style="@style/ButtonForegroundEffectStyle"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="19dp"
+        android:layout_marginRight="19dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/button_back_selector"
+        android:gravity="center"
+        android:text="@string/wallet_transaction_send"
+        android:textColor="#ffffff"
+        android:textSize="15sp" />
+
+    <include
+        android:id="@+id/progress_layout"
+        layout="@layout/progress_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true" />
+</RelativeLayout>

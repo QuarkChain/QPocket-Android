@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?><!--创建钱包-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:fitsSystemWindows="true">
+
+    <!-- 顶部  -->
+    <com.quarkonium.qpocket.view.TopBarView
+        android:id="@+id/top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/appbar_top_height" />
+
+    <ImageView
+        android:id="@+id/wallet_icon_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/create_phrase_rember" />
+
+    <TextView
+        android:id="@+id/backup_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/wallet_icon_view"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="19dp"
+        android:layout_marginRight="19dp"
+        android:layout_marginBottom="30dp"
+        android:text="@string/backup_wallet_remember_hint"
+        android:textColor="@color/text_message"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/create_wallet_language"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_below="@+id/backup_hint"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-15dp"
+        android:background="@drawable/create_wallet_language_bg"
+        android:drawableRight="@drawable/create_wallet_language"
+        android:drawablePadding="10dp"
+        android:gravity="center"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:text="@string/phrase_language_en"
+        android:textColor="@color/text_title"
+        android:textSize="12sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/backup_phrase_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/backup_hint"
+        android:layout_marginLeft="19dp"
+        android:layout_marginRight="19dp"
+        android:background="@drawable/phrase_edit_text_bg"
+        android:lineSpacingExtra="14dp"
+        android:paddingLeft="15dp"
+        android:paddingTop="@dimen/line_padding_bottom"
+        android:paddingRight="15dp"
+        android:paddingBottom="@dimen/line_padding_bottom"
+        android:textColor="@color/text_title"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/account_action_next"
+        style="@style/ButtonForegroundEffectStyle"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="19dp"
+        android:layout_marginRight="19dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/button_back_selector"
+        android:gravity="center"
+        android:text="@string/next"
+        android:textColor="#ffffff"
+        android:textSize="15sp" />
+
+    <include
+        android:id="@+id/progress_layout"
+        layout="@layout/progress_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true" />
+</RelativeLayout>

@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:fitsSystemWindows="true">
+
+    <!-- 顶部  -->
+    <com.quarkonium.qpocket.view.TopBarView
+        android:id="@+id/top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/appbar_top_height" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/top_layout"
+        android:paddingLeft="19dp"
+        android:paddingRight="19dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_15"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                app:cardElevation="2dp"
+                card_view:cardCornerRadius="7dp"
+                card_view:cardUseCompatPadding="true">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginRight="24dp"
+                    android:background="#ffffff"
+                    android:orientation="vertical"
+                    android:paddingBottom="20dp">
+
+                    <ImageView
+                        android:id="@+id/transaction_state_img"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginBottom="10dp" />
+
+                    <TextView
+                        android:id="@+id/transaction_state_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/transaction_state_img"
+                        android:layout_centerHorizontal="true"
+                        android:textColor="@color/text_title"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/transaction_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/transaction_state_text"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/text_title"
+                        android:textSize="12sp" />
+
+                    <View
+                        android:id="@+id/line"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_below="@+id/transaction_time"
+                        android:layout_marginTop="25dp"
+                        android:background="#ebebeb" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/line"
+                        android:layout_marginTop="17dp"
+                        android:text="@string/wallet_transaction_detail_amount"
+                        android:textColor="@color/text_title"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/transaction_amount_token"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/line"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="17dp"
+                        android:textColor="@color/text_title"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/transaction_state_ft"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/transaction_amount_token"
+                        android:layout_marginTop="26dp"
+                        android:textColor="@color/text_title"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <com.quarkonium.qpocket.view.JustifyTextView
+                        android:id="@+id/transaction_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/transaction_state_ft"
+                        android:layout_marginTop="5dp"
+                        android:lineSpacingExtra="2dp"
+                        android:textColor="@color/text_message"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/transaction_cost_token_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/transaction_address"
+                        android:layout_marginTop="25dp"
+                        android:text="@string/wallet_transaction_detail_actual"
+                        android:textColor="@color/text_title"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/transaction_cost_token"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/transaction_address"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="25dp"
+                        android:text="@string/wallet_transaction_gas_default"
+                        android:textColor="@color/text_title"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/detail_other"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                app:cardElevation="2dp"
+                card_view:cardCornerRadius="7dp"
+                card_view:cardUseCompatPadding="true">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffff"
+                    android:paddingLeft="24dp"
+                    android:paddingRight="24dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="24dp"
+                        android:text="@string/wallet_transaction_block_title"
+                        android:textColor="@color/text_title"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/transaction_block_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="24dp"
+                        android:textColor="@color/text_title"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/transaction_tx_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/transaction_block_value"
+                        android:layout_marginTop="15dp"
+                        android:text="@string/wallet_transaction_tx_title"
+                        android:textColor="@color/text_title"
+                        android:textSize="15sp" />
+
+                    <com.quarkonium.qpocket.view.JustifyTextView
+                        android:id="@+id/transaction_tx_value"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/transaction_tx_title"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="20dp"
+                        android:lineSpacingExtra="2dp"
+                        android:textColor="@color/text_message"
+                        android:textSize="13sp" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/tx_more_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="20dp"
+                android:autoLink="all"
+                android:drawableRight="@drawable/tx_more_detail"
+                android:drawablePadding="10dp"
+                android:gravity="center"
+                android:text="@string/transaction_more_detail"
+                android:textColor="@color/text_title"
+                android:textSize="13sp" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</RelativeLayout>

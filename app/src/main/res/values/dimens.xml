@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="appbar_top_height">@dimen/dp_50</dimen>
+
+    <dimen name="login_input_text_size">@dimen/dp_12</dimen>
+    <dimen name="login_input_height">@dimen/dp_32</dimen>
+
+    <!--select_circle-->
+    <dimen name="line_padding_bottom">@dimen/dp_10</dimen>
+
+    <dimen name="wheel_text_size">@dimen/dp_15</dimen>
+
+    <dimen name="seekbar_nail_stroke_width">@dimen/dp_1</dimen>
+    <dimen name="seekbar_line_width">@dimen/dp_2</dimen>
+
+    <!-- dp and sp values, must be defind in this file! -->
+    <!-- view size,you can add if there is no one -->
+    <dimen name="dp_1">1dp</dimen>
+    <dimen name="dp_2">2dp</dimen>
+    <dimen name="dp_4">4dp</dimen>
+    <dimen name="dp_5">5dp</dimen>
+    <dimen name="dp_6">6dp</dimen>
+    <dimen name="dp_10">10dp</dimen>
+    <dimen name="dp_12">12dp</dimen>
+    <dimen name="dp_13">13dp</dimen>
+    <dimen name="dp_14">14dp</dimen>
+    <dimen name="dp_15">15dp</dimen>
+    <dimen name="dp_17">17dp</dimen>
+    <dimen name="dp_20">20dp</dimen>
+    <dimen name="dp_25">25dp</dimen>
+    <dimen name="dp_32">32dp</dimen>
+    <dimen name="dp_40">40dp</dimen>
+    <dimen name="dp_45">45dp</dimen>
+    <dimen name="dp_50">50dp</dimen>
+    <dimen name="dp_67">67dp</dimen>
+    <dimen name="dp_80">80dp</dimen>
+    <dimen name="dp_100">100dp</dimen>
+    <dimen name="dp_110">110dp</dimen>
+    <dimen name="dp_150">150dp</dimen>
+
+    <!-- font size,you can add if there is no one -->
+    <dimen name="sp_12">12sp</dimen>
+    <dimen name="sp_14">14sp</dimen>
+    <dimen name="sp_18">18sp</dimen>
+
+</resources>

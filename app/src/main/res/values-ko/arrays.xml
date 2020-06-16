@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--创建钱包首页-->
+    <array name="create_wallet_titles">
+        <item>올인원 크립토월렛</item>
+        <item>다양한 크립토 자산</item>
+        <item>사적임 &amp; 안전함</item>
+    </array>
+    <array name="create_wallet_messages">
+        <item>간편하고 안전하면서 모든 기능을 포함한 블록체인 포털입니다</item>
+        <item>QKC, ETH, BTC 및 TRX를 지원합니다. 앞으로 더 많이 지원 예정입니다!</item>
+        <item>프라이빗 키는 절대 기기에 보관하지 마십시오</item>
+    </array>
+
+    <!--导入钱包-->
+    <array name="import_wallet_tag">
+        <item>문구</item>
+        <item>프라이빗 키</item>
+        <item>Keystore</item>
+        <item>찾기</item>
+    </array>
+    <array name="import_wallet_tag_cold">
+        <item>문구</item>
+        <item>프라이빗 키</item>
+        <item>Keystore</item>
+    </array>
+
+    <!--交易记录列表-->
+    <array name="wallet_transaction_tag">
+        <item>전체내역</item>
+        <item>발송내역</item>
+        <item>수신내역</item>
+        <item>실패내역</item>
+    </array>
+
+    <!--本地erc20 token详情界面-->
+    <array name="public_sale_transaction_tag">
+        <item>모두 선택하기</item>
+        <item>구매하기</item>
+        <item>전송하기</item>
+        <item>실패</item>
+    </array>
+
+    <!--Settings 语言-->
+    <array name="settings_languages">
+        <item>시스템 기본 설정</item>
+        <item>English</item>
+        <item>简体中文</item>
+        <item>한국어</item>
+        <item>Bahasa Indonesia</item>
+        <item>Tiếng Việt</item>
+        <item>Pусский</item>
+    </array>
+
+    <array name="trx_freeze_tags">
+        <item>@string/trx_freeze_tag_freeze</item>
+        <item>@string/trx_freeze_tag_unfreeze</item>
+    </array>
+
+    <!--dapp-->
+
+    <!--dapp qkc-->
+    <!--dapp qkc-->
+
+    <!--market-->
+
+    <!--market coin 法币-->
+    <array name="setings_coin_all_country">
+        <item>BTC - 비트코인</item>
+        <item>ETH - 이더리움</item>
+        <item>USD - US 달러</item>
+        <item>CNY - 중국 위안화</item>
+        <item>EUR - 유로</item>
+        <item>KRW - 한국 원화</item>
+        <item>IDR - 인도네시아 루피아</item>
+        <item>INR - 인도 루피</item>
+        <item>RUB - 러시아 루블</item>
+        <item>UAH - 우크라이나 흐리브나</item>
+        <item>VND - 베트남 동</item>
+        <item>AED - 아랍에미리트 디람</item>
+        <item>ARS - 아르헨티나 페소</item>
+        <item>AUD - 호주 달러</item>
+        <item>BDT - 방글라데시 타카</item>
+        <item>BHD - 바레인 디나르</item>
+        <item>BMD - 버뮤다 달러</item>
+        <item>BRL - 브라질 레알</item>
+        <item>CAD - 캐나다 달러</item>
+        <item>CHF - 스위스 프랑</item>
+        <item>CLP - 칠레 페소</item>
+        <item>CZK - 체코 코루나</item>
+        <item>DKK - 덴마크 크로네</item>
+        <item>GBP - 영국 파운드</item>
+        <item>HKD - 홍콩 달러</item>
+        <item>HUF - 헝가리 포린트</item>
+        <item>ILS - 이스라엘 셰켈</item>
+        <item>JPY - 일본 엔화</item>
+        <item>KWD - 쿠웨이트 디나르</item>
+        <item>LKR - 스리랑카 루피</item>
+        <item>MMK - 미얀마 챠트</item>
+        <item>MXN - 멕시코 페소</item>
+        <item>MYR - 말레이시아 링깃</item>
+        <item>NOK - 노르웨이 크로네</item>
+        <item>NZD - 뉴질랜드 달러</item>
+        <item>PHP - 필리핀 페소</item>
+        <item>PKR - 파키스탄 루피</item>
+        <item>PLN - 폴란드 즐로티</item>
+        <item>SAR - 사우디아라비아 리얄</item>
+        <item>SEK - 스웨덴 크로나</item>
+        <item>SGD - 싱가포르 달러</item>
+        <item>THB - 태국 바트</item>
+        <item>TRY - 터키 리라</item>
+        <item>TWD - 대만 달러</item>
+        <item>VEF - 베네수엘라 볼리바르</item>
+        <item>ZAR - 남아프리카 랜드</item>
+    </array>
+
+</resources>
