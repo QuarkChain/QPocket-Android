@@ -42,7 +42,6 @@ With the QPocket Wallet you can send and receive QuarkChain,Ethereum,Tron,Bitcoi
  - Masterseed based - make one backup and be safe for ever. ([Bip39](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki))
  - 100% control over your private keys, they never leave your device unless you export them
  - Watch-only addresses (single or xPub) & private key import for secure cold-storage integration
- - Directly spend from paper wallets (single key, xPriv or master seed)
  - Secure your wallet with a PIN
 
 Please note: while we make sure to adhere to the highest standards of software craftsmanship we can not exclude that the software contains bugs. Please make sure you have backups of your private keys and do not use this for more than you are willing to lose.
